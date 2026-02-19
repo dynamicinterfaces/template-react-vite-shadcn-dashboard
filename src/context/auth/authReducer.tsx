@@ -5,9 +5,11 @@ const isPreviewMode = import.meta.env.VITE_PREVIEW_MODE === 'true'
 const authInfoLocalStorage = JSON.parse(localStorage.getItem('auth') || '{}')
 
 const previewAuthInfo = {
-  email: 'preview@dynamicinterfaces.com',
-  name: 'Preview User',
-  accessToken: 'preview-token'
+  token: 'preview-token',
+  user: {
+    email: 'preview@dynamicinterfaces.com',
+    username: 'Preview User'
+  }
 }
 
 export const initialState: IStateAuth = {
