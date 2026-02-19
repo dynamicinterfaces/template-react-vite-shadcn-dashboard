@@ -1,22 +1,39 @@
 {
-  "appRoot": "",
-  "framework": "react-router",
-  "packageManager": "npm",
-  "installCommand": "npm install",
-  "devCommand": "npm run dev",
-  "devPort": 5173,
-  "buildCommand": "npm run build",
-  "buildOutputDir": "dist",
-  "previewStrategy": "none",
   "routes": [
-    { "path": "src/features/posts/index.tsx", "route": "/", "name": "Posts" },
-    { "path": "src/features/posts/detail/index.tsx", "route": "/post/:postId", "name": "Post Detail" },
-    { "path": "src/features/payment/index.tsx", "route": "/payment", "name": "Payment" },
-    { "path": "src/features/kanban/index.tsx", "route": "/kanban", "name": "Kanban" },
-    { "path": "src/features/kanban/create/index.tsx", "route": "/kanban/create", "name": "Kanban Create" },
-    { "path": "src/features/kanban/detail/index.tsx", "route": "/kanban/detail/:id", "name": "Kanban Detail" },
-    { "path": "src/features/kanban/edit/index.tsx", "route": "/kanban/edit/:id", "name": "Kanban Edit" },
-    { "path": "src/features/authentication/login.tsx", "route": "/login", "name": "Login" },
-    { "path": "src/features/authentication/register.tsx", "route": "/register", "name": "Register" }
+    {
+      "path": "src/features/posts/index.tsx",
+      "route": "/",
+      "name": "Posts"
+    },
+    {
+      "path": "src/features/posts/detail/index.tsx",
+      "route": "/post/:postId",
+      "name": "Post Detail"
+    },
+    {
+      "path": "src/features/payment/index.tsx",
+      "route": "/payment",
+      "name": "Payment"
+    },
+    {
+      "path": "src/features/kanban/index.tsx",
+      "route": "/kanban",
+      "name": "Kanban"
+    },
+    {
+      "path": "src/features/kanban/create/index.tsx",
+      "route": "/kanban/create",
+      "name": "Kanban Create"
+    },
+    {
+      "path": "src/features/kanban/detail/index.tsx",
+      "route": "/kanban/detail/:id",
+      "name": "Kanban Detail"
+    },
+    {
+      "path": "src/features/kanban/edit/index.tsx",
+      "route": "/kanban/edit/:id",
+      "name": "Kanban Edit"
+    }
   ]
 }
