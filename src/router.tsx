@@ -84,7 +84,7 @@ const privateRoutes = [
 
 const publicRoutes = [
   {
-    path: '/',
+    path: '/login',
     element: <Login />
   },
   {
@@ -94,12 +94,26 @@ const publicRoutes = [
   { path: '*', element: <Navigate to='/' replace /> }
 ]
 
+// Preview mode: sandbox screenshots navigate with ?_preview=1.
+// Show all routes so both private pages and public pages (login, register) render.
+const isPreviewMode = new URLSearchParams(window.location.search).has('_preview')
+
+const previewRoutes = [
+  ...privateRoutes,
+  { path: '/login', element: <Login /> },
+  { path: '/register', element: <Register /> }
+]
+
 export const DashboardMenu = (): NavGroup[] => {
   return privateRoutes[0].children
 }
 
 export const RoutesApp = () => {
   const { state: authState } = useAuth()
+
+  if (isPreviewMode) {
+    return useRoutes(previewRoutes)
+  }
 
   return useRoutes(authState.isAuthenticated ? privateRoutes : publicRoutes)
 }
