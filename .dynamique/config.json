@@ -45,5 +45,16 @@
       "route": "/register",
       "name": "Register"
     }
-  ]
+  ],
+  "layout": {
+    "cols": 3,
+    "colWidth": 340,
+    "rowHeight": 400,
+    "offsetX": 450,
+    "offsetY": 0
+  },
+  "defaultDimensions": {
+    "width": 300,
+    "height": 350
+  }
 }
