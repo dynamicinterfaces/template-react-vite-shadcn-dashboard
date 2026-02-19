@@ -1,0 +1,19 @@
+{
+  "framework": "vite",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "devPort": 5173,
+  "buildCommand": "npm run build",
+  "buildOutputDir": "dist",
+  "routes": [
+    { "filePath": "src/features/posts/index.tsx", "route": "/", "name": "Posts" },
+    { "filePath": "src/features/authentication/login.tsx", "route": "/login", "name": "Login" },
+    { "filePath": "src/features/authentication/register.tsx", "route": "/register", "name": "Register" },
+    { "filePath": "src/features/payment/index.tsx", "route": "/payment", "name": "Payment" },
+    { "filePath": "src/features/kanban/index.tsx", "route": "/kanban", "name": "Kanban" },
+    { "filePath": "src/features/chats/index.tsx", "route": "/chats", "name": "Chats" },
+    { "filePath": "src/features/users/index.tsx", "route": "/users", "name": "Users" },
+    { "filePath": "src/features/settings/index.tsx", "route": "/settings", "name": "Settings" },
+    { "filePath": "src/features/errors/not-found-error.tsx", "route": "/404", "name": "Not Found" }
+  ]
+}

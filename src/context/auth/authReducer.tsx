@@ -1,11 +1,20 @@
 import { IActionAuth, IStateAuth } from './authTypes'
 
+const isPreviewMode = import.meta.env.VITE_PREVIEW_MODE === 'true'
+
 const authInfoLocalStorage = JSON.parse(localStorage.getItem('auth') || '{}')
 
+const previewAuthInfo = {
+  email: 'preview@dynamicinterfaces.com',
+  name: 'Preview User',
+  accessToken: 'preview-token'
+}
+
 export const initialState: IStateAuth = {
-  isAuthenticated: Object.keys(authInfoLocalStorage).length > 0,
-  authInfo:
-    Object.keys(authInfoLocalStorage).length !== 0
+  isAuthenticated: isPreviewMode || Object.keys(authInfoLocalStorage).length > 0,
+  authInfo: isPreviewMode
+    ? previewAuthInfo
+    : Object.keys(authInfoLocalStorage).length !== 0
       ? authInfoLocalStorage
       : undefined
 }

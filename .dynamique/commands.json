@@ -1,0 +1,8 @@
+{
+  "commands": {
+    "dev": { "command": "npm run dev", "source": "auto" },
+    "build": { "command": "npm run build", "source": "auto" },
+    "lint": { "command": "npx eslint", "source": "auto" },
+    "preview": { "command": "npx vite preview", "source": "auto" }
+  }
+}
