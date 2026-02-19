@@ -34,6 +34,16 @@
       "path": "src/features/kanban/edit/index.tsx",
       "route": "/kanban/edit/:id",
       "name": "Kanban Edit"
+    },
+    {
+      "path": "src/features/authentication/login.tsx",
+      "route": "/login",
+      "name": "Login"
+    },
+    {
+      "path": "src/features/authentication/register.tsx",
+      "route": "/register",
+      "name": "Register"
     }
   ]
 }
