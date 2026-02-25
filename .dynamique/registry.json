@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "nodes": {
+    "src/features/posts/index.tsx": {
+      "uid": "01KJ91QZ13S90RGESR2JWQG7MG",
+      "type": "page",
+      "route": "/",
+      "position": {
+        "x": -3438.699117562726,
+        "y": 2603.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/posts/detail/index.tsx": {
+      "uid": "01KJ91QZ133YX2XT0W3VTRXTRX",
+      "type": "page",
+      "route": "/post/:postId",
+      "position": {
+        "x": -1795.6991175627259,
+        "y": 2603.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/payment/index.tsx": {
+      "uid": "01KJ91QZ1322RW5R5JKBQWK6FF",
+      "type": "page",
+      "route": "/payment",
+      "position": {
+        "x": -152.69911756272595,
+        "y": 2603.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/kanban/index.tsx": {
+      "uid": "01KJ91QZ135YRHDS5P71D7PKSQ",
+      "type": "page",
+      "route": "/kanban",
+      "position": {
+        "x": -3435.5952037552934,
+        "y": 4619.214504285447
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/kanban/create/index.tsx": {
+      "uid": "01KJ91QZ14AR5HN925TZ49B7H7",
+      "type": "page",
+      "route": "/kanban/create",
+      "position": {
+        "x": -3438.699117562726,
+        "y": 3606.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/kanban/detail/index.tsx": {
+      "uid": "01KJ91QZ14PN2YV7A4R50VV7G9",
+      "type": "page",
+      "route": "/kanban/detail/:id",
+      "position": {
+        "x": -1795.6991175627259,
+        "y": 3606.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/kanban/edit/index.tsx": {
+      "uid": "01KJ91QZ147GV7HJWCH91MA4NK",
+      "type": "page",
+      "route": "/kanban/edit/:id",
+      "position": {
+        "x": -152.69911756272595,
+        "y": 3606.9817664545053
+      },
+      "dimensions": {
+        "width": 1603,
+        "height": 923
+      }
+    },
+    "src/features/authentication/login.tsx": {
+      "uid": "01KJ95WSWCJP8Q3RY4RQ1BQ5H6",
+      "type": "page",
+      "route": "/login",
+      "position": {
+        "x": -1771.8841921371284,
+        "y": 4624.645356369452
+      },
+      "dimensions": {
+        "width": 470,
+        "height": 539
+      }
+    },
+    "src/features/authentication/register.tsx": {
+      "uid": "01KJ95WSWDV9N92NX1JDCRKB0G",
+      "type": "page",
+      "route": "/register",
+      "position": {
+        "x": -1232.470462879819,
+        "y": 4625.04897453211
+      },
+      "dimensions": {
+        "width": 470,
+        "height": 539
+      }
+    }
+  }
+}

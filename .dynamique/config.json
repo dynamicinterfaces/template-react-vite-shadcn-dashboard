@@ -56,5 +56,9 @@
   "defaultDimensions": {
     "width": 300,
     "height": 350
-  }
+  },
+  "devCommand": "npm run dev",
+  "framework": "react",
+  "packageManager": "npm",
+  "buildCommand": "npm run build"
 }
