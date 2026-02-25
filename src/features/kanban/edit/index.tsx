@@ -156,7 +156,7 @@ export default function EditKanban() {
   }
 
   if (Object.keys(selectedColumn || {}).length === 0) {
-    return <div>no data</div>
+    return <div>{' '}</div>
   }
 
   return (
