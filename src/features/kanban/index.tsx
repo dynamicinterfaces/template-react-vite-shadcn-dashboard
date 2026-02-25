@@ -22,7 +22,7 @@ export default function Kanban() {
     <div className='flex flex-col space-y-4'>
       <h3 className='text-xl font-bold'>Kanban</h3>
       <Link to='/kanban/create'>
-        <Button variant='outline'>Create New Task</Button>
+        <Button variant='outline'>Create</Button>
       </Link>
 
       <ScrollArea className='w-full whitespace-nowrap rounded-md border p-2'>
