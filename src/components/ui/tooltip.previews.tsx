@@ -1,8 +1,6 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip';
 import { Button } from './button';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Tooltip,
 };
 export default meta;

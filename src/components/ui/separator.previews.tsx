@@ -1,7 +1,5 @@
 import { Separator } from './separator';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Separator,
   argTypes: {
     orientation: { control: 'select', options: ['horizontal', 'vertical'] },

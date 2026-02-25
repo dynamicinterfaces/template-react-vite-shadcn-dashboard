@@ -1,7 +1,5 @@
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from './table';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Table,
 };
 export default meta;

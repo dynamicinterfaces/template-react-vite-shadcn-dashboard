@@ -1,7 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from './avatar';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Avatar,
 };
 export default meta;

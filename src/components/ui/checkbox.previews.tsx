@@ -1,8 +1,6 @@
 import { Checkbox } from './checkbox';
 import { Label } from './label';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Checkbox,
   argTypes: {
     checked: { control: 'boolean' },

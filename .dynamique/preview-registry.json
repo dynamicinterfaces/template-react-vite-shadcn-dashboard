@@ -43,5 +43,49 @@
     "type": "page",
     "path": "src/features/authentication/register.tsx",
     "route": "/register"
+  },
+  "01KJ9AFSF9CNX62P4KVTTD59TB": {
+    "type": "component",
+    "path": "src/components/ui/button.tsx"
+  },
+  "01KJ9AFSFAG9T0DJKYM1GH9NNJ": {
+    "type": "component",
+    "path": "src/components/ui/badge.tsx"
+  },
+  "01KJ9AFSFA48QDQP4ZA2R76VFB": {
+    "type": "component",
+    "path": "src/components/ui/card.tsx"
+  },
+  "01KJ9AFSFAWTN7C1GF5Z5FA7AF": {
+    "type": "component",
+    "path": "src/components/ui/input.tsx"
+  },
+  "01KJ9AFSFANAAY3QMW7PFMPTG6": {
+    "type": "component",
+    "path": "src/components/ui/checkbox.tsx"
+  },
+  "01KJ9AFSFBKPJW4EAFMM73CHK1": {
+    "type": "component",
+    "path": "src/components/ui/label.tsx"
+  },
+  "01KJ9AFSFBV1KMH3HBR1J1JSYQ": {
+    "type": "component",
+    "path": "src/components/ui/skeleton.tsx"
+  },
+  "01KJ9AFSFBW83EFMSR1GYT8502": {
+    "type": "component",
+    "path": "src/components/ui/separator.tsx"
+  },
+  "01KJ9AFSFBGQ3HFVZ06D073RN0": {
+    "type": "component",
+    "path": "src/components/ui/tooltip.tsx"
+  },
+  "01KJ9AFSFBV576MP21CN8HEESW": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx"
+  },
+  "01KJ9AFSFC7PNGD72BJSXM5QKF": {
+    "type": "component",
+    "path": "src/components/ui/avatar.tsx"
   }
 }

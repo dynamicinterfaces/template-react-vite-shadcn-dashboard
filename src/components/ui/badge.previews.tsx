@@ -1,7 +1,5 @@
 import { Badge } from './badge';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Badge,
   args: { children: 'Badge' },
   argTypes: {

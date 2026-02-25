@@ -117,6 +117,138 @@
         "width": 470,
         "height": 539
       }
+    },
+    "src/components/ui/button.tsx": {
+      "uid": "01KJ9AFSF9CNX62P4KVTTD59TB",
+      "type": "component",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/badge.tsx": {
+      "uid": "01KJ9AFSFAG9T0DJKYM1GH9NNJ",
+      "type": "component",
+      "position": {
+        "x": 320,
+        "y": 0
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/card.tsx": {
+      "uid": "01KJ9AFSFA48QDQP4ZA2R76VFB",
+      "type": "component",
+      "position": {
+        "x": 640,
+        "y": 0
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/input.tsx": {
+      "uid": "01KJ9AFSFAWTN7C1GF5Z5FA7AF",
+      "type": "component",
+      "position": {
+        "x": 960,
+        "y": 0
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/checkbox.tsx": {
+      "uid": "01KJ9AFSFANAAY3QMW7PFMPTG6",
+      "type": "component",
+      "position": {
+        "x": 0,
+        "y": 400
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/label.tsx": {
+      "uid": "01KJ9AFSFBKPJW4EAFMM73CHK1",
+      "type": "component",
+      "position": {
+        "x": 320,
+        "y": 400
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/skeleton.tsx": {
+      "uid": "01KJ9AFSFBV1KMH3HBR1J1JSYQ",
+      "type": "component",
+      "position": {
+        "x": 640,
+        "y": 400
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/separator.tsx": {
+      "uid": "01KJ9AFSFBW83EFMSR1GYT8502",
+      "type": "component",
+      "position": {
+        "x": 960,
+        "y": 400
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/tooltip.tsx": {
+      "uid": "01KJ9AFSFBGQ3HFVZ06D073RN0",
+      "type": "component",
+      "position": {
+        "x": 0,
+        "y": 800
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/table.tsx": {
+      "uid": "01KJ9AFSFBV576MP21CN8HEESW",
+      "type": "component",
+      "position": {
+        "x": 320,
+        "y": 800
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
+    },
+    "src/components/ui/avatar.tsx": {
+      "uid": "01KJ9AFSFC7PNGD72BJSXM5QKF",
+      "type": "component",
+      "position": {
+        "x": 640,
+        "y": 800
+      },
+      "dimensions": {
+        "width": 280,
+        "height": 320
+      }
     }
   }
 }

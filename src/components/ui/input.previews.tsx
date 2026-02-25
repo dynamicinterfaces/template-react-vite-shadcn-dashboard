@@ -1,8 +1,6 @@
 import { Input } from './input';
 import { Label } from './label';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Input,
   args: { placeholder: 'Type something...' },
   argTypes: {

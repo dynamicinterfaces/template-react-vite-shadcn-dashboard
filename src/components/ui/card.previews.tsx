@@ -1,8 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card';
 import { Button } from './button';
-import { Meta } from '../../.dynamique/lib/csf';
-
-const meta: Meta = {
+const meta = {
   component: Card,
 };
 export default meta;
