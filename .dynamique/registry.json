@@ -121,6 +121,7 @@
     "src/components/ui/button.tsx": {
       "uid": "01KJ9AFSF9CNX62P4KVTTD59TB",
       "type": "component",
+      "previewPath": "src/components/ui/button.previews.tsx",
       "position": {
         "x": 0,
         "y": 0
@@ -133,6 +134,7 @@
     "src/components/ui/badge.tsx": {
       "uid": "01KJ9AFSFAG9T0DJKYM1GH9NNJ",
       "type": "component",
+      "previewPath": "src/components/ui/badge.previews.tsx",
       "position": {
         "x": 320,
         "y": 0
@@ -145,6 +147,7 @@
     "src/components/ui/card.tsx": {
       "uid": "01KJ9AFSFA48QDQP4ZA2R76VFB",
       "type": "component",
+      "previewPath": "src/components/ui/card.previews.tsx",
       "position": {
         "x": 640,
         "y": 0
@@ -157,6 +160,7 @@
     "src/components/ui/input.tsx": {
       "uid": "01KJ9AFSFAWTN7C1GF5Z5FA7AF",
       "type": "component",
+      "previewPath": "src/components/ui/input.previews.tsx",
       "position": {
         "x": 960,
         "y": 0
@@ -169,6 +173,7 @@
     "src/components/ui/checkbox.tsx": {
       "uid": "01KJ9AFSFANAAY3QMW7PFMPTG6",
       "type": "component",
+      "previewPath": "src/components/ui/checkbox.previews.tsx",
       "position": {
         "x": 0,
         "y": 400
@@ -181,6 +186,7 @@
     "src/components/ui/label.tsx": {
       "uid": "01KJ9AFSFBKPJW4EAFMM73CHK1",
       "type": "component",
+      "previewPath": "src/components/ui/label.previews.tsx",
       "position": {
         "x": 320,
         "y": 400
@@ -193,6 +199,7 @@
     "src/components/ui/skeleton.tsx": {
       "uid": "01KJ9AFSFBV1KMH3HBR1J1JSYQ",
       "type": "component",
+      "previewPath": "src/components/ui/skeleton.previews.tsx",
       "position": {
         "x": 640,
         "y": 400
@@ -205,6 +212,7 @@
     "src/components/ui/separator.tsx": {
       "uid": "01KJ9AFSFBW83EFMSR1GYT8502",
       "type": "component",
+      "previewPath": "src/components/ui/separator.previews.tsx",
       "position": {
         "x": 960,
         "y": 400
@@ -217,6 +225,7 @@
     "src/components/ui/tooltip.tsx": {
       "uid": "01KJ9AFSFBGQ3HFVZ06D073RN0",
       "type": "component",
+      "previewPath": "src/components/ui/tooltip.previews.tsx",
       "position": {
         "x": 0,
         "y": 800
@@ -229,6 +238,7 @@
     "src/components/ui/table.tsx": {
       "uid": "01KJ9AFSFBV576MP21CN8HEESW",
       "type": "component",
+      "previewPath": "src/components/ui/table.previews.tsx",
       "position": {
         "x": 320,
         "y": 800
@@ -241,6 +251,7 @@
     "src/components/ui/avatar.tsx": {
       "uid": "01KJ9AFSFC7PNGD72BJSXM5QKF",
       "type": "component",
+      "previewPath": "src/components/ui/avatar.previews.tsx",
       "position": {
         "x": 640,
         "y": 800
