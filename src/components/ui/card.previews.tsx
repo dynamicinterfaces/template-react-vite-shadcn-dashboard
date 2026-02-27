@@ -2,18 +2,23 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from './button';
 const meta = {
   component: Card,
+  args: {
+    title: "Card Title",
+    description: "Card description with supporting text.",
+    content: "Card content goes here. This is an example of a fully composed card.",
+  },
 };
 export default meta;
 
 export const Default = {
-  render: () => (
+  render: (args: any) => (
     <Card style={{ width: 350 }}>
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card description with supporting text.</CardDescription>
+        <CardTitle>{args.title}</CardTitle>
+        <CardDescription>{args.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Card content goes here. This is an example of a fully composed card.</p>
+        <p>{args.content}</p>
       </CardContent>
       <CardFooter style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
         <Button variant="outline">Cancel</Button>
