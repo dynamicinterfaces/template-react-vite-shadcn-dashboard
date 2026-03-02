@@ -1,4 +1,3 @@
-import type { Meta, StoryObj } from '@storybook/react';
 import { Header } from './header';
 import { SidebarProvider } from '../../components/ui/sidebar';
 import { MemoryRouter } from 'react-router';
@@ -17,7 +16,7 @@ function HeaderPreview(args: { fixed?: boolean }) {
   );
 }
 
-const meta: Meta<typeof HeaderPreview> = {
+const meta = {
   component: HeaderPreview,
   args: {
     fixed: false,
@@ -25,10 +24,9 @@ const meta: Meta<typeof HeaderPreview> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof HeaderPreview>;
 
-export const Default: Story = {};
+export const Default = {};
 
-export const Fixed: Story = {
+export const Fixed = {
   args: { fixed: true },
 };

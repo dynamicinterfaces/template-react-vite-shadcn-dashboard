@@ -171,5 +171,17 @@
     "type": "component",
     "path": "src/components/layout/nav-user.tsx",
     "previewPath": "src/components/layout/nav-user.previews.tsx"
+  },
+  "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
+    "type": "component",
+    "path": "src/components/layout/nav-group.previews.tsx"
+  },
+  "01KJQW1KG1Q7QGPZFD4JNJD0K7": {
+    "type": "component",
+    "path": "src/components/theme-switch.previews.tsx"
+  },
+  "01KJQW1QM70YRXADQ7H06BKV54": {
+    "type": "component",
+    "path": "src/components/command-menu.previews.tsx"
   }
 }
