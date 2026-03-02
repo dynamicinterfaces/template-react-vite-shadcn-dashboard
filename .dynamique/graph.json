@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-03-02T10:29:17.161Z",
+  "analyzedAt": "2026-03-02T15:40:58.153Z",
   "rootDir": "/root/user-repo",
   "nodes": [
     {
@@ -107,6 +107,14 @@
       "hash": "89a5f2f8"
     },
     {
+      "uid": "ig:public/vite.svg",
+      "type": "file",
+      "path": "public/vite.svg",
+      "fileClass": "file",
+      "size": 1497,
+      "hash": "e7b8dfb1"
+    },
+    {
       "uid": "ig:src/index.css",
       "type": "file",
       "path": "src/index.css",
@@ -137,14 +145,6 @@
       "fileClass": "types",
       "size": 38,
       "hash": "11f02fe2"
-    },
-    {
-      "uid": "ig:public/vite.svg",
-      "type": "file",
-      "path": "public/vite.svg",
-      "fileClass": "file",
-      "size": 1497,
-      "hash": "e7b8dfb1"
     },
     {
       "uid": "ig:src/assets/react.svg",
@@ -723,30 +723,6 @@
       "hash": "84b6d6e0"
     },
     {
-      "uid": "ig:src/context/auth/authContext.tsx",
-      "type": "file",
-      "path": "src/context/auth/authContext.tsx",
-      "fileClass": "hook",
-      "size": 827,
-      "hash": "f16f9956"
-    },
-    {
-      "uid": "ig:src/context/auth/authReducer.tsx",
-      "type": "file",
-      "path": "src/context/auth/authReducer.tsx",
-      "fileClass": "component",
-      "size": 1153,
-      "hash": "8a55ab69"
-    },
-    {
-      "uid": "ig:src/context/auth/authTypes.ts",
-      "type": "file",
-      "path": "src/context/auth/authTypes.ts",
-      "fileClass": "type",
-      "size": 475,
-      "hash": "42d82b42"
-    },
-    {
       "uid": "ig:src/context/kanban/kanbanContext.tsx",
       "type": "file",
       "path": "src/context/kanban/kanbanContext.tsx",
@@ -769,6 +745,30 @@
       "fileClass": "type",
       "size": 660,
       "hash": "0e48ba24"
+    },
+    {
+      "uid": "ig:src/context/auth/authContext.tsx",
+      "type": "file",
+      "path": "src/context/auth/authContext.tsx",
+      "fileClass": "hook",
+      "size": 827,
+      "hash": "f16f9956"
+    },
+    {
+      "uid": "ig:src/context/auth/authReducer.tsx",
+      "type": "file",
+      "path": "src/context/auth/authReducer.tsx",
+      "fileClass": "component",
+      "size": 1153,
+      "hash": "8a55ab69"
+    },
+    {
+      "uid": "ig:src/context/auth/authTypes.ts",
+      "type": "file",
+      "path": "src/context/auth/authTypes.ts",
+      "fileClass": "type",
+      "size": 475,
+      "hash": "42d82b42"
     },
     {
       "uid": "ig:src/features/authentication/login.previews.tsx",
@@ -835,22 +835,6 @@
       "hash": "dbec9b2e"
     },
     {
-      "uid": "ig:src/services/api/api.tsx",
-      "type": "file",
-      "path": "src/services/api/api.tsx",
-      "fileClass": "component",
-      "size": 856,
-      "hash": "6e7e36b6"
-    },
-    {
-      "uid": "ig:src/services/api/auth.tsx",
-      "type": "file",
-      "path": "src/services/api/auth.tsx",
-      "fileClass": "component",
-      "size": 649,
-      "hash": "fab4a3c3"
-    },
-    {
       "uid": "ig:src/components/kanban/api/index.ts",
       "type": "file",
       "path": "src/components/kanban/api/index.ts",
@@ -865,6 +849,22 @@
       "fileClass": "file",
       "size": 381,
       "hash": "fbc8d7ee"
+    },
+    {
+      "uid": "ig:src/services/api/api.tsx",
+      "type": "file",
+      "path": "src/services/api/api.tsx",
+      "fileClass": "component",
+      "size": 856,
+      "hash": "6e7e36b6"
+    },
+    {
+      "uid": "ig:src/services/api/auth.tsx",
+      "type": "file",
+      "path": "src/services/api/auth.tsx",
+      "fileClass": "component",
+      "size": 649,
+      "hash": "fab4a3c3"
     },
     {
       "uid": "ig:src/components/kanban/components/empty-space-drop-zone.component.tsx",
@@ -891,6 +891,14 @@
       "hash": "350b3072"
     },
     {
+      "uid": "ig:src/features/kanban/detail/index.tsx",
+      "type": "file",
+      "path": "src/features/kanban/detail/index.tsx",
+      "fileClass": "component",
+      "size": 2505,
+      "hash": "0a1481e4"
+    },
+    {
       "uid": "ig:src/features/kanban/create/index.tsx",
       "type": "file",
       "path": "src/features/kanban/create/index.tsx",
@@ -905,14 +913,6 @@
       "fileClass": "component",
       "size": 6960,
       "hash": "719b259b"
-    },
-    {
-      "uid": "ig:src/features/kanban/detail/index.tsx",
-      "type": "file",
-      "path": "src/features/kanban/detail/index.tsx",
-      "fileClass": "component",
-      "size": 2505,
-      "hash": "0a1481e4"
     },
     {
       "uid": "ig:src/features/posts/detail/index.tsx",
@@ -1003,14 +1003,14 @@
       "hash": "ab973fef"
     },
     {
-      "uid": "ig:src",
-      "type": "folder",
-      "path": "src"
-    },
-    {
       "uid": "ig:public",
       "type": "folder",
       "path": "public"
+    },
+    {
+      "uid": "ig:src",
+      "type": "folder",
+      "path": "src"
     },
     {
       "uid": "ig:src/assets",
@@ -1058,14 +1058,14 @@
       "path": "src/components/ui"
     },
     {
-      "uid": "ig:src/context/auth",
-      "type": "folder",
-      "path": "src/context/auth"
-    },
-    {
       "uid": "ig:src/context/kanban",
       "type": "folder",
       "path": "src/context/kanban"
+    },
+    {
+      "uid": "ig:src/context/auth",
+      "type": "folder",
+      "path": "src/context/auth"
     },
     {
       "uid": "ig:src/features/authentication",
@@ -1088,6 +1088,11 @@
       "path": "src/features/posts"
     },
     {
+      "uid": "ig:src/components/kanban/api",
+      "type": "folder",
+      "path": "src/components/kanban/api"
+    },
+    {
       "uid": "ig:src/services",
       "type": "folder",
       "path": "src/services"
@@ -1096,11 +1101,6 @@
       "uid": "ig:src/services/api",
       "type": "folder",
       "path": "src/services/api"
-    },
-    {
-      "uid": "ig:src/components/kanban/api",
-      "type": "folder",
-      "path": "src/components/kanban/api"
     },
     {
       "uid": "ig:src/components/kanban/components",
@@ -1113,6 +1113,11 @@
       "path": "src/components/layout/data"
     },
     {
+      "uid": "ig:src/features/kanban/detail",
+      "type": "folder",
+      "path": "src/features/kanban/detail"
+    },
+    {
       "uid": "ig:src/features/kanban/create",
       "type": "folder",
       "path": "src/features/kanban/create"
@@ -1121,11 +1126,6 @@
       "uid": "ig:src/features/kanban/edit",
       "type": "folder",
       "path": "src/features/kanban/edit"
-    },
-    {
-      "uid": "ig:src/features/kanban/detail",
-      "type": "folder",
-      "path": "src/features/kanban/detail"
     },
     {
       "uid": "ig:src/features/posts/detail",
@@ -1150,6 +1150,12 @@
   ],
   "edges": [
     {
+      "id": "ig:public->ig:public/vite.svg",
+      "source": "ig:public",
+      "target": "ig:public/vite.svg",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src->ig:src/index.css",
       "source": "ig:src",
       "target": "ig:src/index.css",
@@ -1171,12 +1177,6 @@
       "id": "ig:src->ig:src/vite-env.d.ts",
       "source": "ig:src",
       "target": "ig:src/vite-env.d.ts",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:public->ig:public/vite.svg",
-      "source": "ig:public",
-      "target": "ig:public/vite.svg",
       "kind": "contains"
     },
     {
@@ -1612,24 +1612,6 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/context/auth->ig:src/context/auth/authContext.tsx",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authContext.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/auth->ig:src/context/auth/authReducer.tsx",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authReducer.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/auth->ig:src/context/auth/authTypes.ts",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authTypes.ts",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanContext.tsx",
       "source": "ig:src/context/kanban",
       "target": "ig:src/context/kanban/kanbanContext.tsx",
@@ -1645,6 +1627,24 @@
       "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanTypes.ts",
       "source": "ig:src/context/kanban",
       "target": "ig:src/context/kanban/kanbanTypes.ts",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/context/auth->ig:src/context/auth/authContext.tsx",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authContext.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/context/auth->ig:src/context/auth/authReducer.tsx",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authReducer.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/context/auth->ig:src/context/auth/authTypes.ts",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authTypes.ts",
       "kind": "contains"
     },
     {
@@ -1696,18 +1696,6 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/services/api->ig:src/services/api/api.tsx",
-      "source": "ig:src/services/api",
-      "target": "ig:src/services/api/api.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/services/api->ig:src/services/api/auth.tsx",
-      "source": "ig:src/services/api",
-      "target": "ig:src/services/api/auth.tsx",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/components/kanban/api->ig:src/components/kanban/api/index.ts",
       "source": "ig:src/components/kanban/api",
       "target": "ig:src/components/kanban/api/index.ts",
@@ -1717,6 +1705,18 @@
       "id": "ig:src/components/kanban/api->ig:src/components/kanban/api/kanban.api.ts",
       "source": "ig:src/components/kanban/api",
       "target": "ig:src/components/kanban/api/kanban.api.ts",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/services/api->ig:src/services/api/api.tsx",
+      "source": "ig:src/services/api",
+      "target": "ig:src/services/api/api.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/services/api->ig:src/services/api/auth.tsx",
+      "source": "ig:src/services/api",
+      "target": "ig:src/services/api/auth.tsx",
       "kind": "contains"
     },
     {
@@ -1738,6 +1738,12 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/features/kanban/detail->ig:src/features/kanban/detail/index.tsx",
+      "source": "ig:src/features/kanban/detail",
+      "target": "ig:src/features/kanban/detail/index.tsx",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/features/kanban/create->ig:src/features/kanban/create/index.tsx",
       "source": "ig:src/features/kanban/create",
       "target": "ig:src/features/kanban/create/index.tsx",
@@ -1747,12 +1753,6 @@
       "id": "ig:src/features/kanban/edit->ig:src/features/kanban/edit/index.tsx",
       "source": "ig:src/features/kanban/edit",
       "target": "ig:src/features/kanban/edit/index.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features/kanban/detail->ig:src/features/kanban/detail/index.tsx",
-      "source": "ig:src/features/kanban/detail",
-      "target": "ig:src/features/kanban/detail/index.tsx",
       "kind": "contains"
     },
     {
@@ -1876,15 +1876,15 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/context->ig:src/context/auth",
-      "source": "ig:src/context",
-      "target": "ig:src/context/auth",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/context->ig:src/context/kanban",
       "source": "ig:src/context",
       "target": "ig:src/context/kanban",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/context->ig:src/context/auth",
+      "source": "ig:src/context",
+      "target": "ig:src/context/auth",
       "kind": "contains"
     },
     {
@@ -1912,6 +1912,12 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/components/kanban->ig:src/components/kanban/api",
+      "source": "ig:src/components/kanban",
+      "target": "ig:src/components/kanban/api",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src->ig:src/services",
       "source": "ig:src",
       "target": "ig:src/services",
@@ -1921,12 +1927,6 @@
       "id": "ig:src/services->ig:src/services/api",
       "source": "ig:src/services",
       "target": "ig:src/services/api",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components/kanban->ig:src/components/kanban/api",
-      "source": "ig:src/components/kanban",
-      "target": "ig:src/components/kanban/api",
       "kind": "contains"
     },
     {
@@ -1942,6 +1942,12 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/features/kanban->ig:src/features/kanban/detail",
+      "source": "ig:src/features/kanban",
+      "target": "ig:src/features/kanban/detail",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/features/kanban->ig:src/features/kanban/create",
       "source": "ig:src/features/kanban",
       "target": "ig:src/features/kanban/create",
@@ -1951,12 +1957,6 @@
       "id": "ig:src/features/kanban->ig:src/features/kanban/edit",
       "source": "ig:src/features/kanban",
       "target": "ig:src/features/kanban/edit",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features/kanban->ig:src/features/kanban/detail",
-      "source": "ig:src/features/kanban",
-      "target": "ig:src/features/kanban/detail",
       "kind": "contains"
     },
     {

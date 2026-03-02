@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-03-02T09:40:50.651Z",
+  "analyzedAt": "2026-03-02T15:31:00.510Z",
   "files": [
     {
       "path": "eslint.config.js",
@@ -1166,106 +1166,6 @@
       ]
     },
     {
-      "path": "src/components/search.previews.tsx",
-      "fileClass": "story",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "meta",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 4,
-          "col": 7
-        },
-        {
-          "name": "Default",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 9,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "./ui/button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "symbols": [
-            "Button"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        },
-        {
-          "from": "lucide-react",
-          "symbols": [
-            "SearchIcon"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "Default",
-          "line": 9,
-          "col": 14
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 12,
-          "col": 8,
-          "propsUsed": [
-            "style",
-            "variant"
-          ],
-          "props": {
-            "variant": "outline",
-            "style": "{...}",
-            "children": "{...} {...} {...}"
-          }
-        },
-        {
-          "component": "SearchIcon",
-          "line": 25,
-          "col": 10,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}"
-          }
-        },
-        {
-          "component": "span",
-          "line": 26,
-          "col": 10,
-          "propsUsed": [],
-          "props": {
-            "children": "Search"
-          },
-          "isHtml": true
-        },
-        {
-          "component": "kbd",
-          "line": 27,
-          "col": 10,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "⌘K"
-          },
-          "isHtml": true
-        }
-      ]
-    },
-    {
       "path": "src/components/search.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -1395,97 +1295,6 @@
       ],
       "hookCalls": [
         "useSearch"
-      ]
-    },
-    {
-      "path": "src/components/theme-switch.previews.tsx",
-      "fileClass": "story",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "meta",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 4,
-          "col": 7
-        },
-        {
-          "name": "Default",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 18,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "./theme-switch",
-          "resolvedTo": "src/components/theme-switch.tsx",
-          "symbols": [
-            "ThemeSwitch"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        },
-        {
-          "from": "@/context/theme-context",
-          "resolvedTo": "src/context/theme-context.tsx",
-          "symbols": [
-            "ThemeProvider"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "Default",
-          "line": 18,
-          "col": 14
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "ThemeProvider",
-          "resolvedTo": "src/context/theme-context.tsx",
-          "line": 8,
-          "col": 8,
-          "propsUsed": [
-            "defaultTheme"
-          ],
-          "props": {
-            "defaultTheme": "light",
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "Story",
-          "line": 10,
-          "col": 12,
-          "props": {}
-        },
-        {
-          "component": "ThemeProvider",
-          "resolvedTo": "src/context/theme-context.tsx",
-          "line": 20,
-          "col": 6,
-          "propsUsed": [
-            "defaultTheme"
-          ],
-          "props": {
-            "defaultTheme": "light",
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "ThemeSwitch",
-          "resolvedTo": "src/components/theme-switch.tsx",
-          "line": 22,
-          "col": 10,
-          "props": {}
-        }
       ]
     },
     {
@@ -1748,41 +1557,6 @@
       "hookCalls": [
         "useEffect",
         "useTheme"
-      ]
-    },
-    {
-      "path": "src/features/404.tsx",
-      "fileClass": "component",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "PageNotFound",
-          "kind": "component",
-          "exportKind": "default",
-          "signature": "PageNotFound()",
-          "line": 1,
-          "col": 25
-        }
-      ],
-      "imports": [],
-      "exports": [
-        {
-          "name": "default",
-          "line": 1,
-          "col": 25
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "div",
-          "line": 2,
-          "col": 11,
-          "propsUsed": [],
-          "props": {
-            "children": "PageNotFound"
-          },
-          "isHtml": true
-        }
       ]
     },
     {
@@ -2282,6 +2056,82 @@
         }
       ],
       "jsxUsages": []
+    },
+    {
+      "path": "src/features/404.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "../features/404",
+          "resolvedTo": "src/features/404.tsx",
+          "symbols": [
+            "NotFound"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
+      "path": "src/features/404.tsx",
+      "fileClass": "component",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "PageNotFound",
+          "kind": "component",
+          "exportKind": "default",
+          "signature": "PageNotFound()",
+          "line": 1,
+          "col": 25
+        }
+      ],
+      "imports": [],
+      "exports": [
+        {
+          "name": "default",
+          "line": 1,
+          "col": 25
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "div",
+          "line": 2,
+          "col": 11,
+          "propsUsed": [],
+          "props": {
+            "children": "PageNotFound"
+          },
+          "isHtml": true
+        }
+      ]
     },
     {
       "path": "src/components/kanban/index.ts",
@@ -4703,28 +4553,21 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "WithImage",
           "kind": "variable",
           "exportKind": "named",
-          "line": 7,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Fallback",
           "kind": "variable",
           "exportKind": "named",
-          "line": 16,
-          "col": 14
-        },
-        {
-          "name": "Sizes",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 24,
+          "line": 15,
           "col": 14
         }
       ],
@@ -4745,17 +4588,12 @@
       "exports": [
         {
           "name": "WithImage",
-          "line": 7,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Fallback",
-          "line": 16,
-          "col": 14
-        },
-        {
-          "name": "Sizes",
-          "line": 24,
+          "line": 15,
           "col": 14
         }
       ],
@@ -4763,7 +4601,7 @@
         {
           "component": "Avatar",
           "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 9,
+          "line": 8,
           "col": 6,
           "props": {
             "children": "{...} {...}"
@@ -4772,7 +4610,7 @@
         {
           "component": "AvatarImage",
           "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 10,
+          "line": 9,
           "col": 8,
           "propsUsed": [
             "alt",
@@ -4786,7 +4624,7 @@
         {
           "component": "AvatarFallback",
           "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 11,
+          "line": 10,
           "col": 8,
           "propsUsed": [],
           "props": {
@@ -4796,7 +4634,7 @@
         {
           "component": "Avatar",
           "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 18,
+          "line": 17,
           "col": 6,
           "props": {
             "children": "{...}"
@@ -4805,79 +4643,11 @@
         {
           "component": "AvatarFallback",
           "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 19,
+          "line": 18,
           "col": 8,
           "propsUsed": [],
           "props": {
             "children": "JD"
-          }
-        },
-        {
-          "component": "Avatar",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 27,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "AvatarFallback",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 28,
-          "col": 10,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "S"
-          }
-        },
-        {
-          "component": "Avatar",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 30,
-          "col": 8,
-          "props": {
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "AvatarFallback",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 31,
-          "col": 10,
-          "propsUsed": [],
-          "props": {
-            "children": "M"
-          }
-        },
-        {
-          "component": "Avatar",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 33,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "AvatarFallback",
-          "resolvedTo": "src/components/ui/avatar.tsx",
-          "line": 34,
-          "col": 10,
-          "propsUsed": [],
-          "props": {
-            "children": "L"
           }
         }
       ]
@@ -5822,42 +5592,35 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 11,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Secondary",
           "kind": "variable",
           "exportKind": "named",
-          "line": 12,
+          "line": 7,
           "col": 14
         },
         {
           "name": "Destructive",
           "kind": "variable",
           "exportKind": "named",
-          "line": 13,
+          "line": 8,
           "col": 14
         },
         {
           "name": "Outline",
           "kind": "variable",
           "exportKind": "named",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "AllVariants",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 16,
+          "line": 9,
           "col": 14
         }
       ],
@@ -5876,81 +5639,26 @@
       "exports": [
         {
           "name": "Default",
-          "line": 11,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Secondary",
-          "line": 12,
+          "line": 7,
           "col": 14
         },
         {
           "name": "Destructive",
-          "line": 13,
+          "line": 8,
           "col": 14
         },
         {
           "name": "Outline",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "AllVariants",
-          "line": 16,
+          "line": 9,
           "col": 14
         }
       ],
-      "jsxUsages": [
-        {
-          "component": "Badge",
-          "resolvedTo": "src/components/ui/badge.tsx",
-          "line": 19,
-          "col": 8,
-          "propsUsed": [],
-          "props": {
-            "children": "Default"
-          }
-        },
-        {
-          "component": "Badge",
-          "resolvedTo": "src/components/ui/badge.tsx",
-          "line": 20,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "secondary",
-            "children": "Secondary"
-          }
-        },
-        {
-          "component": "Badge",
-          "resolvedTo": "src/components/ui/badge.tsx",
-          "line": 21,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "destructive",
-            "children": "Destructive"
-          }
-        },
-        {
-          "component": "Badge",
-          "resolvedTo": "src/components/ui/badge.tsx",
-          "line": 22,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "outline",
-            "children": "Outline"
-          }
-        }
-      ]
+      "jsxUsages": []
     },
     {
       "path": "src/components/ui/badge.tsx",
@@ -6040,77 +5748,56 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 13,
-          "col": 14
-        },
-        {
-          "name": "Destructive",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "Outline",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 15,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Secondary",
           "kind": "variable",
           "exportKind": "named",
-          "line": 16,
+          "line": 7,
+          "col": 14
+        },
+        {
+          "name": "Destructive",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 8,
+          "col": 14
+        },
+        {
+          "name": "Outline",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 9,
           "col": 14
         },
         {
           "name": "Ghost",
           "kind": "variable",
           "exportKind": "named",
-          "line": 17,
-          "col": 14
-        },
-        {
-          "name": "Link",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 18,
+          "line": 10,
           "col": 14
         },
         {
           "name": "Small",
           "kind": "variable",
           "exportKind": "named",
-          "line": 19,
+          "line": 11,
           "col": 14
         },
         {
           "name": "Large",
           "kind": "variable",
           "exportKind": "named",
-          "line": 20,
-          "col": 14
-        },
-        {
-          "name": "Disabled",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 21,
-          "col": 14
-        },
-        {
-          "name": "AllVariants",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 23,
+          "line": 12,
           "col": 14
         }
       ],
@@ -6129,132 +5816,41 @@
       "exports": [
         {
           "name": "Default",
-          "line": 13,
-          "col": 14
-        },
-        {
-          "name": "Destructive",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "Outline",
-          "line": 15,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Secondary",
-          "line": 16,
+          "line": 7,
+          "col": 14
+        },
+        {
+          "name": "Destructive",
+          "line": 8,
+          "col": 14
+        },
+        {
+          "name": "Outline",
+          "line": 9,
           "col": 14
         },
         {
           "name": "Ghost",
-          "line": 17,
-          "col": 14
-        },
-        {
-          "name": "Link",
-          "line": 18,
+          "line": 10,
           "col": 14
         },
         {
           "name": "Small",
-          "line": 19,
+          "line": 11,
           "col": 14
         },
         {
           "name": "Large",
-          "line": 20,
-          "col": 14
-        },
-        {
-          "name": "Disabled",
-          "line": 21,
-          "col": 14
-        },
-        {
-          "name": "AllVariants",
-          "line": 23,
+          "line": 12,
           "col": 14
         }
       ],
-      "jsxUsages": [
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 26,
-          "col": 8,
-          "propsUsed": [],
-          "props": {
-            "children": "Default"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 27,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "destructive",
-            "children": "Destructive"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 28,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "outline",
-            "children": "Outline"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 29,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "secondary",
-            "children": "Secondary"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 30,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "ghost",
-            "children": "Ghost"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 31,
-          "col": 8,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "link",
-            "children": "Link"
-          }
-        }
-      ]
+      "jsxUsages": []
     },
     {
       "path": "src/components/ui/button.tsx",
@@ -6648,14 +6244,7 @@
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 13,
-          "col": 14
-        },
-        {
-          "name": "Simple",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 31,
+          "line": 6,
           "col": 14
         }
       ],
@@ -6674,27 +6263,12 @@
           "isTypeOnly": false,
           "line": 1,
           "col": 1
-        },
-        {
-          "from": "./button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "symbols": [
-            "Button"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
         }
       ],
       "exports": [
         {
           "name": "Default",
-          "line": 13,
-          "col": 14
-        },
-        {
-          "name": "Simple",
-          "line": 31,
+          "line": 6,
           "col": 14
         }
       ],
@@ -6702,7 +6276,7 @@
         {
           "component": "Card",
           "resolvedTo": "src/components/ui/card.tsx",
-          "line": 15,
+          "line": 8,
           "col": 6,
           "propsUsed": [
             "style"
@@ -6715,7 +6289,7 @@
         {
           "component": "CardHeader",
           "resolvedTo": "src/components/ui/card.tsx",
-          "line": 16,
+          "line": 9,
           "col": 8,
           "props": {
             "children": "{...} {...}"
@@ -6724,86 +6298,58 @@
         {
           "component": "CardTitle",
           "resolvedTo": "src/components/ui/card.tsx",
-          "line": 17,
+          "line": 10,
           "col": 10,
+          "propsUsed": [],
           "props": {
-            "children": "{...}"
+            "children": "Card Title"
           }
         },
         {
           "component": "CardDescription",
           "resolvedTo": "src/components/ui/card.tsx",
-          "line": 18,
+          "line": 11,
           "col": 10,
+          "propsUsed": [],
           "props": {
-            "children": "{...}"
+            "children": "Card description goes here."
           }
         },
         {
           "component": "CardContent",
           "resolvedTo": "src/components/ui/card.tsx",
-          "line": 20,
+          "line": 13,
           "col": 8,
           "props": {
-            "children": "{...}"
-          }
-        },
-        {
-          "component": "CardFooter",
-          "resolvedTo": "src/components/ui/card.tsx",
-          "line": 23,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "{...} {...}"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 24,
-          "col": 10,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "outline",
-            "children": "Cancel"
-          }
-        },
-        {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 25,
-          "col": 10,
-          "propsUsed": [],
-          "props": {
-            "children": "Save"
-          }
-        },
-        {
-          "component": "Card",
-          "resolvedTo": "src/components/ui/card.tsx",
-          "line": 33,
-          "col": 6,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
             "children": "{...}"
           }
         },
         {
           "component": "p",
-          "line": 34,
-          "col": 8,
+          "line": 14,
+          "col": 10,
           "propsUsed": [],
           "props": {
-            "children": "Simple card with just content"
+            "children": "Card content with some example text."
+          },
+          "isHtml": true
+        },
+        {
+          "component": "CardFooter",
+          "resolvedTo": "src/components/ui/card.tsx",
+          "line": 16,
+          "col": 8,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "p",
+          "line": 17,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Card Footer"
           },
           "isHtml": true
         }
@@ -6928,28 +6474,21 @@
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 12,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Checked",
           "kind": "variable",
           "exportKind": "named",
-          "line": 13,
+          "line": 7,
           "col": 14
         },
         {
           "name": "Disabled",
           "kind": "variable",
           "exportKind": "named",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "WithLabel",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 16,
+          "line": 8,
           "col": 14
         }
       ],
@@ -6963,67 +6502,26 @@
           "isTypeOnly": false,
           "line": 1,
           "col": 1
-        },
-        {
-          "from": "./label",
-          "resolvedTo": "src/components/ui/label.tsx",
-          "symbols": [
-            "Label"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
         }
       ],
       "exports": [
         {
           "name": "Default",
-          "line": 12,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Checked",
-          "line": 13,
+          "line": 7,
           "col": 14
         },
         {
           "name": "Disabled",
-          "line": 14,
-          "col": 14
-        },
-        {
-          "name": "WithLabel",
-          "line": 16,
+          "line": 8,
           "col": 14
         }
       ],
-      "jsxUsages": [
-        {
-          "component": "Checkbox",
-          "resolvedTo": "src/components/ui/checkbox.tsx",
-          "line": 19,
-          "col": 8,
-          "propsUsed": [
-            "id"
-          ],
-          "props": {
-            "id": "terms"
-          }
-        },
-        {
-          "component": "Label",
-          "resolvedTo": "src/components/ui/label.tsx",
-          "line": 20,
-          "col": 8,
-          "propsUsed": [
-            "htmlFor"
-          ],
-          "props": {
-            "htmlFor": "terms",
-            "children": "Accept terms and conditions"
-          }
-        }
-      ]
+      "jsxUsages": []
     },
     {
       "path": "src/components/ui/checkbox.tsx",
@@ -7405,6 +6903,111 @@
       ]
     },
     {
+      "path": "src/components/ui/collapsible.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./collapsible",
+          "resolvedTo": "src/components/ui/collapsible.tsx",
+          "symbols": [
+            "Collapsible",
+            "CollapsibleContent",
+            "CollapsibleTrigger"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "Collapsible",
+          "resolvedTo": "src/components/ui/collapsible.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "defaultOpen"
+          ],
+          "props": {
+            "defaultOpen": "true",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "CollapsibleTrigger",
+          "resolvedTo": "src/components/ui/collapsible.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "asChild"
+          ],
+          "props": {
+            "asChild": "true",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "button",
+          "line": 10,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Toggle"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "CollapsibleContent",
+          "resolvedTo": "src/components/ui/collapsible.tsx",
+          "line": 12,
+          "col": 8,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "div",
+          "line": 13,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Collapsible content here."
+          },
+          "isHtml": true
+        }
+      ]
+    },
+    {
       "path": "src/components/ui/collapsible.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -7460,6 +7063,181 @@
         }
       ],
       "jsxUsages": []
+    },
+    {
+      "path": "src/components/ui/command.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./command",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "symbols": [
+            "Command",
+            "CommandEmpty",
+            "CommandGroup",
+            "CommandInput",
+            "CommandItem",
+            "CommandList",
+            "CommandSeparator"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "Command",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "CommandInput",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "placeholder"
+          ],
+          "props": {
+            "placeholder": "Type a command..."
+          }
+        },
+        {
+          "component": "CommandList",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 10,
+          "col": 8,
+          "props": {
+            "children": "{...} {...} {...} {...}"
+          }
+        },
+        {
+          "component": "CommandEmpty",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 11,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "No results found."
+          }
+        },
+        {
+          "component": "CommandGroup",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 12,
+          "col": 10,
+          "propsUsed": [
+            "heading"
+          ],
+          "props": {
+            "heading": "Suggestions",
+            "children": "{...} {...} {...}"
+          }
+        },
+        {
+          "component": "CommandItem",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 13,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Calendar"
+          }
+        },
+        {
+          "component": "CommandItem",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 14,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Search"
+          }
+        },
+        {
+          "component": "CommandItem",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 15,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Settings"
+          }
+        },
+        {
+          "component": "CommandSeparator",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 17,
+          "col": 10,
+          "props": {}
+        },
+        {
+          "component": "CommandGroup",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 18,
+          "col": 10,
+          "propsUsed": [
+            "heading"
+          ],
+          "props": {
+            "heading": "Actions",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "CommandItem",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 19,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "New File"
+          }
+        },
+        {
+          "component": "CommandItem",
+          "resolvedTo": "src/components/ui/command.tsx",
+          "line": 20,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "New Folder"
+          }
+        }
+      ]
     },
     {
       "path": "src/components/ui/command.tsx",
@@ -9700,6 +9478,163 @@
       ]
     },
     {
+      "path": "src/components/ui/dialog.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./dialog",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "symbols": [
+            "Dialog",
+            "DialogContent",
+            "DialogDescription",
+            "DialogFooter",
+            "DialogHeader",
+            "DialogTitle",
+            "DialogTrigger"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "Dialog",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "defaultOpen"
+          ],
+          "props": {
+            "defaultOpen": "true",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "DialogTrigger",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "asChild"
+          ],
+          "props": {
+            "asChild": "true",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "button",
+          "line": 10,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Open Dialog"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "DialogContent",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 12,
+          "col": 8,
+          "props": {
+            "children": "{...} {...} {...}"
+          }
+        },
+        {
+          "component": "DialogHeader",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 13,
+          "col": 10,
+          "props": {
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "DialogTitle",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 14,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Dialog Title"
+          }
+        },
+        {
+          "component": "DialogDescription",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 15,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "This is a dialog description."
+          }
+        },
+        {
+          "component": "div",
+          "line": 17,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Dialog body content goes here."
+          },
+          "isHtml": true
+        },
+        {
+          "component": "DialogFooter",
+          "resolvedTo": "src/components/ui/dialog.tsx",
+          "line": 18,
+          "col": 10,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "button",
+          "line": 19,
+          "col": 12,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Save"
+          },
+          "isHtml": true
+        }
+      ]
+    },
+    {
       "path": "src/components/ui/dialog.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -11046,6 +10981,148 @@
             "onTransitionEndCapture",
             "asChild"
           ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./dropdown-menu",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "symbols": [
+            "DropdownMenu",
+            "DropdownMenuContent",
+            "DropdownMenuItem",
+            "DropdownMenuLabel",
+            "DropdownMenuSeparator",
+            "DropdownMenuTrigger"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "DropdownMenu",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "defaultOpen"
+          ],
+          "props": {
+            "defaultOpen": "true",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "DropdownMenuTrigger",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "asChild"
+          ],
+          "props": {
+            "asChild": "true",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "button",
+          "line": 10,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Open Menu"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "DropdownMenuContent",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 12,
+          "col": 8,
+          "props": {
+            "children": "{...} {...} {...} {...} {...}"
+          }
+        },
+        {
+          "component": "DropdownMenuLabel",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 13,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "My Account"
+          }
+        },
+        {
+          "component": "DropdownMenuSeparator",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 14,
+          "col": 10,
+          "props": {}
+        },
+        {
+          "component": "DropdownMenuItem",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 15,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Profile"
+          }
+        },
+        {
+          "component": "DropdownMenuItem",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 16,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Settings"
+          }
+        },
+        {
+          "component": "DropdownMenuItem",
+          "resolvedTo": "src/components/ui/dropdown-menu.tsx",
+          "line": 17,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Logout"
+          }
         }
       ]
     },
@@ -13624,6 +13701,47 @@
       ]
     },
     {
+      "path": "src/components/ui/fancy-multi-select.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./fancy-multi-select",
+          "resolvedTo": "src/components/ui/fancy-multi-select.tsx",
+          "symbols": [
+            "FancyMultiSelect"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
       "path": "src/components/ui/fancy-multi-select.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -14690,35 +14808,28 @@
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 14,
+          "line": 6,
           "col": 14
         },
         {
-          "name": "Email",
+          "name": "WithValue",
           "kind": "variable",
           "exportKind": "named",
-          "line": 15,
-          "col": 14
-        },
-        {
-          "name": "Password",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 16,
+          "line": 7,
           "col": 14
         },
         {
           "name": "Disabled",
           "kind": "variable",
           "exportKind": "named",
-          "line": 17,
+          "line": 8,
           "col": 14
         },
         {
-          "name": "WithLabel",
+          "name": "Password",
           "kind": "variable",
           "exportKind": "named",
-          "line": 19,
+          "line": 9,
           "col": 14
         }
       ],
@@ -14732,76 +14843,31 @@
           "isTypeOnly": false,
           "line": 1,
           "col": 1
-        },
-        {
-          "from": "./label",
-          "resolvedTo": "src/components/ui/label.tsx",
-          "symbols": [
-            "Label"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
         }
       ],
       "exports": [
         {
           "name": "Default",
-          "line": 14,
+          "line": 6,
           "col": 14
         },
         {
-          "name": "Email",
-          "line": 15,
-          "col": 14
-        },
-        {
-          "name": "Password",
-          "line": 16,
+          "name": "WithValue",
+          "line": 7,
           "col": 14
         },
         {
           "name": "Disabled",
-          "line": 17,
+          "line": 8,
           "col": 14
         },
         {
-          "name": "WithLabel",
-          "line": 19,
+          "name": "Password",
+          "line": 9,
           "col": 14
         }
       ],
-      "jsxUsages": [
-        {
-          "component": "Label",
-          "resolvedTo": "src/components/ui/label.tsx",
-          "line": 22,
-          "col": 8,
-          "propsUsed": [
-            "htmlFor"
-          ],
-          "props": {
-            "htmlFor": "email",
-            "children": "Email"
-          }
-        },
-        {
-          "component": "Input",
-          "resolvedTo": "src/components/ui/input.tsx",
-          "line": 23,
-          "col": 8,
-          "propsUsed": [
-            "id",
-            "placeholder",
-            "type"
-          ],
-          "props": {
-            "id": "email",
-            "type": "email",
-            "placeholder": "email@example.com"
-          }
-        }
-      ]
+      "jsxUsages": []
     },
     {
       "path": "src/components/ui/input.tsx",
@@ -14855,21 +14921,21 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 8,
+          "line": 6,
           "col": 14
         },
         {
-          "name": "Required",
+          "name": "WithHtmlFor",
           "kind": "variable",
           "exportKind": "named",
-          "line": 9,
+          "line": 7,
           "col": 14
         }
       ],
@@ -14888,40 +14954,16 @@
       "exports": [
         {
           "name": "Default",
-          "line": 8,
+          "line": 6,
           "col": 14
         },
         {
-          "name": "Required",
-          "line": 9,
+          "name": "WithHtmlFor",
+          "line": 7,
           "col": 14
         }
       ],
-      "jsxUsages": [
-        {
-          "component": "Label",
-          "resolvedTo": "src/components/ui/label.tsx",
-          "line": 11,
-          "col": 6,
-          "propsUsed": [],
-          "props": {
-            "children": "Username {...}"
-          }
-        },
-        {
-          "component": "span",
-          "line": 11,
-          "col": 22,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "*"
-          },
-          "isHtml": true
-        }
-      ]
+      "jsxUsages": []
     },
     {
       "path": "src/components/ui/label.tsx",
@@ -15272,6 +15314,76 @@
             "onTransitionEndCapture",
             "asChild"
           ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/scroll-area.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./scroll-area",
+          "resolvedTo": "src/components/ui/scroll-area.tsx",
+          "symbols": [
+            "ScrollArea"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "ScrollArea",
+          "resolvedTo": "src/components/ui/scroll-area.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "p",
+          "line": 11,
+          "col": 12,
+          "propsUsed": [
+            "key",
+            "style"
+          ],
+          "props": {
+            "key": "{...}",
+            "style": "{...}",
+            "children": "Item {...}"
+          },
+          "isHtml": true
         }
       ]
     },
@@ -15949,21 +16061,21 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Horizontal",
           "kind": "variable",
           "exportKind": "named",
-          "line": 10,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Vertical",
           "kind": "variable",
           "exportKind": "named",
-          "line": 20,
+          "line": 7,
           "col": 14
         }
       ],
@@ -15982,80 +16094,21 @@
       "exports": [
         {
           "name": "Horizontal",
-          "line": 10,
+          "line": 6,
           "col": 14
         },
         {
           "name": "Vertical",
-          "line": 20,
+          "line": 7,
           "col": 14
         }
       ],
       "jsxUsages": [
         {
-          "component": "p",
-          "line": 13,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "Above"
-          },
-          "isHtml": true
-        },
-        {
-          "component": "Separator",
-          "resolvedTo": "src/components/ui/separator.tsx",
-          "line": 14,
-          "col": 8,
+          "component": "Story",
+          "line": 9,
+          "col": 63,
           "props": {}
-        },
-        {
-          "component": "p",
-          "line": 15,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "Below"
-          },
-          "isHtml": true
-        },
-        {
-          "component": "span",
-          "line": 23,
-          "col": 8,
-          "propsUsed": [],
-          "props": {
-            "children": "Left"
-          },
-          "isHtml": true
-        },
-        {
-          "component": "Separator",
-          "resolvedTo": "src/components/ui/separator.tsx",
-          "line": 24,
-          "col": 8,
-          "propsUsed": [
-            "orientation"
-          ],
-          "props": {
-            "orientation": "vertical"
-          }
-        },
-        {
-          "component": "span",
-          "line": 25,
-          "col": 8,
-          "propsUsed": [],
-          "props": {
-            "children": "Right"
-          },
-          "isHtml": true
         }
       ]
     },
@@ -16393,6 +16446,143 @@
             "onTransitionEndCapture",
             "asChild"
           ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/sheet.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./sheet",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "symbols": [
+            "Sheet",
+            "SheetContent",
+            "SheetDescription",
+            "SheetHeader",
+            "SheetTitle",
+            "SheetTrigger"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "Sheet",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 8,
+          "col": 6,
+          "propsUsed": [
+            "defaultOpen"
+          ],
+          "props": {
+            "defaultOpen": "true",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "SheetTrigger",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "asChild"
+          ],
+          "props": {
+            "asChild": "true",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "button",
+          "line": 10,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Open Sheet"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "SheetContent",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 12,
+          "col": 8,
+          "props": {
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "SheetHeader",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 13,
+          "col": 10,
+          "props": {
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "SheetTitle",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 14,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Sheet Title"
+          }
+        },
+        {
+          "component": "SheetDescription",
+          "resolvedTo": "src/components/ui/sheet.tsx",
+          "line": 15,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Sheet description text."
+          }
+        },
+        {
+          "component": "div",
+          "line": 17,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Sheet body content."
+          },
+          "isHtml": true
         }
       ]
     },
@@ -20786,21 +20976,14 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 7,
-          "col": 14
-        },
-        {
-          "name": "CardSkeleton",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 11,
+          "line": 6,
           "col": 14
         }
       ],
@@ -20819,12 +21002,7 @@
       "exports": [
         {
           "name": "Default",
-          "line": 7,
-          "col": 14
-        },
-        {
-          "name": "CardSkeleton",
-          "line": 11,
+          "line": 6,
           "col": 14
         }
       ],
@@ -20832,19 +21010,7 @@
         {
           "component": "Skeleton",
           "resolvedTo": "src/components/ui/skeleton.tsx",
-          "line": 8,
-          "col": 18,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}"
-          }
-        },
-        {
-          "component": "Skeleton",
-          "resolvedTo": "src/components/ui/skeleton.tsx",
-          "line": 14,
+          "line": 9,
           "col": 8,
           "propsUsed": [
             "style"
@@ -20856,7 +21022,7 @@
         {
           "component": "Skeleton",
           "resolvedTo": "src/components/ui/skeleton.tsx",
-          "line": 15,
+          "line": 10,
           "col": 8,
           "propsUsed": [
             "style"
@@ -20868,19 +21034,7 @@
         {
           "component": "Skeleton",
           "resolvedTo": "src/components/ui/skeleton.tsx",
-          "line": 16,
-          "col": 8,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}"
-          }
-        },
-        {
-          "component": "Skeleton",
-          "resolvedTo": "src/components/ui/skeleton.tsx",
-          "line": 17,
+          "line": 11,
           "col": 8,
           "propsUsed": [
             "style"
@@ -20935,14 +21089,14 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 2,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 7,
+          "line": 6,
           "col": 14
         }
       ],
@@ -20967,7 +21121,7 @@
       "exports": [
         {
           "name": "Default",
-          "line": 7,
+          "line": 6,
           "col": 14
         }
       ],
@@ -20975,7 +21129,7 @@
         {
           "component": "Table",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 9,
+          "line": 8,
           "col": 6,
           "props": {
             "children": "{...} {...} {...}"
@@ -20984,17 +21138,17 @@
         {
           "component": "TableCaption",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 10,
+          "line": 9,
           "col": 8,
           "propsUsed": [],
           "props": {
-            "children": "Recent invoices"
+            "children": "A list of recent invoices."
           }
         },
         {
           "component": "TableHeader",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 11,
+          "line": 10,
           "col": 8,
           "props": {
             "children": "{...}"
@@ -21003,7 +21157,7 @@
         {
           "component": "TableRow",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 12,
+          "line": 11,
           "col": 10,
           "props": {
             "children": "{...} {...} {...} {...}"
@@ -21012,7 +21166,7 @@
         {
           "component": "TableHead",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 13,
+          "line": 12,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21022,7 +21176,7 @@
         {
           "component": "TableHead",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 14,
+          "line": 13,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21032,7 +21186,7 @@
         {
           "component": "TableHead",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 15,
+          "line": 14,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21042,7 +21196,7 @@
         {
           "component": "TableHead",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 16,
+          "line": 15,
           "col": 12,
           "propsUsed": [
             "style"
@@ -21055,16 +21209,16 @@
         {
           "component": "TableBody",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 19,
+          "line": 18,
           "col": 8,
           "props": {
-            "children": "{...} {...} {...}"
+            "children": "{...} {...}"
           }
         },
         {
           "component": "TableRow",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 20,
+          "line": 19,
           "col": 10,
           "props": {
             "children": "{...} {...} {...} {...}"
@@ -21073,7 +21227,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 21,
+          "line": 20,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21083,7 +21237,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 22,
+          "line": 21,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21093,7 +21247,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 23,
+          "line": 22,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21103,7 +21257,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 24,
+          "line": 23,
           "col": 12,
           "propsUsed": [
             "style"
@@ -21116,7 +21270,7 @@
         {
           "component": "TableRow",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 26,
+          "line": 25,
           "col": 10,
           "props": {
             "children": "{...} {...} {...} {...}"
@@ -21125,7 +21279,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 27,
+          "line": 26,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21135,7 +21289,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 28,
+          "line": 27,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21145,7 +21299,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 29,
+          "line": 28,
           "col": 12,
           "propsUsed": [],
           "props": {
@@ -21155,7 +21309,7 @@
         {
           "component": "TableCell",
           "resolvedTo": "src/components/ui/table.tsx",
-          "line": 30,
+          "line": 29,
           "col": 12,
           "propsUsed": [
             "style"
@@ -21163,58 +21317,6 @@
           "props": {
             "style": "{...}",
             "children": "$150.00"
-          }
-        },
-        {
-          "component": "TableRow",
-          "resolvedTo": "src/components/ui/table.tsx",
-          "line": 32,
-          "col": 10,
-          "props": {
-            "children": "{...} {...} {...} {...}"
-          }
-        },
-        {
-          "component": "TableCell",
-          "resolvedTo": "src/components/ui/table.tsx",
-          "line": 33,
-          "col": 12,
-          "propsUsed": [],
-          "props": {
-            "children": "INV003"
-          }
-        },
-        {
-          "component": "TableCell",
-          "resolvedTo": "src/components/ui/table.tsx",
-          "line": 34,
-          "col": 12,
-          "propsUsed": [],
-          "props": {
-            "children": "Unpaid"
-          }
-        },
-        {
-          "component": "TableCell",
-          "resolvedTo": "src/components/ui/table.tsx",
-          "line": 35,
-          "col": 12,
-          "propsUsed": [],
-          "props": {
-            "children": "Bank Transfer"
-          }
-        },
-        {
-          "component": "TableCell",
-          "resolvedTo": "src/components/ui/table.tsx",
-          "line": 36,
-          "col": 12,
-          "propsUsed": [
-            "style"
-          ],
-          "props": {
-            "style": "{...}",
-            "children": "$350.00"
           }
         }
       ]
@@ -21345,6 +21447,178 @@
         }
       ],
       "jsxUsages": []
+    },
+    {
+      "path": "src/components/ui/toast.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 6,
+          "col": 14
+        },
+        {
+          "name": "Destructive",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 21,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./toast",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "symbols": [
+            "Toast",
+            "ToastAction",
+            "ToastDescription",
+            "ToastProvider",
+            "ToastTitle",
+            "ToastViewport"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 6,
+          "col": 14
+        },
+        {
+          "name": "Destructive",
+          "line": 21,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "ToastProvider",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 8,
+          "col": 6,
+          "props": {
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "Toast",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 9,
+          "col": 8,
+          "propsUsed": [
+            "open"
+          ],
+          "props": {
+            "open": "true",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "ToastTitle",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 11,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Notification"
+          }
+        },
+        {
+          "component": "ToastDescription",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 12,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Something happened successfully."
+          }
+        },
+        {
+          "component": "ToastAction",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 14,
+          "col": 10,
+          "propsUsed": [
+            "altText"
+          ],
+          "props": {
+            "altText": "Undo",
+            "children": "Undo"
+          }
+        },
+        {
+          "component": "ToastViewport",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 16,
+          "col": 8,
+          "props": {}
+        },
+        {
+          "component": "ToastProvider",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 23,
+          "col": 6,
+          "props": {
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "Toast",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 24,
+          "col": 8,
+          "propsUsed": [
+            "open",
+            "variant"
+          ],
+          "props": {
+            "variant": "destructive",
+            "open": "true",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "ToastTitle",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 26,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Error"
+          }
+        },
+        {
+          "component": "ToastDescription",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 27,
+          "col": 12,
+          "propsUsed": [],
+          "props": {
+            "children": "Something went wrong."
+          }
+        },
+        {
+          "component": "ToastViewport",
+          "resolvedTo": "src/components/ui/toast.tsx",
+          "line": 30,
+          "col": 8,
+          "props": {}
+        }
+      ]
     },
     {
       "path": "src/components/ui/toast.tsx",
@@ -23660,7 +23934,7 @@
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 8,
+          "line": 6,
           "col": 14
         }
       ],
@@ -23677,22 +23951,12 @@
           "isTypeOnly": false,
           "line": 1,
           "col": 1
-        },
-        {
-          "from": "./button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "symbols": [
-            "Button"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
         }
       ],
       "exports": [
         {
           "name": "Default",
-          "line": 8,
+          "line": 6,
           "col": 14
         }
       ],
@@ -23700,7 +23964,7 @@
         {
           "component": "TooltipProvider",
           "resolvedTo": "src/components/ui/tooltip.tsx",
-          "line": 10,
+          "line": 8,
           "col": 6,
           "props": {
             "children": "{...}"
@@ -23709,7 +23973,7 @@
         {
           "component": "Tooltip",
           "resolvedTo": "src/components/ui/tooltip.tsx",
-          "line": 11,
+          "line": 9,
           "col": 8,
           "propsUsed": [
             "defaultOpen"
@@ -23722,7 +23986,7 @@
         {
           "component": "TooltipTrigger",
           "resolvedTo": "src/components/ui/tooltip.tsx",
-          "line": 12,
+          "line": 10,
           "col": 10,
           "propsUsed": [
             "asChild"
@@ -23733,22 +23997,22 @@
           }
         },
         {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 13,
+          "component": "button",
+          "line": 11,
           "col": 12,
           "propsUsed": [
-            "variant"
+            "style"
           ],
           "props": {
-            "variant": "outline",
+            "style": "{...}",
             "children": "Hover me"
-          }
+          },
+          "isHtml": true
         },
         {
           "component": "TooltipContent",
           "resolvedTo": "src/components/ui/tooltip.tsx",
-          "line": 15,
+          "line": 13,
           "col": 10,
           "props": {
             "children": "{...}"
@@ -23756,11 +24020,11 @@
         },
         {
           "component": "p",
-          "line": 16,
+          "line": 14,
           "col": 12,
           "propsUsed": [],
           "props": {
-            "children": "This is a tooltip"
+            "children": "Tooltip content"
           },
           "isHtml": true
         }
@@ -24159,6 +24423,579 @@
       ]
     },
     {
+      "path": "src/context/auth/authContext.tsx",
+      "fileClass": "hook",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "ContextProps",
+          "kind": "interface",
+          "exportKind": "none",
+          "signature": "interface ContextProps",
+          "line": 5,
+          "col": 11
+        },
+        {
+          "name": "AuthContext",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 10,
+          "col": 7
+        },
+        {
+          "name": "AuthProvider",
+          "kind": "component",
+          "exportKind": "named",
+          "signature": "AuthProvider({ children }: { children: ReactNode })",
+          "line": 12,
+          "col": 14
+        },
+        {
+          "name": "useAuth",
+          "kind": "hook",
+          "exportKind": "named",
+          "signature": "useAuth()",
+          "line": 22,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "symbols": [
+            "React",
+            "ReactNode",
+            "createContext",
+            "useContext",
+            "useReducer"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "./authReducer",
+          "resolvedTo": "src/context/auth/authReducer.tsx",
+          "symbols": [
+            "initialState",
+            "reducer"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        },
+        {
+          "from": "./authTypes",
+          "resolvedTo": "src/context/auth/authTypes.ts",
+          "symbols": [
+            "IActionAuth",
+            "IStateAuth"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthProvider",
+          "line": 12,
+          "col": 14
+        },
+        {
+          "name": "useAuth",
+          "line": 22,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "AuthContext.Provider",
+          "line": 16,
+          "col": 6,
+          "propsUsed": [
+            "value"
+          ],
+          "props": {
+            "value": "{...}",
+            "children": "{...}"
+          }
+        }
+      ],
+      "hookCalls": [
+        "useContext",
+        "useReducer"
+      ]
+    },
+    {
+      "path": "src/context/auth/authReducer.tsx",
+      "fileClass": "component",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "authInfoLocalStorage",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 3,
+          "col": 7
+        },
+        {
+          "name": "isPreviewMode",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 8,
+          "col": 7
+        },
+        {
+          "name": "initialState",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 10,
+          "col": 14
+        },
+        {
+          "name": "reducer",
+          "kind": "function",
+          "exportKind": "named",
+          "signature": "reducer(state: IStateAuth, action: IActionAuth)",
+          "line": 20,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./authTypes",
+          "resolvedTo": "src/context/auth/authTypes.ts",
+          "symbols": [
+            "IActionAuth",
+            "IStateAuth"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "initialState",
+          "line": 10,
+          "col": 14
+        },
+        {
+          "name": "reducer",
+          "line": 20,
+          "col": 14
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
+      "path": "src/context/auth/authTypes.ts",
+      "fileClass": "type",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "IStateAuth",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IStateAuth",
+          "line": 1,
+          "col": 18
+        },
+        {
+          "name": "IActionAuth",
+          "kind": "type",
+          "exportKind": "named",
+          "signature": "export type IActionAuth = IActionLogin | IActionLogout",
+          "line": 8,
+          "col": 13
+        },
+        {
+          "name": "IActionLogin",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IActionLogin",
+          "line": 10,
+          "col": 18
+        },
+        {
+          "name": "IAuthPayload",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IAuthPayload",
+          "line": 15,
+          "col": 18
+        },
+        {
+          "name": "IAuthUser",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IAuthUser",
+          "line": 19,
+          "col": 18
+        },
+        {
+          "name": "IActionLogout",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IActionLogout",
+          "line": 24,
+          "col": 18
+        }
+      ],
+      "imports": [],
+      "exports": [
+        {
+          "name": "IStateAuth",
+          "line": 1,
+          "col": 18
+        },
+        {
+          "name": "IActionAuth",
+          "line": 8,
+          "col": 13
+        },
+        {
+          "name": "IActionLogin",
+          "line": 10,
+          "col": 18
+        },
+        {
+          "name": "IAuthPayload",
+          "line": 15,
+          "col": 18
+        },
+        {
+          "name": "IAuthUser",
+          "line": 19,
+          "col": 18
+        },
+        {
+          "name": "IActionLogout",
+          "line": 24,
+          "col": 18
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
+      "path": "src/context/kanban/kanbanContext.tsx",
+      "fileClass": "hook",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "ContextProps",
+          "kind": "interface",
+          "exportKind": "none",
+          "signature": "interface ContextProps",
+          "line": 8,
+          "col": 11
+        },
+        {
+          "name": "KanbanContext",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 13,
+          "col": 7
+        },
+        {
+          "name": "KanbanProvider",
+          "kind": "component",
+          "exportKind": "named",
+          "signature": "KanbanProvider({ children }: { children: ReactNode })",
+          "line": 15,
+          "col": 14
+        },
+        {
+          "name": "useKanban",
+          "kind": "hook",
+          "exportKind": "named",
+          "signature": "useKanban()",
+          "line": 25,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "@/components/kanban/model",
+          "resolvedTo": "src/components/kanban/model.ts",
+          "symbols": [
+            "KanbanContent"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        },
+        {
+          "from": "react",
+          "symbols": [
+            "React",
+            "ReactNode",
+            "createContext",
+            "useContext",
+            "useReducer"
+          ],
+          "isTypeOnly": false,
+          "line": 4,
+          "col": 1
+        },
+        {
+          "from": "./kanbanReducer",
+          "resolvedTo": "src/context/kanban/kanbanReducer.tsx",
+          "symbols": [
+            "initialState",
+            "reducer"
+          ],
+          "isTypeOnly": false,
+          "line": 5,
+          "col": 1
+        },
+        {
+          "from": "./kanbanTypes",
+          "resolvedTo": "src/context/kanban/kanbanTypes.ts",
+          "symbols": [
+            "IActionkanban"
+          ],
+          "isTypeOnly": false,
+          "line": 6,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "KanbanProvider",
+          "line": 15,
+          "col": 14
+        },
+        {
+          "name": "useKanban",
+          "line": 25,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "KanbanContext.Provider",
+          "line": 19,
+          "col": 6,
+          "propsUsed": [
+            "value"
+          ],
+          "props": {
+            "value": "{...}",
+            "children": "{...}"
+          }
+        }
+      ],
+      "hookCalls": [
+        "useContext",
+        "useReducer"
+      ]
+    },
+    {
+      "path": "src/context/kanban/kanbanReducer.tsx",
+      "fileClass": "component",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "initialState",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 4,
+          "col": 14
+        },
+        {
+          "name": "reducer",
+          "kind": "function",
+          "exportKind": "named",
+          "signature": "reducer(state: KanbanContent, action: IActionkanban)",
+          "line": 8,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "@/components/kanban/model",
+          "resolvedTo": "src/components/kanban/model.ts",
+          "symbols": [
+            "KanbanContent"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "./kanbanTypes",
+          "resolvedTo": "src/context/kanban/kanbanTypes.ts",
+          "symbols": [
+            "IActionkanban"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "initialState",
+          "line": 4,
+          "col": 14
+        },
+        {
+          "name": "reducer",
+          "line": 8,
+          "col": 14
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
+      "path": "src/context/kanban/kanbanTypes.ts",
+      "fileClass": "type",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "IActionkanban",
+          "kind": "type",
+          "exportKind": "named",
+          "signature": "export type IActionkanban = IActionkanbanAdd | IActionkanbanUpdate",
+          "line": 20,
+          "col": 13
+        },
+        {
+          "name": "IActionkanbanAdd",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IActionkanbanAdd",
+          "line": 22,
+          "col": 18
+        },
+        {
+          "name": "IActionkanbanUpdate",
+          "kind": "interface",
+          "exportKind": "named",
+          "signature": "export interface IActionkanbanUpdate",
+          "line": 26,
+          "col": 18
+        }
+      ],
+      "imports": [
+        {
+          "from": "@/components/kanban/model",
+          "resolvedTo": "src/components/kanban/model.ts",
+          "symbols": [
+            "CardContent",
+            "KanbanContent"
+          ],
+          "isTypeOnly": false,
+          "line": 8,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "IActionkanban",
+          "line": 20,
+          "col": 13
+        },
+        {
+          "name": "IActionkanbanAdd",
+          "line": 22,
+          "col": 18
+        },
+        {
+          "name": "IActionkanbanUpdate",
+          "line": 26,
+          "col": 18
+        }
+      ],
+      "jsxUsages": []
+    },
+    {
+      "path": "src/features/authentication/login.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 5,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 17,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./login",
+          "resolvedTo": "src/features/authentication/login.tsx",
+          "symbols": [
+            "Login"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "react-router",
+          "symbols": [
+            "MemoryRouter"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        },
+        {
+          "from": "@/context/auth/authContext",
+          "resolvedTo": "src/context/auth/authContext.tsx",
+          "symbols": [
+            "AuthProvider"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 17,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "MemoryRouter",
+          "line": 8,
+          "col": 6,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "AuthProvider",
+          "resolvedTo": "src/context/auth/authContext.tsx",
+          "line": 9,
+          "col": 8,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "Story",
+          "line": 10,
+          "col": 10,
+          "props": {}
+        }
+      ]
+    },
+    {
       "path": "src/features/authentication/login.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -24532,6 +25369,90 @@
         "useAuth",
         "useForm",
         "useNavigate"
+      ]
+    },
+    {
+      "path": "src/features/authentication/register.previews.tsx",
+      "fileClass": "story",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 5,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 17,
+          "col": 14
+        }
+      ],
+      "imports": [
+        {
+          "from": "./register",
+          "resolvedTo": "src/features/authentication/register.tsx",
+          "symbols": [
+            "Register"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "react-router",
+          "symbols": [
+            "MemoryRouter"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        },
+        {
+          "from": "@/context/auth/authContext",
+          "resolvedTo": "src/context/auth/authContext.tsx",
+          "symbols": [
+            "AuthProvider"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "Default",
+          "line": 17,
+          "col": 14
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "MemoryRouter",
+          "line": 8,
+          "col": 6,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "AuthProvider",
+          "resolvedTo": "src/context/auth/authContext.tsx",
+          "line": 9,
+          "col": 8,
+          "props": {
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "Story",
+          "line": 10,
+          "col": 10,
+          "props": {}
+        }
       ]
     },
     {
@@ -24993,6 +25914,175 @@
         "useForm",
         "useMutation",
         "useNavigate"
+      ]
+    },
+    {
+      "path": "src/features/kanban/index.tsx",
+      "fileClass": "component",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "Kanban",
+          "kind": "component",
+          "exportKind": "default",
+          "signature": "Kanban()",
+          "line": 10,
+          "col": 25
+        }
+      ],
+      "imports": [
+        {
+          "from": "@/components/kanban",
+          "resolvedTo": "src/components/kanban/index.ts",
+          "symbols": [
+            "KanbanContainer"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "@/components/kanban/api",
+          "resolvedTo": "src/components/kanban/api/index.ts",
+          "symbols": [
+            "loadKanbanContent"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedTo": "src/components/ui/button.tsx",
+          "symbols": [
+            "Button"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        },
+        {
+          "from": "@/components/ui/scroll-area",
+          "resolvedTo": "src/components/ui/scroll-area.tsx",
+          "symbols": [
+            "ScrollArea",
+            "ScrollBar"
+          ],
+          "isTypeOnly": false,
+          "line": 5,
+          "col": 1
+        },
+        {
+          "from": "@/context/kanban/kanbanContext",
+          "resolvedTo": "src/context/kanban/kanbanContext.tsx",
+          "symbols": [
+            "useKanban"
+          ],
+          "isTypeOnly": false,
+          "line": 6,
+          "col": 1
+        },
+        {
+          "from": "react",
+          "symbols": [
+            "useEffect"
+          ],
+          "isTypeOnly": false,
+          "line": 7,
+          "col": 1
+        },
+        {
+          "from": "react-router",
+          "symbols": [
+            "Link"
+          ],
+          "isTypeOnly": false,
+          "line": 8,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 10,
+          "col": 25
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "h3",
+          "line": 23,
+          "col": 8,
+          "propsUsed": [
+            "className"
+          ],
+          "props": {
+            "className": "text-xl font-bold",
+            "children": "Kanban"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "Link",
+          "line": 24,
+          "col": 8,
+          "propsUsed": [
+            "to"
+          ],
+          "props": {
+            "to": "/kanban/create",
+            "children": "{...}"
+          }
+        },
+        {
+          "component": "Button",
+          "resolvedTo": "src/components/ui/button.tsx",
+          "line": 25,
+          "col": 10,
+          "propsUsed": [
+            "variant"
+          ],
+          "props": {
+            "variant": "outline",
+            "children": "Create"
+          }
+        },
+        {
+          "component": "ScrollArea",
+          "resolvedTo": "src/components/ui/scroll-area.tsx",
+          "line": 28,
+          "col": 8,
+          "propsUsed": [
+            "className"
+          ],
+          "props": {
+            "className": "w-full whitespace-nowrap rounded-md border p-2",
+            "children": "{...} {...}"
+          }
+        },
+        {
+          "component": "KanbanContainer",
+          "resolvedTo": "src/components/kanban/index.ts",
+          "line": 29,
+          "col": 10,
+          "props": {}
+        },
+        {
+          "component": "ScrollBar",
+          "resolvedTo": "src/components/ui/scroll-area.tsx",
+          "line": 30,
+          "col": 10,
+          "propsUsed": [
+            "orientation"
+          ],
+          "props": {
+            "orientation": "horizontal"
+          }
+        }
+      ],
+      "hookCalls": [
+        "useEffect",
+        "useKanban"
       ]
     },
     {
@@ -25590,172 +26680,68 @@
       ]
     },
     {
-      "path": "src/features/kanban/index.tsx",
-      "fileClass": "component",
+      "path": "src/features/posts/index.previews.tsx",
+      "fileClass": "story",
       "symbols": [],
       "definitions": [
         {
-          "name": "Kanban",
-          "kind": "component",
-          "exportKind": "default",
-          "signature": "Kanban()",
-          "line": 10,
-          "col": 25
+          "name": "meta",
+          "kind": "variable",
+          "exportKind": "none",
+          "line": 4,
+          "col": 7
+        },
+        {
+          "name": "Default",
+          "kind": "variable",
+          "exportKind": "named",
+          "line": 14,
+          "col": 14
         }
       ],
       "imports": [
         {
-          "from": "@/components/kanban",
-          "resolvedTo": "src/components/kanban/index.ts",
+          "from": "./index",
+          "resolvedTo": "src/features/posts/index.tsx",
           "symbols": [
-            "KanbanContainer"
+            "Posts"
           ],
           "isTypeOnly": false,
           "line": 1,
           "col": 1
         },
         {
-          "from": "@/components/kanban/api",
-          "resolvedTo": "src/components/kanban/api/index.ts",
+          "from": "react-router",
           "symbols": [
-            "loadKanbanContent"
+            "MemoryRouter"
           ],
           "isTypeOnly": false,
           "line": 2,
-          "col": 1
-        },
-        {
-          "from": "@/components/ui/button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "symbols": [
-            "Button"
-          ],
-          "isTypeOnly": false,
-          "line": 3,
-          "col": 1
-        },
-        {
-          "from": "@/components/ui/scroll-area",
-          "resolvedTo": "src/components/ui/scroll-area.tsx",
-          "symbols": [
-            "ScrollArea",
-            "ScrollBar"
-          ],
-          "isTypeOnly": false,
-          "line": 5,
-          "col": 1
-        },
-        {
-          "from": "@/context/kanban/kanbanContext",
-          "resolvedTo": "src/context/kanban/kanbanContext.tsx",
-          "symbols": [
-            "useKanban"
-          ],
-          "isTypeOnly": false,
-          "line": 6,
-          "col": 1
-        },
-        {
-          "from": "react",
-          "symbols": [
-            "useEffect"
-          ],
-          "isTypeOnly": false,
-          "line": 7,
-          "col": 1
-        },
-        {
-          "from": "react-router",
-          "symbols": [
-            "Link"
-          ],
-          "isTypeOnly": false,
-          "line": 8,
           "col": 1
         }
       ],
       "exports": [
         {
-          "name": "default",
-          "line": 10,
-          "col": 25
+          "name": "Default",
+          "line": 14,
+          "col": 14
         }
       ],
       "jsxUsages": [
         {
-          "component": "h3",
-          "line": 23,
-          "col": 8,
-          "propsUsed": [
-            "className"
-          ],
+          "component": "MemoryRouter",
+          "line": 7,
+          "col": 6,
           "props": {
-            "className": "text-xl font-bold",
-            "children": "Kanban"
-          },
-          "isHtml": true
-        },
-        {
-          "component": "Link",
-          "line": 24,
-          "col": 8,
-          "propsUsed": [
-            "to"
-          ],
-          "props": {
-            "to": "/kanban/create",
             "children": "{...}"
           }
         },
         {
-          "component": "Button",
-          "resolvedTo": "src/components/ui/button.tsx",
-          "line": 25,
-          "col": 10,
-          "propsUsed": [
-            "variant"
-          ],
-          "props": {
-            "variant": "outline",
-            "children": "Create"
-          }
-        },
-        {
-          "component": "ScrollArea",
-          "resolvedTo": "src/components/ui/scroll-area.tsx",
-          "line": 28,
+          "component": "Story",
+          "line": 8,
           "col": 8,
-          "propsUsed": [
-            "className"
-          ],
-          "props": {
-            "className": "w-full whitespace-nowrap rounded-md border p-2",
-            "children": "{...} {...}"
-          }
-        },
-        {
-          "component": "KanbanContainer",
-          "resolvedTo": "src/components/kanban/index.ts",
-          "line": 29,
-          "col": 10,
           "props": {}
-        },
-        {
-          "component": "ScrollBar",
-          "resolvedTo": "src/components/ui/scroll-area.tsx",
-          "line": 30,
-          "col": 10,
-          "propsUsed": [
-            "orientation"
-          ],
-          "props": {
-            "orientation": "horizontal"
-          }
         }
-      ],
-      "hookCalls": [
-        "useEffect",
-        "useKanban"
       ]
     },
     {
@@ -26113,495 +27099,6 @@
         "useMemo",
         "useState"
       ]
-    },
-    {
-      "path": "src/context/auth/authContext.tsx",
-      "fileClass": "hook",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "ContextProps",
-          "kind": "interface",
-          "exportKind": "none",
-          "signature": "interface ContextProps",
-          "line": 5,
-          "col": 11
-        },
-        {
-          "name": "AuthContext",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 10,
-          "col": 7
-        },
-        {
-          "name": "AuthProvider",
-          "kind": "component",
-          "exportKind": "named",
-          "signature": "AuthProvider({ children }: { children: ReactNode })",
-          "line": 12,
-          "col": 14
-        },
-        {
-          "name": "useAuth",
-          "kind": "hook",
-          "exportKind": "named",
-          "signature": "useAuth()",
-          "line": 22,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "react",
-          "symbols": [
-            "React",
-            "ReactNode",
-            "createContext",
-            "useContext",
-            "useReducer"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        },
-        {
-          "from": "./authReducer",
-          "resolvedTo": "src/context/auth/authReducer.tsx",
-          "symbols": [
-            "initialState",
-            "reducer"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
-        },
-        {
-          "from": "./authTypes",
-          "resolvedTo": "src/context/auth/authTypes.ts",
-          "symbols": [
-            "IActionAuth",
-            "IStateAuth"
-          ],
-          "isTypeOnly": false,
-          "line": 3,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "AuthProvider",
-          "line": 12,
-          "col": 14
-        },
-        {
-          "name": "useAuth",
-          "line": 22,
-          "col": 14
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "AuthContext.Provider",
-          "line": 16,
-          "col": 6,
-          "propsUsed": [
-            "value"
-          ],
-          "props": {
-            "value": "{...}",
-            "children": "{...}"
-          }
-        }
-      ],
-      "hookCalls": [
-        "useContext",
-        "useReducer"
-      ]
-    },
-    {
-      "path": "src/context/auth/authReducer.tsx",
-      "fileClass": "component",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "authInfoLocalStorage",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 3,
-          "col": 7
-        },
-        {
-          "name": "isPreviewMode",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 8,
-          "col": 7
-        },
-        {
-          "name": "initialState",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 10,
-          "col": 14
-        },
-        {
-          "name": "reducer",
-          "kind": "function",
-          "exportKind": "named",
-          "signature": "reducer(state: IStateAuth, action: IActionAuth)",
-          "line": 20,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "./authTypes",
-          "resolvedTo": "src/context/auth/authTypes.ts",
-          "symbols": [
-            "IActionAuth",
-            "IStateAuth"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "initialState",
-          "line": 10,
-          "col": 14
-        },
-        {
-          "name": "reducer",
-          "line": 20,
-          "col": 14
-        }
-      ],
-      "jsxUsages": []
-    },
-    {
-      "path": "src/context/auth/authTypes.ts",
-      "fileClass": "type",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "IStateAuth",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IStateAuth",
-          "line": 1,
-          "col": 18
-        },
-        {
-          "name": "IActionAuth",
-          "kind": "type",
-          "exportKind": "named",
-          "signature": "export type IActionAuth = IActionLogin | IActionLogout",
-          "line": 8,
-          "col": 13
-        },
-        {
-          "name": "IActionLogin",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IActionLogin",
-          "line": 10,
-          "col": 18
-        },
-        {
-          "name": "IAuthPayload",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IAuthPayload",
-          "line": 15,
-          "col": 18
-        },
-        {
-          "name": "IAuthUser",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IAuthUser",
-          "line": 19,
-          "col": 18
-        },
-        {
-          "name": "IActionLogout",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IActionLogout",
-          "line": 24,
-          "col": 18
-        }
-      ],
-      "imports": [],
-      "exports": [
-        {
-          "name": "IStateAuth",
-          "line": 1,
-          "col": 18
-        },
-        {
-          "name": "IActionAuth",
-          "line": 8,
-          "col": 13
-        },
-        {
-          "name": "IActionLogin",
-          "line": 10,
-          "col": 18
-        },
-        {
-          "name": "IAuthPayload",
-          "line": 15,
-          "col": 18
-        },
-        {
-          "name": "IAuthUser",
-          "line": 19,
-          "col": 18
-        },
-        {
-          "name": "IActionLogout",
-          "line": 24,
-          "col": 18
-        }
-      ],
-      "jsxUsages": []
-    },
-    {
-      "path": "src/context/kanban/kanbanContext.tsx",
-      "fileClass": "hook",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "ContextProps",
-          "kind": "interface",
-          "exportKind": "none",
-          "signature": "interface ContextProps",
-          "line": 8,
-          "col": 11
-        },
-        {
-          "name": "KanbanContext",
-          "kind": "variable",
-          "exportKind": "none",
-          "line": 13,
-          "col": 7
-        },
-        {
-          "name": "KanbanProvider",
-          "kind": "component",
-          "exportKind": "named",
-          "signature": "KanbanProvider({ children }: { children: ReactNode })",
-          "line": 15,
-          "col": 14
-        },
-        {
-          "name": "useKanban",
-          "kind": "hook",
-          "exportKind": "named",
-          "signature": "useKanban()",
-          "line": 25,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "@/components/kanban/model",
-          "resolvedTo": "src/components/kanban/model.ts",
-          "symbols": [
-            "KanbanContent"
-          ],
-          "isTypeOnly": false,
-          "line": 3,
-          "col": 1
-        },
-        {
-          "from": "react",
-          "symbols": [
-            "React",
-            "ReactNode",
-            "createContext",
-            "useContext",
-            "useReducer"
-          ],
-          "isTypeOnly": false,
-          "line": 4,
-          "col": 1
-        },
-        {
-          "from": "./kanbanReducer",
-          "resolvedTo": "src/context/kanban/kanbanReducer.tsx",
-          "symbols": [
-            "initialState",
-            "reducer"
-          ],
-          "isTypeOnly": false,
-          "line": 5,
-          "col": 1
-        },
-        {
-          "from": "./kanbanTypes",
-          "resolvedTo": "src/context/kanban/kanbanTypes.ts",
-          "symbols": [
-            "IActionkanban"
-          ],
-          "isTypeOnly": false,
-          "line": 6,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "KanbanProvider",
-          "line": 15,
-          "col": 14
-        },
-        {
-          "name": "useKanban",
-          "line": 25,
-          "col": 14
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "KanbanContext.Provider",
-          "line": 19,
-          "col": 6,
-          "propsUsed": [
-            "value"
-          ],
-          "props": {
-            "value": "{...}",
-            "children": "{...}"
-          }
-        }
-      ],
-      "hookCalls": [
-        "useContext",
-        "useReducer"
-      ]
-    },
-    {
-      "path": "src/context/kanban/kanbanReducer.tsx",
-      "fileClass": "component",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "initialState",
-          "kind": "variable",
-          "exportKind": "named",
-          "line": 4,
-          "col": 14
-        },
-        {
-          "name": "reducer",
-          "kind": "function",
-          "exportKind": "named",
-          "signature": "reducer(state: KanbanContent, action: IActionkanban)",
-          "line": 8,
-          "col": 14
-        }
-      ],
-      "imports": [
-        {
-          "from": "@/components/kanban/model",
-          "resolvedTo": "src/components/kanban/model.ts",
-          "symbols": [
-            "KanbanContent"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        },
-        {
-          "from": "./kanbanTypes",
-          "resolvedTo": "src/context/kanban/kanbanTypes.ts",
-          "symbols": [
-            "IActionkanban"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "initialState",
-          "line": 4,
-          "col": 14
-        },
-        {
-          "name": "reducer",
-          "line": 8,
-          "col": 14
-        }
-      ],
-      "jsxUsages": []
-    },
-    {
-      "path": "src/context/kanban/kanbanTypes.ts",
-      "fileClass": "type",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "IActionkanban",
-          "kind": "type",
-          "exportKind": "named",
-          "signature": "export type IActionkanban = IActionkanbanAdd | IActionkanbanUpdate",
-          "line": 20,
-          "col": 13
-        },
-        {
-          "name": "IActionkanbanAdd",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IActionkanbanAdd",
-          "line": 22,
-          "col": 18
-        },
-        {
-          "name": "IActionkanbanUpdate",
-          "kind": "interface",
-          "exportKind": "named",
-          "signature": "export interface IActionkanbanUpdate",
-          "line": 26,
-          "col": 18
-        }
-      ],
-      "imports": [
-        {
-          "from": "@/components/kanban/model",
-          "resolvedTo": "src/components/kanban/model.ts",
-          "symbols": [
-            "CardContent",
-            "KanbanContent"
-          ],
-          "isTypeOnly": false,
-          "line": 8,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "IActionkanban",
-          "line": 20,
-          "col": 13
-        },
-        {
-          "name": "IActionkanbanAdd",
-          "line": 22,
-          "col": 18
-        },
-        {
-          "name": "IActionkanbanUpdate",
-          "line": 26,
-          "col": 18
-        }
-      ],
-      "jsxUsages": []
     },
     {
       "path": "src/services/api/api.tsx",
@@ -27642,76 +28139,6 @@
       ]
     },
     {
-      "path": "src/features/posts/detail/index.tsx",
-      "fileClass": "component",
-      "symbols": [],
-      "definitions": [
-        {
-          "name": "PostDetail",
-          "kind": "component",
-          "exportKind": "default",
-          "signature": "PostDetail()",
-          "line": 5,
-          "col": 25
-        }
-      ],
-      "imports": [
-        {
-          "from": "react",
-          "symbols": [
-            "useEffect",
-            "useState"
-          ],
-          "isTypeOnly": false,
-          "line": 1,
-          "col": 1
-        },
-        {
-          "from": "react-router",
-          "symbols": [
-            "useParams"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
-        },
-        {
-          "from": "..",
-          "resolvedTo": "src/features/posts/index.tsx",
-          "symbols": [
-            "IPost"
-          ],
-          "isTypeOnly": false,
-          "line": 3,
-          "col": 1
-        }
-      ],
-      "exports": [
-        {
-          "name": "default",
-          "line": 5,
-          "col": 25
-        }
-      ],
-      "jsxUsages": [
-        {
-          "component": "div",
-          "line": 27,
-          "col": 10,
-          "propsUsed": [],
-          "props": {
-            "children": "Loading..."
-          },
-          "isHtml": true
-        }
-      ],
-      "hookCalls": [
-        "useEffect",
-        "useParams",
-        "useState"
-      ]
-    },
-    {
       "path": "src/features/kanban/edit/index.tsx",
       "fileClass": "component",
       "symbols": [],
@@ -28415,6 +28842,76 @@
       ]
     },
     {
+      "path": "src/features/posts/detail/index.tsx",
+      "fileClass": "component",
+      "symbols": [],
+      "definitions": [
+        {
+          "name": "PostDetail",
+          "kind": "component",
+          "exportKind": "default",
+          "signature": "PostDetail()",
+          "line": 5,
+          "col": 25
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "symbols": [
+            "useEffect",
+            "useState"
+          ],
+          "isTypeOnly": false,
+          "line": 1,
+          "col": 1
+        },
+        {
+          "from": "react-router",
+          "symbols": [
+            "useParams"
+          ],
+          "isTypeOnly": false,
+          "line": 2,
+          "col": 1
+        },
+        {
+          "from": "..",
+          "resolvedTo": "src/features/posts/index.tsx",
+          "symbols": [
+            "IPost"
+          ],
+          "isTypeOnly": false,
+          "line": 3,
+          "col": 1
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 5,
+          "col": 25
+        }
+      ],
+      "jsxUsages": [
+        {
+          "component": "div",
+          "line": 27,
+          "col": 10,
+          "propsUsed": [],
+          "props": {
+            "children": "Loading..."
+          },
+          "isHtml": true
+        }
+      ],
+      "hookCalls": [
+        "useEffect",
+        "useParams",
+        "useState"
+      ]
+    },
+    {
       "path": "src/components/kanban/components/card/card.component.previews.tsx",
       "fileClass": "story",
       "symbols": [],
@@ -28696,14 +29193,14 @@
           "name": "meta",
           "kind": "variable",
           "exportKind": "none",
-          "line": 4,
+          "line": 3,
           "col": 7
         },
         {
           "name": "Default",
           "kind": "variable",
           "exportKind": "named",
-          "line": 9,
+          "line": 6,
           "col": 14
         }
       ],
@@ -28717,48 +29214,54 @@
           "isTypeOnly": false,
           "line": 1,
           "col": 1
-        },
-        {
-          "from": "react-router",
-          "symbols": [
-            "MemoryRouter"
-          ],
-          "isTypeOnly": false,
-          "line": 2,
-          "col": 1
         }
       ],
       "exports": [
         {
           "name": "Default",
-          "line": 9,
+          "line": 6,
           "col": 14
         }
       ],
       "jsxUsages": [
         {
-          "component": "MemoryRouter",
-          "line": 11,
-          "col": 6,
+          "component": "div",
+          "line": 12,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
           "props": {
-            "children": "{...}"
-          }
+            "style": "{...}",
+            "children": "Task 1"
+          },
+          "isHtml": true
         },
         {
-          "component": "Column",
-          "resolvedTo": "src/components/kanban/components/column/column.component.tsx",
+          "component": "div",
           "line": 13,
           "col": 10,
           "propsUsed": [
-            "columnId",
-            "content",
-            "name"
+            "style"
           ],
           "props": {
-            "columnId": "1",
-            "name": "To Do",
-            "content": "{...}"
-          }
+            "style": "{...}",
+            "children": "Task 2"
+          },
+          "isHtml": true
+        },
+        {
+          "component": "div",
+          "line": 14,
+          "col": 10,
+          "propsUsed": [
+            "style"
+          ],
+          "props": {
+            "style": "{...}",
+            "children": "Task 3"
+          },
+          "isHtml": true
         }
       ]
     },
@@ -29122,13 +29625,6 @@
       ]
     },
     {
-      "from": "src/components/search.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
       "from": "src/components/search.tsx",
       "to": "src/context/search-context.tsx",
       "symbols": [
@@ -29147,20 +29643,6 @@
       "to": "src/components/ui/button.tsx",
       "symbols": [
         "Button"
-      ]
-    },
-    {
-      "from": "src/components/theme-switch.previews.tsx",
-      "to": "src/components/theme-switch.tsx",
-      "symbols": [
-        "ThemeSwitch"
-      ]
-    },
-    {
-      "from": "src/components/theme-switch.previews.tsx",
-      "to": "src/context/theme-context.tsx",
-      "symbols": [
-        "ThemeProvider"
       ]
     },
     {
@@ -29207,6 +29689,13 @@
       "symbols": [
         "ToastActionElement",
         "ToastProps"
+      ]
+    },
+    {
+      "from": "src/features/404.previews.tsx",
+      "to": "src/features/404.tsx",
+      "symbols": [
+        "NotFound"
       ]
     },
     {
@@ -29578,13 +30067,6 @@
       ]
     },
     {
-      "from": "src/components/ui/card.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
       "from": "src/components/ui/card.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
@@ -29599,17 +30081,32 @@
       ]
     },
     {
-      "from": "src/components/ui/checkbox.previews.tsx",
-      "to": "src/components/ui/label.tsx",
-      "symbols": [
-        "Label"
-      ]
-    },
-    {
       "from": "src/components/ui/checkbox.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
         "cn"
+      ]
+    },
+    {
+      "from": "src/components/ui/collapsible.previews.tsx",
+      "to": "src/components/ui/collapsible.tsx",
+      "symbols": [
+        "Collapsible",
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ]
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "symbols": [
+        "Command",
+        "CommandEmpty",
+        "CommandGroup",
+        "CommandInput",
+        "CommandItem",
+        "CommandList",
+        "CommandSeparator"
       ]
     },
     {
@@ -29628,6 +30125,19 @@
       ]
     },
     {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "symbols": [
+        "Dialog",
+        "DialogContent",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogTitle",
+        "DialogTrigger"
+      ]
+    },
+    {
       "from": "src/components/ui/dialog.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
@@ -29635,10 +30145,29 @@
       ]
     },
     {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "symbols": [
+        "DropdownMenu",
+        "DropdownMenuContent",
+        "DropdownMenuItem",
+        "DropdownMenuLabel",
+        "DropdownMenuSeparator",
+        "DropdownMenuTrigger"
+      ]
+    },
+    {
       "from": "src/components/ui/dropdown-menu.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
         "cn"
+      ]
+    },
+    {
+      "from": "src/components/ui/fancy-multi-select.previews.tsx",
+      "to": "src/components/ui/fancy-multi-select.tsx",
+      "symbols": [
+        "FancyMultiSelect"
       ]
     },
     {
@@ -29701,13 +30230,6 @@
       ]
     },
     {
-      "from": "src/components/ui/input.previews.tsx",
-      "to": "src/components/ui/label.tsx",
-      "symbols": [
-        "Label"
-      ]
-    },
-    {
       "from": "src/components/ui/input.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
@@ -29729,6 +30251,13 @@
       ]
     },
     {
+      "from": "src/components/ui/scroll-area.previews.tsx",
+      "to": "src/components/ui/scroll-area.tsx",
+      "symbols": [
+        "ScrollArea"
+      ]
+    },
+    {
       "from": "src/components/ui/scroll-area.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
@@ -29747,6 +30276,18 @@
       "to": "src/lib/utils.ts",
       "symbols": [
         "cn"
+      ]
+    },
+    {
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "symbols": [
+        "Sheet",
+        "SheetContent",
+        "SheetDescription",
+        "SheetHeader",
+        "SheetTitle",
+        "SheetTrigger"
       ]
     },
     {
@@ -29853,6 +30394,18 @@
       ]
     },
     {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "symbols": [
+        "Toast",
+        "ToastAction",
+        "ToastDescription",
+        "ToastProvider",
+        "ToastTitle",
+        "ToastViewport"
+      ]
+    },
+    {
       "from": "src/components/ui/toast.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
@@ -29889,210 +30442,10 @@
       ]
     },
     {
-      "from": "src/components/ui/tooltip.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
       "from": "src/components/ui/tooltip.tsx",
       "to": "src/lib/utils.ts",
       "symbols": [
         "cn"
-      ]
-    },
-    {
-      "from": "src/features/authentication/login.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
-      "from": "src/features/authentication/login.tsx",
-      "to": "src/components/ui/card.tsx",
-      "symbols": [
-        "Card",
-        "CardContent",
-        "CardFooter"
-      ]
-    },
-    {
-      "from": "src/features/authentication/login.tsx",
-      "to": "src/components/ui/form.tsx",
-      "symbols": [
-        "Form",
-        "FormControl",
-        "FormField",
-        "FormItem",
-        "FormLabel",
-        "FormMessage"
-      ]
-    },
-    {
-      "from": "src/features/authentication/login.tsx",
-      "to": "src/components/ui/input.tsx",
-      "symbols": [
-        "Input"
-      ]
-    },
-    {
-      "from": "src/features/authentication/login.tsx",
-      "to": "src/context/auth/authContext.tsx",
-      "symbols": [
-        "useAuth"
-      ]
-    },
-    {
-      "from": "src/features/authentication/register.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
-      "from": "src/features/authentication/register.tsx",
-      "to": "src/components/ui/card.tsx",
-      "symbols": [
-        "Card",
-        "CardContent",
-        "CardFooter"
-      ]
-    },
-    {
-      "from": "src/features/authentication/register.tsx",
-      "to": "src/components/ui/form.tsx",
-      "symbols": [
-        "Form",
-        "FormControl",
-        "FormField",
-        "FormItem",
-        "FormLabel",
-        "FormMessage"
-      ]
-    },
-    {
-      "from": "src/features/authentication/register.tsx",
-      "to": "src/components/ui/input.tsx",
-      "symbols": [
-        "Input"
-      ]
-    },
-    {
-      "from": "src/features/authentication/register.tsx",
-      "to": "src/services/api/auth.tsx",
-      "symbols": [
-        "IRegisterPayload",
-        "register"
-      ]
-    },
-    {
-      "from": "src/features/payment/index.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
-      "from": "src/features/payment/index.tsx",
-      "to": "src/components/ui/checkbox.tsx",
-      "symbols": [
-        "Checkbox"
-      ]
-    },
-    {
-      "from": "src/features/payment/index.tsx",
-      "to": "src/components/ui/dropdown-menu.tsx",
-      "symbols": [
-        "DropdownMenu",
-        "DropdownMenuCheckboxItem",
-        "DropdownMenuContent",
-        "DropdownMenuItem",
-        "DropdownMenuLabel",
-        "DropdownMenuSeparator",
-        "DropdownMenuTrigger"
-      ]
-    },
-    {
-      "from": "src/features/payment/index.tsx",
-      "to": "src/components/ui/input.tsx",
-      "symbols": [
-        "Input"
-      ]
-    },
-    {
-      "from": "src/features/payment/index.tsx",
-      "to": "src/components/ui/table.tsx",
-      "symbols": [
-        "Table",
-        "TableBody",
-        "TableCell",
-        "TableHead",
-        "TableHeader",
-        "TableRow"
-      ]
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/kanban/index.ts",
-      "symbols": [
-        "KanbanContainer"
-      ]
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/kanban/api/index.ts",
-      "symbols": [
-        "loadKanbanContent"
-      ]
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/ui/scroll-area.tsx",
-      "symbols": [
-        "ScrollArea",
-        "ScrollBar"
-      ]
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/context/kanban/kanbanContext.tsx",
-      "symbols": [
-        "useKanban"
-      ]
-    },
-    {
-      "from": "src/features/posts/index.tsx",
-      "to": "src/components/ui/button.tsx",
-      "symbols": [
-        "Button"
-      ]
-    },
-    {
-      "from": "src/features/posts/index.tsx",
-      "to": "src/components/ui/input.tsx",
-      "symbols": [
-        "Input"
-      ]
-    },
-    {
-      "from": "src/features/posts/index.tsx",
-      "to": "src/components/ui/table.tsx",
-      "symbols": [
-        "Table",
-        "TableBody",
-        "TableCell",
-        "TableHead",
-        "TableHeader",
-        "TableRow"
       ]
     },
     {
@@ -30161,6 +30514,234 @@
       "symbols": [
         "CardContent",
         "KanbanContent"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.previews.tsx",
+      "to": "src/features/authentication/login.tsx",
+      "symbols": [
+        "Login"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.previews.tsx",
+      "to": "src/context/auth/authContext.tsx",
+      "symbols": [
+        "AuthProvider"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.tsx",
+      "to": "src/components/ui/button.tsx",
+      "symbols": [
+        "Button"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.tsx",
+      "to": "src/components/ui/card.tsx",
+      "symbols": [
+        "Card",
+        "CardContent",
+        "CardFooter"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.tsx",
+      "to": "src/components/ui/form.tsx",
+      "symbols": [
+        "Form",
+        "FormControl",
+        "FormField",
+        "FormItem",
+        "FormLabel",
+        "FormMessage"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.tsx",
+      "to": "src/components/ui/input.tsx",
+      "symbols": [
+        "Input"
+      ]
+    },
+    {
+      "from": "src/features/authentication/login.tsx",
+      "to": "src/context/auth/authContext.tsx",
+      "symbols": [
+        "useAuth"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.previews.tsx",
+      "to": "src/features/authentication/register.tsx",
+      "symbols": [
+        "Register"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.previews.tsx",
+      "to": "src/context/auth/authContext.tsx",
+      "symbols": [
+        "AuthProvider"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.tsx",
+      "to": "src/components/ui/button.tsx",
+      "symbols": [
+        "Button"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.tsx",
+      "to": "src/components/ui/card.tsx",
+      "symbols": [
+        "Card",
+        "CardContent",
+        "CardFooter"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.tsx",
+      "to": "src/components/ui/form.tsx",
+      "symbols": [
+        "Form",
+        "FormControl",
+        "FormField",
+        "FormItem",
+        "FormLabel",
+        "FormMessage"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.tsx",
+      "to": "src/components/ui/input.tsx",
+      "symbols": [
+        "Input"
+      ]
+    },
+    {
+      "from": "src/features/authentication/register.tsx",
+      "to": "src/services/api/auth.tsx",
+      "symbols": [
+        "IRegisterPayload",
+        "register"
+      ]
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/kanban/index.ts",
+      "symbols": [
+        "KanbanContainer"
+      ]
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/kanban/api/index.ts",
+      "symbols": [
+        "loadKanbanContent"
+      ]
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/ui/button.tsx",
+      "symbols": [
+        "Button"
+      ]
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/ui/scroll-area.tsx",
+      "symbols": [
+        "ScrollArea",
+        "ScrollBar"
+      ]
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/context/kanban/kanbanContext.tsx",
+      "symbols": [
+        "useKanban"
+      ]
+    },
+    {
+      "from": "src/features/payment/index.tsx",
+      "to": "src/components/ui/button.tsx",
+      "symbols": [
+        "Button"
+      ]
+    },
+    {
+      "from": "src/features/payment/index.tsx",
+      "to": "src/components/ui/checkbox.tsx",
+      "symbols": [
+        "Checkbox"
+      ]
+    },
+    {
+      "from": "src/features/payment/index.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "symbols": [
+        "DropdownMenu",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuContent",
+        "DropdownMenuItem",
+        "DropdownMenuLabel",
+        "DropdownMenuSeparator",
+        "DropdownMenuTrigger"
+      ]
+    },
+    {
+      "from": "src/features/payment/index.tsx",
+      "to": "src/components/ui/input.tsx",
+      "symbols": [
+        "Input"
+      ]
+    },
+    {
+      "from": "src/features/payment/index.tsx",
+      "to": "src/components/ui/table.tsx",
+      "symbols": [
+        "Table",
+        "TableBody",
+        "TableCell",
+        "TableHead",
+        "TableHeader",
+        "TableRow"
+      ]
+    },
+    {
+      "from": "src/features/posts/index.previews.tsx",
+      "to": "src/features/posts/index.tsx",
+      "symbols": [
+        "Posts"
+      ]
+    },
+    {
+      "from": "src/features/posts/index.tsx",
+      "to": "src/components/ui/button.tsx",
+      "symbols": [
+        "Button"
+      ]
+    },
+    {
+      "from": "src/features/posts/index.tsx",
+      "to": "src/components/ui/input.tsx",
+      "symbols": [
+        "Input"
+      ]
+    },
+    {
+      "from": "src/features/posts/index.tsx",
+      "to": "src/components/ui/table.tsx",
+      "symbols": [
+        "Table",
+        "TableBody",
+        "TableCell",
+        "TableHead",
+        "TableHeader",
+        "TableRow"
       ]
     },
     {
@@ -30304,13 +30885,6 @@
       ]
     },
     {
-      "from": "src/features/posts/detail/index.tsx",
-      "to": "src/features/posts/index.tsx",
-      "symbols": [
-        "IPost"
-      ]
-    },
-    {
       "from": "src/features/kanban/edit/index.tsx",
       "to": "src/components/kanban/api/index.ts",
       "symbols": [
@@ -30390,6 +30964,13 @@
       "to": "src/lib/const.ts",
       "symbols": [
         "roles_assignment"
+      ]
+    },
+    {
+      "from": "src/features/posts/detail/index.tsx",
+      "to": "src/features/posts/index.tsx",
+      "symbols": [
+        "IPost"
       ]
     },
     {
@@ -30614,24 +31195,9 @@
       "component": "CommandSeparator"
     },
     {
-      "from": "src/components/search.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "component": "Button"
-    },
-    {
       "from": "src/components/search.tsx",
       "to": "src/components/ui/button.tsx",
       "component": "Button"
-    },
-    {
-      "from": "src/components/theme-switch.previews.tsx",
-      "to": "src/context/theme-context.tsx",
-      "component": "ThemeProvider"
-    },
-    {
-      "from": "src/components/theme-switch.previews.tsx",
-      "to": "src/components/theme-switch.tsx",
-      "component": "ThemeSwitch"
     },
     {
       "from": "src/components/theme-switch.tsx",
@@ -30964,16 +31530,6 @@
       "component": "AvatarFallback"
     },
     {
-      "from": "src/components/ui/badge.previews.tsx",
-      "to": "src/components/ui/badge.tsx",
-      "component": "Badge"
-    },
-    {
-      "from": "src/components/ui/button.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "component": "Button"
-    },
-    {
       "from": "src/components/ui/card.previews.tsx",
       "to": "src/components/ui/card.tsx",
       "component": "Card"
@@ -31004,19 +31560,54 @@
       "component": "CardFooter"
     },
     {
-      "from": "src/components/ui/card.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "component": "Button"
+      "from": "src/components/ui/collapsible.previews.tsx",
+      "to": "src/components/ui/collapsible.tsx",
+      "component": "Collapsible"
     },
     {
-      "from": "src/components/ui/checkbox.previews.tsx",
-      "to": "src/components/ui/checkbox.tsx",
-      "component": "Checkbox"
+      "from": "src/components/ui/collapsible.previews.tsx",
+      "to": "src/components/ui/collapsible.tsx",
+      "component": "CollapsibleTrigger"
     },
     {
-      "from": "src/components/ui/checkbox.previews.tsx",
-      "to": "src/components/ui/label.tsx",
-      "component": "Label"
+      "from": "src/components/ui/collapsible.previews.tsx",
+      "to": "src/components/ui/collapsible.tsx",
+      "component": "CollapsibleContent"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "Command"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandInput"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandList"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandEmpty"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandGroup"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandItem"
+    },
+    {
+      "from": "src/components/ui/command.previews.tsx",
+      "to": "src/components/ui/command.tsx",
+      "component": "CommandSeparator"
     },
     {
       "from": "src/components/ui/command.tsx",
@@ -31027,6 +31618,71 @@
       "from": "src/components/ui/command.tsx",
       "to": "src/components/ui/dialog.tsx",
       "component": "DialogContent"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "Dialog"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogTrigger"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogContent"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogHeader"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogTitle"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogDescription"
+    },
+    {
+      "from": "src/components/ui/dialog.previews.tsx",
+      "to": "src/components/ui/dialog.tsx",
+      "component": "DialogFooter"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenu"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenuTrigger"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenuContent"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenuLabel"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenuSeparator"
+    },
+    {
+      "from": "src/components/ui/dropdown-menu.previews.tsx",
+      "to": "src/components/ui/dropdown-menu.tsx",
+      "component": "DropdownMenuItem"
     },
     {
       "from": "src/components/ui/fancy-multi-select.tsx",
@@ -31059,24 +31715,39 @@
       "component": "Label"
     },
     {
-      "from": "src/components/ui/input.previews.tsx",
-      "to": "src/components/ui/label.tsx",
-      "component": "Label"
+      "from": "src/components/ui/scroll-area.previews.tsx",
+      "to": "src/components/ui/scroll-area.tsx",
+      "component": "ScrollArea"
     },
     {
-      "from": "src/components/ui/input.previews.tsx",
-      "to": "src/components/ui/input.tsx",
-      "component": "Input"
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "Sheet"
     },
     {
-      "from": "src/components/ui/label.previews.tsx",
-      "to": "src/components/ui/label.tsx",
-      "component": "Label"
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "SheetTrigger"
     },
     {
-      "from": "src/components/ui/separator.previews.tsx",
-      "to": "src/components/ui/separator.tsx",
-      "component": "Separator"
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "SheetContent"
+    },
+    {
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "SheetHeader"
+    },
+    {
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "SheetTitle"
+    },
+    {
+      "from": "src/components/ui/sheet.previews.tsx",
+      "to": "src/components/ui/sheet.tsx",
+      "component": "SheetDescription"
     },
     {
       "from": "src/components/ui/sidebar.tsx",
@@ -31179,6 +31850,36 @@
       "component": "TableCell"
     },
     {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "ToastProvider"
+    },
+    {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "Toast"
+    },
+    {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "ToastTitle"
+    },
+    {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "ToastDescription"
+    },
+    {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "ToastAction"
+    },
+    {
+      "from": "src/components/ui/toast.previews.tsx",
+      "to": "src/components/ui/toast.tsx",
+      "component": "ToastViewport"
+    },
+    {
       "from": "src/components/ui/toaster.tsx",
       "to": "src/components/ui/toast.tsx",
       "component": "ToastProvider"
@@ -31225,15 +31926,15 @@
     },
     {
       "from": "src/components/ui/tooltip.previews.tsx",
-      "to": "src/components/ui/button.tsx",
-      "component": "Button"
-    },
-    {
-      "from": "src/components/ui/tooltip.previews.tsx",
       "to": "src/components/ui/tooltip.tsx",
       "component": "TooltipContent"
     },
     {
+      "from": "src/features/authentication/login.previews.tsx",
+      "to": "src/context/auth/authContext.tsx",
+      "component": "AuthProvider"
+    },
+    {
       "from": "src/features/authentication/login.tsx",
       "to": "src/components/ui/card.tsx",
       "component": "Card"
@@ -31289,6 +31990,11 @@
       "component": "Button"
     },
     {
+      "from": "src/features/authentication/register.previews.tsx",
+      "to": "src/context/auth/authContext.tsx",
+      "component": "AuthProvider"
+    },
+    {
       "from": "src/features/authentication/register.tsx",
       "to": "src/components/ui/card.tsx",
       "component": "Card"
@@ -31342,6 +32048,26 @@
       "from": "src/features/authentication/register.tsx",
       "to": "src/components/ui/button.tsx",
       "component": "Button"
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/ui/button.tsx",
+      "component": "Button"
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/ui/scroll-area.tsx",
+      "component": "ScrollArea"
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/kanban/index.ts",
+      "component": "KanbanContainer"
+    },
+    {
+      "from": "src/features/kanban/index.tsx",
+      "to": "src/components/ui/scroll-area.tsx",
+      "component": "ScrollBar"
     },
     {
       "from": "src/features/payment/index.tsx",
@@ -31422,26 +32148,6 @@
       "from": "src/features/payment/index.tsx",
       "to": "src/components/ui/table.tsx",
       "component": "TableCell"
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/ui/button.tsx",
-      "component": "Button"
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/ui/scroll-area.tsx",
-      "component": "ScrollArea"
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/kanban/index.ts",
-      "component": "KanbanContainer"
-    },
-    {
-      "from": "src/features/kanban/index.tsx",
-      "to": "src/components/ui/scroll-area.tsx",
-      "component": "ScrollBar"
     },
     {
       "from": "src/features/posts/index.tsx",
@@ -31662,11 +32368,6 @@
       "from": "src/components/kanban/components/card/card.component.tsx",
       "to": "src/components/ui/badge.tsx",
       "component": "Badge"
-    },
-    {
-      "from": "src/components/kanban/components/column/column.component.previews.tsx",
-      "to": "src/components/kanban/components/column/column.component.tsx",
-      "component": "Column"
     },
     {
       "from": "src/components/kanban/components/column/column.component.tsx",
