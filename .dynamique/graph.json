@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-03-02T08:19:41.329Z",
+  "analyzedAt": "2026-03-02T09:20:30.759Z",
   "rootDir": "/root/user-repo",
   "nodes": [
     {
@@ -155,6 +155,54 @@
       "hash": "6c87de9b"
     },
     {
+      "uid": "ig:src/components/command-menu.previews.tsx",
+      "type": "file",
+      "path": "src/components/command-menu.previews.tsx",
+      "fileClass": "story",
+      "size": 1418,
+      "hash": "92168387"
+    },
+    {
+      "uid": "ig:src/components/command-menu.tsx",
+      "type": "file",
+      "path": "src/components/command-menu.tsx",
+      "fileClass": "component",
+      "size": 3275,
+      "hash": "36ad8f10"
+    },
+    {
+      "uid": "ig:src/components/search.previews.tsx",
+      "type": "file",
+      "path": "src/components/search.previews.tsx",
+      "fileClass": "story",
+      "size": 777,
+      "hash": "e5fe0e1b"
+    },
+    {
+      "uid": "ig:src/components/search.tsx",
+      "type": "file",
+      "path": "src/components/search.tsx",
+      "fileClass": "component",
+      "size": 1163,
+      "hash": "5eb3887c"
+    },
+    {
+      "uid": "ig:src/components/theme-switch.previews.tsx",
+      "type": "file",
+      "path": "src/components/theme-switch.previews.tsx",
+      "fileClass": "story",
+      "size": 550,
+      "hash": "dc22687a"
+    },
+    {
+      "uid": "ig:src/components/theme-switch.tsx",
+      "type": "file",
+      "path": "src/components/theme-switch.tsx",
+      "fileClass": "component",
+      "size": 2025,
+      "hash": "15cb1c7c"
+    },
+    {
       "uid": "ig:src/context/search-context.tsx",
       "type": "file",
       "path": "src/context/search-context.tsx",
@@ -171,28 +219,12 @@
       "hash": "4facc690"
     },
     {
-      "uid": "ig:src/components/command-menu.tsx",
+      "uid": "ig:src/features/404.tsx",
       "type": "file",
-      "path": "src/components/command-menu.tsx",
+      "path": "src/features/404.tsx",
       "fileClass": "component",
-      "size": 3275,
-      "hash": "36ad8f10"
-    },
-    {
-      "uid": "ig:src/components/search.tsx",
-      "type": "file",
-      "path": "src/components/search.tsx",
-      "fileClass": "component",
-      "size": 1163,
-      "hash": "5eb3887c"
-    },
-    {
-      "uid": "ig:src/components/theme-switch.tsx",
-      "type": "file",
-      "path": "src/components/theme-switch.tsx",
-      "fileClass": "component",
-      "size": 2025,
-      "hash": "15cb1c7c"
+      "size": 77,
+      "hash": "c061bd74"
     },
     {
       "uid": "ig:src/hooks/use-mobile.tsx",
@@ -227,62 +259,6 @@
       "hash": "fed2fe91"
     },
     {
-      "uid": "ig:src/features/404.tsx",
-      "type": "file",
-      "path": "src/features/404.tsx",
-      "fileClass": "component",
-      "size": 77,
-      "hash": "c061bd74"
-    },
-    {
-      "uid": "ig:src/context/auth/authContext.tsx",
-      "type": "file",
-      "path": "src/context/auth/authContext.tsx",
-      "fileClass": "hook",
-      "size": 827,
-      "hash": "f16f9956"
-    },
-    {
-      "uid": "ig:src/context/auth/authReducer.tsx",
-      "type": "file",
-      "path": "src/context/auth/authReducer.tsx",
-      "fileClass": "component",
-      "size": 1153,
-      "hash": "8a55ab69"
-    },
-    {
-      "uid": "ig:src/context/auth/authTypes.ts",
-      "type": "file",
-      "path": "src/context/auth/authTypes.ts",
-      "fileClass": "type",
-      "size": 475,
-      "hash": "42d82b42"
-    },
-    {
-      "uid": "ig:src/context/kanban/kanbanContext.tsx",
-      "type": "file",
-      "path": "src/context/kanban/kanbanContext.tsx",
-      "fileClass": "hook",
-      "size": 915,
-      "hash": "b1f64265"
-    },
-    {
-      "uid": "ig:src/context/kanban/kanbanReducer.tsx",
-      "type": "file",
-      "path": "src/context/kanban/kanbanReducer.tsx",
-      "fileClass": "component",
-      "size": 856,
-      "hash": "fbe730c6"
-    },
-    {
-      "uid": "ig:src/context/kanban/kanbanTypes.ts",
-      "type": "file",
-      "path": "src/context/kanban/kanbanTypes.ts",
-      "fileClass": "type",
-      "size": 660,
-      "hash": "0e48ba24"
-    },
-    {
       "uid": "ig:src/components/kanban/index.ts",
       "type": "file",
       "path": "src/components/kanban/index.ts",
@@ -307,6 +283,14 @@
       "hash": "ac3dea53"
     },
     {
+      "uid": "ig:src/components/kanban/kanban.container.previews.tsx",
+      "type": "file",
+      "path": "src/components/kanban/kanban.container.previews.tsx",
+      "fileClass": "story",
+      "size": 1639,
+      "hash": "7e9d26ee"
+    },
+    {
       "uid": "ig:src/components/kanban/kanban.container.tsx",
       "type": "file",
       "path": "src/components/kanban/kanban.container.tsx",
@@ -329,6 +313,94 @@
       "fileClass": "file",
       "size": 327,
       "hash": "36fffae7"
+    },
+    {
+      "uid": "ig:src/components/layout/app-sidebar.previews.tsx",
+      "type": "file",
+      "path": "src/components/layout/app-sidebar.previews.tsx",
+      "fileClass": "story",
+      "size": 2686,
+      "hash": "5e27ec19"
+    },
+    {
+      "uid": "ig:src/components/layout/app-sidebar.tsx",
+      "type": "file",
+      "path": "src/components/layout/app-sidebar.tsx",
+      "fileClass": "component",
+      "size": 1833,
+      "hash": "58211179"
+    },
+    {
+      "uid": "ig:src/components/layout/header.previews.tsx",
+      "type": "file",
+      "path": "src/components/layout/header.previews.tsx",
+      "fileClass": "story",
+      "size": 696,
+      "hash": "8c80820e"
+    },
+    {
+      "uid": "ig:src/components/layout/header.tsx",
+      "type": "file",
+      "path": "src/components/layout/header.tsx",
+      "fileClass": "component",
+      "size": 1303,
+      "hash": "e66e7f52"
+    },
+    {
+      "uid": "ig:src/components/layout/index.previews.tsx",
+      "type": "file",
+      "path": "src/components/layout/index.previews.tsx",
+      "fileClass": "story",
+      "size": 595,
+      "hash": "c6a59c85"
+    },
+    {
+      "uid": "ig:src/components/layout/index.tsx",
+      "type": "file",
+      "path": "src/components/layout/index.tsx",
+      "fileClass": "component",
+      "size": 1682,
+      "hash": "07aad0e5"
+    },
+    {
+      "uid": "ig:src/components/layout/nav-group.previews.tsx",
+      "type": "file",
+      "path": "src/components/layout/nav-group.previews.tsx",
+      "fileClass": "story",
+      "size": 1119,
+      "hash": "67b06f00"
+    },
+    {
+      "uid": "ig:src/components/layout/nav-group.tsx",
+      "type": "file",
+      "path": "src/components/layout/nav-group.tsx",
+      "fileClass": "component",
+      "size": 5600,
+      "hash": "af8a9248"
+    },
+    {
+      "uid": "ig:src/components/layout/nav-user.previews.tsx",
+      "type": "file",
+      "path": "src/components/layout/nav-user.previews.tsx",
+      "fileClass": "story",
+      "size": 1089,
+      "hash": "5230243d"
+    },
+    {
+      "uid": "ig:src/components/layout/nav-user.tsx",
+      "type": "file",
+      "path": "src/components/layout/nav-user.tsx",
+      "fileClass": "component",
+      "size": 2742,
+      "hash": "c3bc09fe"
+    },
+    {
+      "uid": "ig:src/components/layout/types.ts",
+      "type": "file",
+      "path": "src/components/layout/types.ts",
+      "fileClass": "type",
+      "size": 704,
+      "hash": "bec5eeef"
     },
     {
       "uid": "ig:src/components/ui/avatar.previews.tsx",
@@ -595,68 +667,52 @@
       "hash": "84b6d6e0"
     },
     {
-      "uid": "ig:src/components/layout/app-sidebar.tsx",
+      "uid": "ig:src/context/kanban/kanbanContext.tsx",
       "type": "file",
-      "path": "src/components/layout/app-sidebar.tsx",
-      "fileClass": "component",
-      "size": 1833,
-      "hash": "58211179"
+      "path": "src/context/kanban/kanbanContext.tsx",
+      "fileClass": "hook",
+      "size": 915,
+      "hash": "b1f64265"
     },
     {
-      "uid": "ig:src/components/layout/header.tsx",
+      "uid": "ig:src/context/kanban/kanbanReducer.tsx",
       "type": "file",
-      "path": "src/components/layout/header.tsx",
-      "fileClass": "component",
-      "size": 1303,
-      "hash": "e66e7f52"
-    },
-    {
-      "uid": "ig:src/components/layout/index.tsx",
-      "type": "file",
-      "path": "src/components/layout/index.tsx",
-      "fileClass": "component",
-      "size": 1682,
-      "hash": "07aad0e5"
-    },
-    {
-      "uid": "ig:src/components/layout/nav-group.tsx",
-      "type": "file",
-      "path": "src/components/layout/nav-group.tsx",
-      "fileClass": "component",
-      "size": 5600,
-      "hash": "af8a9248"
-    },
-    {
-      "uid": "ig:src/components/layout/nav-user.tsx",
-      "type": "file",
-      "path": "src/components/layout/nav-user.tsx",
-      "fileClass": "component",
-      "size": 2742,
-      "hash": "c3bc09fe"
-    },
-    {
-      "uid": "ig:src/components/layout/types.ts",
-      "type": "file",
-      "path": "src/components/layout/types.ts",
-      "fileClass": "type",
-      "size": 704,
-      "hash": "bec5eeef"
-    },
-    {
-      "uid": "ig:src/services/api/api.tsx",
-      "type": "file",
-      "path": "src/services/api/api.tsx",
+      "path": "src/context/kanban/kanbanReducer.tsx",
       "fileClass": "component",
       "size": 856,
-      "hash": "6e7e36b6"
+      "hash": "fbe730c6"
     },
     {
-      "uid": "ig:src/services/api/auth.tsx",
+      "uid": "ig:src/context/kanban/kanbanTypes.ts",
       "type": "file",
-      "path": "src/services/api/auth.tsx",
+      "path": "src/context/kanban/kanbanTypes.ts",
+      "fileClass": "type",
+      "size": 660,
+      "hash": "0e48ba24"
+    },
+    {
+      "uid": "ig:src/context/auth/authContext.tsx",
+      "type": "file",
+      "path": "src/context/auth/authContext.tsx",
+      "fileClass": "hook",
+      "size": 827,
+      "hash": "f16f9956"
+    },
+    {
+      "uid": "ig:src/context/auth/authReducer.tsx",
+      "type": "file",
+      "path": "src/context/auth/authReducer.tsx",
       "fileClass": "component",
-      "size": 649,
-      "hash": "fab4a3c3"
+      "size": 1153,
+      "hash": "8a55ab69"
+    },
+    {
+      "uid": "ig:src/context/auth/authTypes.ts",
+      "type": "file",
+      "path": "src/context/auth/authTypes.ts",
+      "fileClass": "type",
+      "size": 475,
+      "hash": "42d82b42"
     },
     {
       "uid": "ig:src/features/authentication/login.tsx",
@@ -675,14 +731,6 @@
       "hash": "ce6af4a8"
     },
     {
-      "uid": "ig:src/features/kanban/index.tsx",
-      "type": "file",
-      "path": "src/features/kanban/index.tsx",
-      "fileClass": "component",
-      "size": 1009,
-      "hash": "cb6630d6"
-    },
-    {
       "uid": "ig:src/features/payment/index.tsx",
       "type": "file",
       "path": "src/features/payment/index.tsx",
@@ -691,12 +739,36 @@
       "hash": "ad98c152"
     },
     {
+      "uid": "ig:src/features/kanban/index.tsx",
+      "type": "file",
+      "path": "src/features/kanban/index.tsx",
+      "fileClass": "component",
+      "size": 1009,
+      "hash": "cb6630d6"
+    },
+    {
       "uid": "ig:src/features/posts/index.tsx",
       "type": "file",
       "path": "src/features/posts/index.tsx",
       "fileClass": "component",
       "size": 3595,
       "hash": "dbec9b2e"
+    },
+    {
+      "uid": "ig:src/services/api/api.tsx",
+      "type": "file",
+      "path": "src/services/api/api.tsx",
+      "fileClass": "component",
+      "size": 856,
+      "hash": "6e7e36b6"
+    },
+    {
+      "uid": "ig:src/services/api/auth.tsx",
+      "type": "file",
+      "path": "src/services/api/auth.tsx",
+      "fileClass": "component",
+      "size": 649,
+      "hash": "fab4a3c3"
     },
     {
       "uid": "ig:src/components/kanban/api/index.ts",
@@ -779,6 +851,14 @@
       "hash": "81ad4659"
     },
     {
+      "uid": "ig:src/components/kanban/components/card/card.component.previews.tsx",
+      "type": "file",
+      "path": "src/components/kanban/components/card/card.component.previews.tsx",
+      "fileClass": "story",
+      "size": 834,
+      "hash": "42817616"
+    },
+    {
       "uid": "ig:src/components/kanban/components/card/card.component.tsx",
       "type": "file",
       "path": "src/components/kanban/components/card/card.component.tsx",
@@ -793,30 +873,6 @@
       "fileClass": "file",
       "size": 33,
       "hash": "afaf965d"
-    },
-    {
-      "uid": "ig:src/components/kanban/components/column/column.component.module.css",
-      "type": "file",
-      "path": "src/components/kanban/components/column/column.component.module.css",
-      "fileClass": "style",
-      "size": 386,
-      "hash": "63469459"
-    },
-    {
-      "uid": "ig:src/components/kanban/components/column/column.component.tsx",
-      "type": "file",
-      "path": "src/components/kanban/components/column/column.component.tsx",
-      "fileClass": "component",
-      "size": 832,
-      "hash": "f4be6d56"
-    },
-    {
-      "uid": "ig:src/components/kanban/components/column/index.ts",
-      "type": "file",
-      "path": "src/components/kanban/components/column/index.ts",
-      "fileClass": "file",
-      "size": 35,
-      "hash": "ae219716"
     },
     {
       "uid": "ig:src/components/kanban/components/ghost-card/ghost-card.component.module.css",
@@ -835,6 +891,38 @@
       "hash": "ab973fef"
     },
     {
+      "uid": "ig:src/components/kanban/components/column/column.component.module.css",
+      "type": "file",
+      "path": "src/components/kanban/components/column/column.component.module.css",
+      "fileClass": "style",
+      "size": 386,
+      "hash": "63469459"
+    },
+    {
+      "uid": "ig:src/components/kanban/components/column/column.component.previews.tsx",
+      "type": "file",
+      "path": "src/components/kanban/components/column/column.component.previews.tsx",
+      "fileClass": "story",
+      "size": 774,
+      "hash": "a319ade2"
+    },
+    {
+      "uid": "ig:src/components/kanban/components/column/column.component.tsx",
+      "type": "file",
+      "path": "src/components/kanban/components/column/column.component.tsx",
+      "fileClass": "component",
+      "size": 832,
+      "hash": "f4be6d56"
+    },
+    {
+      "uid": "ig:src/components/kanban/components/column/index.ts",
+      "type": "file",
+      "path": "src/components/kanban/components/column/index.ts",
+      "fileClass": "file",
+      "size": 35,
+      "hash": "ae219716"
+    },
+    {
       "uid": "ig:public",
       "type": "folder",
       "path": "public"
@@ -850,14 +938,19 @@
       "path": "src/assets"
     },
     {
+      "uid": "ig:src/components",
+      "type": "folder",
+      "path": "src/components"
+    },
+    {
       "uid": "ig:src/context",
       "type": "folder",
       "path": "src/context"
     },
     {
-      "uid": "ig:src/components",
+      "uid": "ig:src/features",
       "type": "folder",
-      "path": "src/components"
+      "path": "src/features"
     },
     {
       "uid": "ig:src/hooks",
@@ -870,24 +963,14 @@
       "path": "src/lib"
     },
     {
-      "uid": "ig:src/features",
-      "type": "folder",
-      "path": "src/features"
-    },
-    {
-      "uid": "ig:src/context/auth",
-      "type": "folder",
-      "path": "src/context/auth"
-    },
-    {
-      "uid": "ig:src/context/kanban",
-      "type": "folder",
-      "path": "src/context/kanban"
-    },
-    {
       "uid": "ig:src/components/kanban",
       "type": "folder",
       "path": "src/components/kanban"
+    },
+    {
+      "uid": "ig:src/components/layout",
+      "type": "folder",
+      "path": "src/components/layout"
     },
     {
       "uid": "ig:src/components/ui",
@@ -895,9 +978,34 @@
       "path": "src/components/ui"
     },
     {
-      "uid": "ig:src/components/layout",
+      "uid": "ig:src/context/kanban",
       "type": "folder",
-      "path": "src/components/layout"
+      "path": "src/context/kanban"
+    },
+    {
+      "uid": "ig:src/context/auth",
+      "type": "folder",
+      "path": "src/context/auth"
+    },
+    {
+      "uid": "ig:src/features/authentication",
+      "type": "folder",
+      "path": "src/features/authentication"
+    },
+    {
+      "uid": "ig:src/features/payment",
+      "type": "folder",
+      "path": "src/features/payment"
+    },
+    {
+      "uid": "ig:src/features/kanban",
+      "type": "folder",
+      "path": "src/features/kanban"
+    },
+    {
+      "uid": "ig:src/features/posts",
+      "type": "folder",
+      "path": "src/features/posts"
     },
     {
       "uid": "ig:src/services",
@@ -908,26 +1016,6 @@
       "uid": "ig:src/services/api",
       "type": "folder",
       "path": "src/services/api"
-    },
-    {
-      "uid": "ig:src/features/authentication",
-      "type": "folder",
-      "path": "src/features/authentication"
-    },
-    {
-      "uid": "ig:src/features/kanban",
-      "type": "folder",
-      "path": "src/features/kanban"
-    },
-    {
-      "uid": "ig:src/features/payment",
-      "type": "folder",
-      "path": "src/features/payment"
-    },
-    {
-      "uid": "ig:src/features/posts",
-      "type": "folder",
-      "path": "src/features/posts"
     },
     {
       "uid": "ig:src/components/kanban/api",
@@ -970,14 +1058,14 @@
       "path": "src/components/kanban/components/card"
     },
     {
-      "uid": "ig:src/components/kanban/components/column",
-      "type": "folder",
-      "path": "src/components/kanban/components/column"
-    },
-    {
       "uid": "ig:src/components/kanban/components/ghost-card",
       "type": "folder",
       "path": "src/components/kanban/components/ghost-card"
+    },
+    {
+      "uid": "ig:src/components/kanban/components/column",
+      "type": "folder",
+      "path": "src/components/kanban/components/column"
     }
   ],
   "edges": [
@@ -1018,6 +1106,42 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/components->ig:src/components/command-menu.previews.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/command-menu.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/command-menu.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/command-menu.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/search.previews.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/search.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/search.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/search.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/theme-switch.previews.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/theme-switch.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/theme-switch.tsx",
+      "source": "ig:src/components",
+      "target": "ig:src/components/theme-switch.tsx",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/context->ig:src/context/search-context.tsx",
       "source": "ig:src/context",
       "target": "ig:src/context/search-context.tsx",
@@ -1030,21 +1154,9 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/components->ig:src/components/command-menu.tsx",
-      "source": "ig:src/components",
-      "target": "ig:src/components/command-menu.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components->ig:src/components/search.tsx",
-      "source": "ig:src/components",
-      "target": "ig:src/components/search.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components->ig:src/components/theme-switch.tsx",
-      "source": "ig:src/components",
-      "target": "ig:src/components/theme-switch.tsx",
+      "id": "ig:src/features->ig:src/features/404.tsx",
+      "source": "ig:src/features",
+      "target": "ig:src/features/404.tsx",
       "kind": "contains"
     },
     {
@@ -1072,48 +1184,6 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/features->ig:src/features/404.tsx",
-      "source": "ig:src/features",
-      "target": "ig:src/features/404.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/auth->ig:src/context/auth/authContext.tsx",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authContext.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/auth->ig:src/context/auth/authReducer.tsx",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authReducer.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/auth->ig:src/context/auth/authTypes.ts",
-      "source": "ig:src/context/auth",
-      "target": "ig:src/context/auth/authTypes.ts",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanContext.tsx",
-      "source": "ig:src/context/kanban",
-      "target": "ig:src/context/kanban/kanbanContext.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanReducer.tsx",
-      "source": "ig:src/context/kanban",
-      "target": "ig:src/context/kanban/kanbanReducer.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanTypes.ts",
-      "source": "ig:src/context/kanban",
-      "target": "ig:src/context/kanban/kanbanTypes.ts",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/components/kanban->ig:src/components/kanban/index.ts",
       "source": "ig:src/components/kanban",
       "target": "ig:src/components/kanban/index.ts",
@@ -1132,6 +1202,12 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/components/kanban->ig:src/components/kanban/kanban.container.previews.tsx",
+      "source": "ig:src/components/kanban",
+      "target": "ig:src/components/kanban/kanban.container.previews.tsx",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/components/kanban->ig:src/components/kanban/kanban.container.tsx",
       "source": "ig:src/components/kanban",
       "target": "ig:src/components/kanban/kanban.container.tsx",
@@ -1147,6 +1223,72 @@
       "id": "ig:src/components/kanban->ig:src/components/kanban/model.ts",
       "source": "ig:src/components/kanban",
       "target": "ig:src/components/kanban/model.ts",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/app-sidebar.previews.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/app-sidebar.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/app-sidebar.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/app-sidebar.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/header.previews.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/header.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/header.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/header.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/index.previews.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/index.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/index.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/index.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/nav-group.previews.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/nav-group.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/nav-group.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/nav-group.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/nav-user.previews.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/nav-user.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/nav-user.tsx",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/nav-user.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/layout->ig:src/components/layout/types.ts",
+      "source": "ig:src/components/layout",
+      "target": "ig:src/components/layout/types.ts",
       "kind": "contains"
     },
     {
@@ -1348,51 +1490,39 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/app-sidebar.tsx",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/app-sidebar.tsx",
+      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanContext.tsx",
+      "source": "ig:src/context/kanban",
+      "target": "ig:src/context/kanban/kanbanContext.tsx",
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/header.tsx",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/header.tsx",
+      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanReducer.tsx",
+      "source": "ig:src/context/kanban",
+      "target": "ig:src/context/kanban/kanbanReducer.tsx",
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/index.tsx",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/index.tsx",
+      "id": "ig:src/context/kanban->ig:src/context/kanban/kanbanTypes.ts",
+      "source": "ig:src/context/kanban",
+      "target": "ig:src/context/kanban/kanbanTypes.ts",
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/nav-group.tsx",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/nav-group.tsx",
+      "id": "ig:src/context/auth->ig:src/context/auth/authContext.tsx",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authContext.tsx",
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/nav-user.tsx",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/nav-user.tsx",
+      "id": "ig:src/context/auth->ig:src/context/auth/authReducer.tsx",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authReducer.tsx",
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/layout->ig:src/components/layout/types.ts",
-      "source": "ig:src/components/layout",
-      "target": "ig:src/components/layout/types.ts",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/services/api->ig:src/services/api/api.tsx",
-      "source": "ig:src/services/api",
-      "target": "ig:src/services/api/api.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/services/api->ig:src/services/api/auth.tsx",
-      "source": "ig:src/services/api",
-      "target": "ig:src/services/api/auth.tsx",
+      "id": "ig:src/context/auth->ig:src/context/auth/authTypes.ts",
+      "source": "ig:src/context/auth",
+      "target": "ig:src/context/auth/authTypes.ts",
       "kind": "contains"
     },
     {
@@ -1408,21 +1538,33 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/features/kanban->ig:src/features/kanban/index.tsx",
-      "source": "ig:src/features/kanban",
-      "target": "ig:src/features/kanban/index.tsx",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/features/payment->ig:src/features/payment/index.tsx",
       "source": "ig:src/features/payment",
       "target": "ig:src/features/payment/index.tsx",
       "kind": "contains"
     },
     {
+      "id": "ig:src/features/kanban->ig:src/features/kanban/index.tsx",
+      "source": "ig:src/features/kanban",
+      "target": "ig:src/features/kanban/index.tsx",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/features/posts->ig:src/features/posts/index.tsx",
       "source": "ig:src/features/posts",
       "target": "ig:src/features/posts/index.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/services/api->ig:src/services/api/api.tsx",
+      "source": "ig:src/services/api",
+      "target": "ig:src/services/api/api.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/services/api->ig:src/services/api/auth.tsx",
+      "source": "ig:src/services/api",
+      "target": "ig:src/services/api/auth.tsx",
       "kind": "contains"
     },
     {
@@ -1486,6 +1628,12 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/components/kanban/components/card->ig:src/components/kanban/components/card/card.component.previews.tsx",
+      "source": "ig:src/components/kanban/components/card",
+      "target": "ig:src/components/kanban/components/card/card.component.previews.tsx",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src/components/kanban/components/card->ig:src/components/kanban/components/card/card.component.tsx",
       "source": "ig:src/components/kanban/components/card",
       "target": "ig:src/components/kanban/components/card/card.component.tsx",
@@ -1495,24 +1643,6 @@
       "id": "ig:src/components/kanban/components/card->ig:src/components/kanban/components/card/index.ts",
       "source": "ig:src/components/kanban/components/card",
       "target": "ig:src/components/kanban/components/card/index.ts",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/column.component.module.css",
-      "source": "ig:src/components/kanban/components/column",
-      "target": "ig:src/components/kanban/components/column/column.component.module.css",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/column.component.tsx",
-      "source": "ig:src/components/kanban/components/column",
-      "target": "ig:src/components/kanban/components/column/column.component.tsx",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/index.ts",
-      "source": "ig:src/components/kanban/components/column",
-      "target": "ig:src/components/kanban/components/column/index.ts",
       "kind": "contains"
     },
     {
@@ -1528,9 +1658,39 @@
       "kind": "contains"
     },
     {
+      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/column.component.module.css",
+      "source": "ig:src/components/kanban/components/column",
+      "target": "ig:src/components/kanban/components/column/column.component.module.css",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/column.component.previews.tsx",
+      "source": "ig:src/components/kanban/components/column",
+      "target": "ig:src/components/kanban/components/column/column.component.previews.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/column.component.tsx",
+      "source": "ig:src/components/kanban/components/column",
+      "target": "ig:src/components/kanban/components/column/column.component.tsx",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/kanban/components/column->ig:src/components/kanban/components/column/index.ts",
+      "source": "ig:src/components/kanban/components/column",
+      "target": "ig:src/components/kanban/components/column/index.ts",
+      "kind": "contains"
+    },
+    {
       "id": "ig:src->ig:src/assets",
       "source": "ig:src",
       "target": "ig:src/assets",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src->ig:src/components",
+      "source": "ig:src",
+      "target": "ig:src/components",
       "kind": "contains"
     },
     {
@@ -1540,9 +1700,9 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src->ig:src/components",
+      "id": "ig:src->ig:src/features",
       "source": "ig:src",
-      "target": "ig:src/components",
+      "target": "ig:src/features",
       "kind": "contains"
     },
     {
@@ -1558,27 +1718,15 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src->ig:src/features",
-      "source": "ig:src",
-      "target": "ig:src/features",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context->ig:src/context/auth",
-      "source": "ig:src/context",
-      "target": "ig:src/context/auth",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/context->ig:src/context/kanban",
-      "source": "ig:src/context",
-      "target": "ig:src/context/kanban",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/components->ig:src/components/kanban",
       "source": "ig:src/components",
       "target": "ig:src/components/kanban",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/components->ig:src/components/layout",
+      "source": "ig:src/components",
+      "target": "ig:src/components/layout",
       "kind": "contains"
     },
     {
@@ -1588,9 +1736,39 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/components->ig:src/components/layout",
-      "source": "ig:src/components",
-      "target": "ig:src/components/layout",
+      "id": "ig:src/context->ig:src/context/kanban",
+      "source": "ig:src/context",
+      "target": "ig:src/context/kanban",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/context->ig:src/context/auth",
+      "source": "ig:src/context",
+      "target": "ig:src/context/auth",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/features->ig:src/features/authentication",
+      "source": "ig:src/features",
+      "target": "ig:src/features/authentication",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/features->ig:src/features/payment",
+      "source": "ig:src/features",
+      "target": "ig:src/features/payment",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/features->ig:src/features/kanban",
+      "source": "ig:src/features",
+      "target": "ig:src/features/kanban",
+      "kind": "contains"
+    },
+    {
+      "id": "ig:src/features->ig:src/features/posts",
+      "source": "ig:src/features",
+      "target": "ig:src/features/posts",
       "kind": "contains"
     },
     {
@@ -1603,30 +1781,6 @@
       "id": "ig:src/services->ig:src/services/api",
       "source": "ig:src/services",
       "target": "ig:src/services/api",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features->ig:src/features/authentication",
-      "source": "ig:src/features",
-      "target": "ig:src/features/authentication",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features->ig:src/features/kanban",
-      "source": "ig:src/features",
-      "target": "ig:src/features/kanban",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features->ig:src/features/payment",
-      "source": "ig:src/features",
-      "target": "ig:src/features/payment",
-      "kind": "contains"
-    },
-    {
-      "id": "ig:src/features->ig:src/features/posts",
-      "source": "ig:src/features",
-      "target": "ig:src/features/posts",
       "kind": "contains"
     },
     {
@@ -1678,20 +1832,20 @@
       "kind": "contains"
     },
     {
-      "id": "ig:src/components/kanban/components->ig:src/components/kanban/components/column",
-      "source": "ig:src/components/kanban/components",
-      "target": "ig:src/components/kanban/components/column",
-      "kind": "contains"
-    },
-    {
       "id": "ig:src/components/kanban/components->ig:src/components/kanban/components/ghost-card",
       "source": "ig:src/components/kanban/components",
       "target": "ig:src/components/kanban/components/ghost-card",
       "kind": "contains"
+    },
+    {
+      "id": "ig:src/components/kanban/components->ig:src/components/kanban/components/column",
+      "source": "ig:src/components/kanban/components",
+      "target": "ig:src/components/kanban/components/column",
+      "kind": "contains"
     }
   ],
   "summary": {
-    "totalFiles": 104,
+    "totalFiles": 115,
     "totalFolders": 29,
     "byClass": {
       "file": 20,
@@ -1700,9 +1854,9 @@
       "entry": 1,
       "component": 49,
       "types": 1,
+      "story": 22,
       "hook": 8,
-      "type": 3,
-      "story": 11
+      "type": 3
     }
   }
 }
