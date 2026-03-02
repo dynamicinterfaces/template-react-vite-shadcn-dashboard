@@ -1,28 +1,10 @@
 import { Separator } from './separator';
-const meta = {
-  component: Separator,
-  argTypes: {
-    orientation: { control: 'select', options: ['horizontal', 'vertical'] },
-  },
-};
+
+const meta = { component: Separator };
 export default meta;
 
-export const Horizontal = {
-  render: () => (
-    <div style={{ width: 300 }}>
-      <p style={{ margin: '8px 0' }}>Above</p>
-      <Separator />
-      <p style={{ margin: '8px 0' }}>Below</p>
-    </div>
-  ),
-};
-
+export const Horizontal = { args: { orientation: 'horizontal' } };
 export const Vertical = {
-  render: () => (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 8, height: 24 }}>
-      <span>Left</span>
-      <Separator orientation="vertical" />
-      <span>Right</span>
-    </div>
-  ),
+  args: { orientation: 'vertical' },
+  decorators: [(Story: any) => (<div style={{ height: 100 }}><Story /></div>)],
 };
