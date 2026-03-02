@@ -16,6 +16,9 @@ export function applyPreviewGlobals(globals: Record<string, string>) {
   if (globals.colorScheme) {
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(globals.colorScheme);
+    // Also set data-theme attribute — many component libraries (including
+    // Dynamic Interfaces' own theme.css) use [data-theme="light"] selectors
+    document.documentElement.setAttribute('data-theme', globals.colorScheme);
     let meta = document.querySelector('meta[name="color-scheme"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement('meta');

@@ -11,16 +11,25 @@ export function isReactComponent(val: unknown): boolean {
 
 /**
  * Detect if a module uses Storybook CSF format.
- * CSF: default export is an object with { component } or { render }.
+ * CSF: default export is an object with { component }, { render },
+ * or { title } with named story exports that have render functions.
  */
 export function isCSF(exports: Record<string, any>): boolean {
   const def = exports.default;
-  return (
-    def &&
-    typeof def === 'object' &&
-    !Array.isArray(def) &&
-    (isReactComponent(def.component) || typeof def.render === 'function')
-  );
+  if (!def || typeof def !== 'object' || Array.isArray(def)) return false;
+
+  // Standard CSF: meta has component or render
+  if (isReactComponent(def.component) || typeof def.render === 'function') return true;
+
+  // Extended CSF: meta has title + named exports with render functions (static mockup pattern)
+  if (def.title) {
+    for (const [key, val] of Object.entries(exports)) {
+      if (key === 'default' || key.startsWith('_')) continue;
+      if (val && typeof val === 'object' && typeof (val as any).render === 'function') return true;
+    }
+  }
+
+  return false;
 }
 
 export interface StoryEntry {

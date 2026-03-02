@@ -11,6 +11,10 @@ config.server = config.server || {};
 config.server.hmr = config.server.hmr || {};
 if (typeof config.server.hmr === 'object') {
   config.server.hmr.host = undefined;
+  // Disable Vite's error overlay — preview pages handle errors with their own
+  // error boundary and try/catch. Without this, one broken preview's import error
+  // causes Vite's overlay to appear on ALL preview pages (shared dev server).
+  config.server.hmr.overlay = false;
 }
 // Enable polling for file watcher — inotify doesn't work in containers
 config.server.watch = config.server.watch || {};
@@ -22,6 +26,8 @@ config.server.fs.allow = [...(config.server.fs.allow || []), '/root/user-repo'];
 // Allow all hosts (Modal tunnel URLs) — env var __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS
 // doesn't work reliably in Vite 6, so set it explicitly
 config.server.allowedHosts = true;
+// Enable CORS so cross-origin iframes (proxy) can load modules
+config.server.cors = true;
 // Bind to all interfaces so Modal tunnel can reach Vite
 config.server.host = '0.0.0.0';
 export default config;

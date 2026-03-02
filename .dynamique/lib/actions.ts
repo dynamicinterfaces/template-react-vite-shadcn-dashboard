@@ -3,13 +3,22 @@
  * Detects callback args and wraps them to fire postMessage events.
  */
 
-/** Strip non-cloneable values (functions, symbols) so postMessage doesn't throw. */
+/** Check if a value is a React element (has Symbol-valued $$typeof). */
+function isReactElement(v: any): boolean {
+  return v && typeof v === 'object' && typeof v.$$typeof === 'symbol';
+}
+
+/** Strip non-cloneable values (functions, symbols, React elements) so postMessage doesn't throw. */
 export function sanitizeForPostMessage(obj: any): any {
   if (!obj || typeof obj !== 'object') return obj;
+  if (isReactElement(obj)) return '[ReactElement]';
+  if (Array.isArray(obj)) return obj.map((item) => sanitizeForPostMessage(item));
   const clean: Record<string, any> = {};
   for (const [k, v] of Object.entries(obj)) {
     if (typeof v === 'function' || typeof v === 'symbol') continue;
-    if (v && typeof v === 'object' && !Array.isArray(v)) {
+    if (isReactElement(v)) {
+      clean[k] = '[ReactElement]';
+    } else if (v && typeof v === 'object') {
       clean[k] = sanitizeForPostMessage(v);
     } else {
       clean[k] = v;

@@ -32,13 +32,7 @@ export function PreviewView({ Component, renderFn, initialArgs, Shell, decorator
     return () => window.removeEventListener('message', handler);
   }, [args, actionNames]);
 
-  // Strip action-wrapped callbacks from props passed to component.
-  // Actions are for postMessage reporting only — passing them as props causes
-  // React "Unknown event handler property" warnings when components spread onto DOM.
-  const propsForComponent = actionNames.length > 0
-    ? Object.fromEntries(Object.entries(args).filter(([k]) => !actionNames.includes(k)))
-    : args;
-  let rendered = renderFn ? renderFn(args) : <Component {...propsForComponent} />;
+  let rendered = renderFn ? renderFn(args) : <Component {...args} />;
 
   // Apply CSF decorators (outermost first)
   for (let i = decorators.length - 1; i >= 0; i--) {
