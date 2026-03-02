@@ -1,22 +1,37 @@
 import { Column } from './column.component';
+import { MemoryRouter } from 'react-router';
+import type { CardContent } from '../../model';
 
-function Wrapper(props: { title: string; length: number; children?: React.ReactNode }) {
-  return <Column {...props} />;
+const mockCards: CardContent[] = [
+  { id: 1, title: 'Design homepage', description: 'Create wireframes', assignTo: ['Alice'] },
+  { id: 2, title: 'Setup CI/CD', description: 'Configure GitHub Actions', assignTo: ['Bob'] },
+  { id: 3, title: 'Write tests', description: 'Unit + integration tests', assignTo: ['Alice', 'Charlie'] },
+];
+
+function Wrapper(props: { columnId: number; name: string; content: CardContent[] }) {
+  return (
+    <MemoryRouter>
+      <Column {...props} />
+    </MemoryRouter>
+  );
 }
 
-const meta = { component: Wrapper };
+const meta = {
+  component: Wrapper,
+  args: {
+    columnId: 1,
+    name: 'To Do',
+    content: mockCards,
+  },
+};
 export default meta;
 
-export const Default = {
+export const Default = {};
+
+export const Empty = {
   args: {
-    title: 'To Do',
-    length: 3,
-    children: (
-      <div style={{ padding: 8 }}>
-        <div style={{ padding: 8, marginBottom: 4, background: '#f5f5f5', borderRadius: 4 }}>Task 1</div>
-        <div style={{ padding: 8, marginBottom: 4, background: '#f5f5f5', borderRadius: 4 }}>Task 2</div>
-        <div style={{ padding: 8, background: '#f5f5f5', borderRadius: 4 }}>Task 3</div>
-      </div>
-    ),
+    columnId: 2,
+    name: 'Done',
+    content: [],
   },
 };
