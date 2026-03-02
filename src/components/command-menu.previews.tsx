@@ -1,30 +1,21 @@
-import { CommandMenu } from './command-menu';
+import { SearchProvider } from '../context/search-context';
 import { ThemeProvider } from '../context/theme-context';
+import { AuthProvider } from '../context/auth/authContext';
 import { MemoryRouter } from 'react-router';
-import React from 'react';
-
-import * as searchModule from '../context/search-context';
-const originalUseSearch = searchModule.useSearch;
-
-function MockSearchProvider({ children }: { children: React.ReactNode }) {
-  const [open, setOpen] = React.useState(true);
-  // @ts-expect-error patching module for preview
-  searchModule.useSearch = () => ({ open, setOpen });
-  React.useEffect(() => {
-    return () => { searchModule.useSearch = originalUseSearch; };
-  }, []);
-  return <>{children}</>;
-}
 
 function CommandMenuPreview() {
   return (
     <MemoryRouter>
       <ThemeProvider defaultTheme="light">
-        <MockSearchProvider>
-          <div style={{ minHeight: 400 }}>
-            <CommandMenu />
-          </div>
-        </MockSearchProvider>
+        <AuthProvider>
+          <SearchProvider>
+            <div style={{ minHeight: 400 }}>
+              <p style={{ fontSize: 14, color: 'var(--muted-foreground)', padding: 16 }}>
+                Press Cmd+K to open the command menu
+              </p>
+            </div>
+          </SearchProvider>
+        </AuthProvider>
       </ThemeProvider>
     </MemoryRouter>
   );

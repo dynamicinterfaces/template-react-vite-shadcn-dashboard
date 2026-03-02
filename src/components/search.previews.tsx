@@ -1,25 +1,22 @@
 import { Search } from './search';
-import React from 'react';
-
-import * as searchModule from '../context/search-context';
-const originalUseSearch = searchModule.useSearch;
-
-function MockSearchProvider({ children }: { children: React.ReactNode }) {
-  // @ts-expect-error patching module for preview
-  searchModule.useSearch = () => ({ open: false, setOpen: () => {} });
-  React.useEffect(() => {
-    return () => { searchModule.useSearch = originalUseSearch; };
-  }, []);
-  return <>{children}</>;
-}
+import { SearchProvider } from '../context/search-context';
+import { ThemeProvider } from '../context/theme-context';
+import { AuthProvider } from '../context/auth/authContext';
+import { MemoryRouter } from 'react-router';
 
 function SearchPreview() {
   return (
-    <MockSearchProvider>
-      <div style={{ padding: 24, maxWidth: 400 }}>
-        <Search placeholder="Search commands..." />
-      </div>
-    </MockSearchProvider>
+    <MemoryRouter>
+      <ThemeProvider defaultTheme="light">
+        <AuthProvider>
+          <SearchProvider>
+            <div style={{ padding: 24, maxWidth: 400 }}>
+              <Search placeholder="Search commands..." />
+            </div>
+          </SearchProvider>
+        </AuthProvider>
+      </ThemeProvider>
+    </MemoryRouter>
   );
 }
 
