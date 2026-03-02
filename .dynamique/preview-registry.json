@@ -91,11 +91,6 @@
     "path": "src/components/ui/scroll-area.tsx",
     "previewPath": "src/components/ui/scroll-area.previews.tsx"
   },
-  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
-    "type": "component",
-    "path": "src/components/ui/table.tsx",
-    "previewPath": "src/components/ui/table.previews.tsx"
-  },
   "01KJPYYYSKAYRG6EQ1PK8RZS3K": {
     "type": "component",
     "path": "src/components/ui/tooltip.tsx",
@@ -151,5 +146,10 @@
     "path": "src/features/authentication/register.tsx",
     "previewPath": "src/features/authentication/register.previews.tsx",
     "route": "/register"
+  },
+  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx",
+    "previewPath": "src/components/ui/table.previews.tsx"
   }
 }
