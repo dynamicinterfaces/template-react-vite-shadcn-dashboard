@@ -1,12 +1,9 @@
 import { Toast, ToastAction, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from './toast';
 
-const meta = { component: Toast };
-export default meta;
-
-export const Default = {
-  render: () => (
-    <ToastProvider>
-      <Toast open>
+function DefaultToast() {
+  return (
+    <ToastProvider swipeDirection="right" duration={Infinity}>
+      <Toast open onOpenChange={() => {}}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <ToastTitle>Notification</ToastTitle>
           <ToastDescription>Something happened successfully.</ToastDescription>
@@ -15,13 +12,13 @@ export const Default = {
       </Toast>
       <ToastViewport />
     </ToastProvider>
-  ),
-};
+  );
+}
 
-export const Destructive = {
-  render: () => (
-    <ToastProvider>
-      <Toast variant="destructive" open>
+function DestructiveToast() {
+  return (
+    <ToastProvider swipeDirection="right" duration={Infinity}>
+      <Toast variant="destructive" open onOpenChange={() => {}}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <ToastTitle>Error</ToastTitle>
           <ToastDescription>Something went wrong.</ToastDescription>
@@ -29,5 +26,14 @@ export const Destructive = {
       </Toast>
       <ToastViewport />
     </ToastProvider>
-  ),
+  );
+}
+
+const meta = { component: DefaultToast };
+export default meta;
+
+export const Default = {};
+
+export const Destructive = {
+  render: () => <DestructiveToast />,
 };
