@@ -1,7 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from './avatar';
-const meta = {
-  component: Avatar,
-};
+
+const meta = { component: Avatar };
 export default meta;
 
 export const WithImage = {
@@ -18,21 +17,5 @@ export const Fallback = {
     <Avatar>
       <AvatarFallback>JD</AvatarFallback>
     </Avatar>
-  ),
-};
-
-export const Sizes = {
-  render: () => (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-      <Avatar style={{ width: 24, height: 24 }}>
-        <AvatarFallback style={{ fontSize: 10 }}>S</AvatarFallback>
-      </Avatar>
-      <Avatar>
-        <AvatarFallback>M</AvatarFallback>
-      </Avatar>
-      <Avatar style={{ width: 56, height: 56 }}>
-        <AvatarFallback>L</AvatarFallback>
-      </Avatar>
-    </div>
   ),
 };
