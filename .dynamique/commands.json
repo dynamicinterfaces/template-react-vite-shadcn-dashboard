@@ -1,8 +1,9 @@
 {
   "commands": {
     "dev": {
-      "command": "npm run dev",
-      "description": "Auto-detected from package.json scripts.dev: vite"
+      "command": "npx vite --host 0.0.0.0 --port 5173",
+      "description": "Start Vite dev server exposed on all interfaces",
+      "background": true
     },
     "build": {
       "command": "npm run build",

@@ -1,4 +1,14 @@
 {
+  "appRoot": "",
+  "framework": "react",
+  "packageManager": "npm",
+  "installCommand": "",
+  "devCommand": "npx vite --host 0.0.0.0 --port 5173",
+  "devPort": 5173,
+  "buildCommand": "npm run build",
+  "buildOutputDir": "dist",
+  "previewStrategy": "none",
+  "env": {},
   "routes": [
     {
       "path": "src/features/posts/index.tsx",
@@ -46,6 +56,8 @@
       "name": "Register"
     }
   ],
+  "gitBranch": "",
+  "gitRemote": "",
   "layout": {
     "cols": 3,
     "colWidth": 340,
@@ -56,9 +68,5 @@
   "defaultDimensions": {
     "width": 300,
     "height": 350
-  },
-  "devCommand": "npm run dev",
-  "framework": "react",
-  "packageManager": "npm",
-  "buildCommand": "npm run build"
+  }
 }
