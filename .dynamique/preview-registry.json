@@ -183,5 +183,9 @@
   "01KJQW1QM70YRXADQ7H06BKV54": {
     "type": "component",
     "path": "src/components/command-menu.previews.tsx"
+  },
+  "01KJQW2S9T0MNZJVXYHCK96JS8": {
+    "type": "component",
+    "path": "src/components/search.previews.tsx"
   }
 }
