@@ -91,7 +91,7 @@ const publicRoutes = [
     path: '/register',
     element: <Register />
   },
-  { path: '*', element: <Navigate to='/' replace /> }
+  { path: '*', element: <Navigate to='/login' replace /> }
 ]
 
 // Preview mode: sandbox screenshots navigate with ?_preview=1.
