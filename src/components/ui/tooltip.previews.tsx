@@ -1,8 +1,6 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip';
-import { Button } from './button';
-const meta = {
-  component: Tooltip,
-};
+
+const meta = { component: Tooltip };
 export default meta;
 
 export const Default = {
@@ -10,10 +8,10 @@ export const Default = {
     <TooltipProvider>
       <Tooltip defaultOpen>
         <TooltipTrigger asChild>
-          <Button variant="outline">Hover me</Button>
+          <button style={{ padding: '8px 16px', border: '1px solid #ccc', borderRadius: 4 }}>Hover me</button>
         </TooltipTrigger>
         <TooltipContent>
-          <p>This is a tooltip</p>
+          <p>Tooltip content</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
