@@ -20,7 +20,7 @@ export const Column: React.FC<Props> = props => {
     >
       <div className='flex min-w-[300px] items-center justify-between font-bold'>
         <h4>{name}</h4>
-        <span className='text-sm text-muted-foreground'>{content.length}</span>
+        <span className='rounded-full bg-primary/10 px-3 py-1 text-sm text-primary'>{content.length}</span>
       </div>
       {content.map(card => (
         <Link to={`/kanban/detail/${card.id}`} key={card.id}>
