@@ -24,3 +24,11 @@ dist-ssr
 *.sw?
 
 .env
+
+# Dynamic Interfaces platform internals (injected at runtime)
+.dynamique/preview-*.tsx
+.dynamique/properties-view.tsx
+.dynamique/components/
+.dynamique/lib/
+.dynamique/graph.json
+.dynamique/semantic.json
