@@ -1,57 +1,50 @@
-import { Command, LayoutDashboard, CreditCard, Columns3, ChevronsUpDown } from 'lucide-react';
+import { AppSidebar } from './app-sidebar';
+import { SidebarProvider } from '../../components/ui/sidebar';
+import { MemoryRouter } from 'react-router';
+import React from 'react';
+
+/**
+ * Composed preview: AppSidebar
+ * Full sidebar with navigation groups and user menu.
+ * Mocks AuthContext and sidebar data to avoid external dependencies.
+ */
+
+const mockAuthContext = React.createContext({
+  state: { authInfo: { user: { username: 'John Doe' } } },
+  dispatch: () => {},
+});
+
+// Patch useAuth to use our mock
+import * as authModule from '../../context/auth/authContext';
+const originalUseAuth = authModule.useAuth;
+
+function MockAuthProvider({ children }: { children: React.ReactNode }) {
+  const value = React.useContext(mockAuthContext);
+  // @ts-expect-error patching module for preview
+  authModule.useAuth = () => value;
+  React.useEffect(() => {
+    return () => { authModule.useAuth = originalUseAuth; };
+  }, []);
+  return <>{children}</>;
+}
+
+function AppSidebarPreview() {
+  return (
+    <MemoryRouter initialEntries={['/']}>
+      <MockAuthProvider>
+        <SidebarProvider defaultOpen={true}>
+          <div style={{ width: 280, height: 600, position: 'relative' }}>
+            <AppSidebar />
+          </div>
+        </SidebarProvider>
+      </MockAuthProvider>
+    </MemoryRouter>
+  );
+}
 
 const meta = {
-  title: 'AppSidebar',
+  component: AppSidebarPreview,
 };
 export default meta;
 
-export const Default = {
-  render: () => (
-    <div
-      style={{
-        width: 260,
-        minHeight: 480,
-        background: 'var(--sidebar-background, hsl(0 0% 98%))',
-        borderRadius: 8,
-        border: '1px solid hsl(0 0% 90%)',
-        display: 'flex',
-        flexDirection: 'column' as const,
-        fontFamily: 'system-ui, sans-serif',
-        fontSize: 14,
-        color: 'hsl(0 0% 10%)',
-        overflow: 'hidden',
-      }}
-    >
-      <div style={{ padding: '16px 12px', display: 'flex', alignItems: 'center', gap: 8 }}>
-        <div style={{ width: 32, height: 32, borderRadius: 6, background: 'hsl(0 0% 10%)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Command style={{ width: 16, height: 16 }} />
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column' as const }}>
-          <span style={{ fontWeight: 600, fontSize: 13 }}>Dashboard Starter Kit</span>
-          <span style={{ fontSize: 11, opacity: 0.6 }}>Vite + ShadcnUI</span>
-        </div>
-      </div>
-      <div style={{ flex: 1, padding: '4px 8px' }}>
-        <div style={{ fontSize: 11, fontWeight: 500, opacity: 0.5, padding: '8px 8px 4px', textTransform: 'uppercase' as const }}>General</div>
-        {[
-          { icon: LayoutDashboard, label: 'Dashboard', active: true },
-          { icon: CreditCard, label: 'Payment' },
-          { icon: Columns3, label: 'Kanban Board' },
-        ].map((item) => (
-          <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 8px', borderRadius: 6, background: item.active ? 'hsl(0 0% 93%)' : 'transparent', fontWeight: item.active ? 500 : 400 }}>
-            <item.icon style={{ width: 16, height: 16, opacity: 0.7 }} />
-            <span>{item.label}</span>
-          </div>
-        ))}
-      </div>
-      <div style={{ padding: '12px', borderTop: '1px solid hsl(0 0% 90%)', display: 'flex', alignItems: 'center', gap: 8 }}>
-        <div style={{ width: 32, height: 32, borderRadius: 6, background: 'hsl(0 0% 85%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 600 }}>JD</div>
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' as const }}>
-          <span style={{ fontWeight: 600, fontSize: 13 }}>John Doe</span>
-          <span style={{ fontSize: 11, opacity: 0.6 }}>john@example.com</span>
-        </div>
-        <ChevronsUpDown style={{ width: 14, height: 14, opacity: 0.5 }} />
-      </div>
-    </div>
-  ),
-};
+export const Default = {};
