@@ -115,7 +115,7 @@ export default function Login() {
               <p className='text-center text-sm'>
                 Don't have an account?{' '}
                 <Link to='/register' className='text-blue-500 hover:underline'>
-                  Register here
+                  Sign Up
                 </Link>
               </p>
             </CardFooter>
