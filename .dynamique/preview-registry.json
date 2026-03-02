@@ -1,8 +1,9 @@
 {
   "01KJPX0VY70SSNF82DYWX2KJ3Y": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/posts/index.tsx",
-    "route": "/"
+    "route": "/",
+    "previewPath": "src/features/posts/index.previews.tsx"
   },
   "01KJPX0VY89Y4TZQSGGMFRQY93": {
     "type": "page",
@@ -35,14 +36,16 @@
     "route": "/kanban/edit/:id"
   },
   "01KJPX0VY9EQ4J7EST1V9Y0ZSE": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/authentication/login.tsx",
-    "route": "/login"
+    "route": "/login",
+    "previewPath": "src/features/authentication/login.previews.tsx"
   },
   "01KJPX0VY9KRNDB8QBKF1WMMFA": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/authentication/register.tsx",
-    "route": "/register"
+    "route": "/register",
+    "previewPath": "src/features/authentication/register.previews.tsx"
   },
   "01KJPYXZN6TFXQWWBGVW2C1PBP": {
     "type": "component",
@@ -93,5 +96,60 @@
     "type": "component",
     "path": "src/components/ui/scroll-area.tsx",
     "previewPath": "src/components/ui/scroll-area.previews.tsx"
+  },
+  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx",
+    "previewPath": "src/components/ui/table.previews.tsx"
+  },
+  "01KJPYYYSKAYRG6EQ1PK8RZS3K": {
+    "type": "component",
+    "path": "src/components/ui/tooltip.tsx",
+    "previewPath": "src/components/ui/tooltip.previews.tsx"
+  },
+  "01KJPYZ1WRTN7211PXZEXAYD3Z": {
+    "type": "component",
+    "path": "src/components/ui/dialog.tsx",
+    "previewPath": "src/components/ui/dialog.previews.tsx"
+  },
+  "01KJPYZ58FPHSFR4RT58SMXVHK": {
+    "type": "component",
+    "path": "src/components/ui/toast.tsx",
+    "previewPath": "src/components/ui/toast.previews.tsx"
+  },
+  "01KJPYZ7N7QFZNM5Q8HZR6E03N": {
+    "type": "component",
+    "path": "src/components/ui/dropdown-menu.tsx",
+    "previewPath": "src/components/ui/dropdown-menu.previews.tsx"
+  },
+  "01KJPYZFY4EZ0MBNFNMDB607NE": {
+    "type": "component",
+    "path": "src/components/ui/sheet.tsx",
+    "previewPath": "src/components/ui/sheet.previews.tsx"
+  },
+  "01KJPYZHYT454C86P9PZVSRXXA": {
+    "type": "component",
+    "path": "src/components/ui/command.tsx",
+    "previewPath": "src/components/ui/command.previews.tsx"
+  },
+  "01KJPYZMJ8HC54M7P14MACT63F": {
+    "type": "component",
+    "path": "src/components/ui/collapsible.tsx",
+    "previewPath": "src/components/ui/collapsible.previews.tsx"
+  },
+  "01KJPYZPN5WAK0QAN4ETGWEQDB": {
+    "type": "component",
+    "path": "src/components/ui/fancy-multi-select.tsx",
+    "previewPath": "src/components/ui/fancy-multi-select.previews.tsx"
+  },
+  "01KJPYZYNC4MEB2VT00AY3W0M5": {
+    "type": "component",
+    "path": "src/features/404.tsx",
+    "previewPath": "src/features/404.previews.tsx"
+  },
+  "01KJPZ0CPQVRAZCREMGE49N4M6": {
+    "type": "component",
+    "path": "src/components/kanban/components/column/column.component.tsx",
+    "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
   }
 }
