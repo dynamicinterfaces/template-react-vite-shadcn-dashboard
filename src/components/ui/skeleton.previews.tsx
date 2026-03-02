@@ -1,20 +1,14 @@
 import { Skeleton } from './skeleton';
-const meta = {
-  component: Skeleton,
-};
+
+const meta = { component: Skeleton };
 export default meta;
 
 export const Default = {
-  render: () => <Skeleton style={{ width: 200, height: 20 }} />,
-};
-
-export const CardSkeleton = {
   render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 12, width: 300 }}>
-      <Skeleton style={{ width: 300, height: 200, borderRadius: 12 }} />
-      <Skeleton style={{ width: 200, height: 16 }} />
-      <Skeleton style={{ width: 260, height: 12 }} />
-      <Skeleton style={{ width: 160, height: 12 }} />
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+      <Skeleton style={{ height: 40, width: 40, borderRadius: '50%' }} />
+      <Skeleton style={{ height: 16, width: 200 }} />
+      <Skeleton style={{ height: 16, width: 150 }} />
     </div>
   ),
 };
