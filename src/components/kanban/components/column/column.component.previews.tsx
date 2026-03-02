@@ -1,6 +1,10 @@
-import Column from './column.component';
+import { Column } from './column.component';
 
-const meta = { component: Column };
+function Wrapper(props: { title: string; length: number; children?: React.ReactNode }) {
+  return <Column {...props} />;
+}
+
+const meta = { component: Wrapper };
 export default meta;
 
 export const Default = {
