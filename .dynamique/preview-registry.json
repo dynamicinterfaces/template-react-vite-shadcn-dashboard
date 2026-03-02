@@ -161,5 +161,15 @@
     "type": "component",
     "path": "src/components/layout/app-sidebar.tsx",
     "previewPath": "src/components/layout/app-sidebar.previews.tsx"
+  },
+  "01KJQVXPD0BYS70G7W7JASADF8": {
+    "type": "component",
+    "path": "src/components/layout/header.tsx",
+    "previewPath": "src/components/layout/header.previews.tsx"
+  },
+  "01KJQVY0V1M87850EQJQ886468": {
+    "type": "component",
+    "path": "src/components/layout/nav-user.tsx",
+    "previewPath": "src/components/layout/nav-user.previews.tsx"
   }
 }
