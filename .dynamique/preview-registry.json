@@ -46,19 +46,23 @@
   },
   "01KJPT4D86NFKTGERFFNB0QRCC": {
     "type": "component",
-    "path": "src/components/layout/app-sidebar.tsx"
+    "path": "src/components/layout/app-sidebar.tsx",
+    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   },
   "01KJPT4D877VKJX1G53G80JZ57": {
     "type": "component",
-    "path": "src/components/layout/header.tsx"
+    "path": "src/components/layout/header.tsx",
+    "previewPath": "src/components/layout/header.previews.tsx"
   },
   "01KJPT4D87T4SCY44BMC0AH9TF": {
     "type": "component",
-    "path": "src/components/layout/index.tsx"
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
   },
   "01KJPT4D873X88KEV4YXX5YZ2Q": {
     "type": "component",
-    "path": "src/components/layout/nav-group.tsx"
+    "path": "src/components/layout/nav-group.tsx",
+    "previewPath": "src/components/layout/nav-group.previews.tsx"
   },
   "01KJPT4D87V9CRBK2018P4J2HD": {
     "type": "component",
@@ -67,11 +71,13 @@
   },
   "01KJPT4D88EHNGTJQNTZ710Q6G": {
     "type": "component",
-    "path": "src/components/command-menu.tsx"
+    "path": "src/components/command-menu.tsx",
+    "previewPath": "src/components/command-menu.previews.tsx"
   },
   "01KJPT4D88H8VACKZ20NHWS595": {
     "type": "component",
-    "path": "src/components/search.tsx"
+    "path": "src/components/search.tsx",
+    "previewPath": "src/components/search.previews.tsx"
   },
   "01KJPT4D8874PPBJV9K4MJ3WPZ": {
     "type": "component",
@@ -80,14 +86,17 @@
   },
   "01KJPT4D883JCDV3B0SRE8D9NE": {
     "type": "component",
-    "path": "src/components/kanban/kanban.container.tsx"
+    "path": "src/components/kanban/kanban.container.tsx",
+    "previewPath": "src/components/kanban/kanban.container.previews.tsx"
   },
   "01KJPT4D88Z1675NABMTJGXDBC": {
     "type": "component",
-    "path": "src/components/kanban/components/card/card.component.tsx"
+    "path": "src/components/kanban/components/card/card.component.tsx",
+    "previewPath": "src/components/kanban/components/card/card.component.previews.tsx"
   },
   "01KJPT4D88854F6CRYWE6PFDPA": {
     "type": "component",
-    "path": "src/components/kanban/components/column/column.component.tsx"
+    "path": "src/components/kanban/components/column/column.component.tsx",
+    "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
   }
 }
