@@ -1,25 +1,9 @@
 import { Badge } from './badge';
-const meta = {
-  component: Badge,
-  args: { children: 'Badge' },
-  argTypes: {
-    variant: { control: 'select', options: ['default', 'secondary', 'destructive', 'outline'] },
-  },
-};
+
+const meta = { component: Badge };
 export default meta;
 
-export const Default = { args: { children: 'Default' } };
-export const Secondary = { args: { variant: 'secondary', children: 'Secondary' } };
-export const Destructive = { args: { variant: 'destructive', children: 'Destructive' } };
-export const Outline = { args: { variant: 'outline', children: 'Outline' } };
-
-export const AllVariants = {
-  render: () => (
-    <div style={{ display: 'flex', gap: 8, padding: 16 }}>
-      <Badge>Default</Badge>
-      <Badge variant="secondary">Secondary</Badge>
-      <Badge variant="destructive">Destructive</Badge>
-      <Badge variant="outline">Outline</Badge>
-    </div>
-  ),
-};
+export const Default = { args: { children: 'Badge' } };
+export const Secondary = { args: { children: 'Secondary', variant: 'secondary' } };
+export const Destructive = { args: { children: 'Destructive', variant: 'destructive' } };
+export const Outline = { args: { children: 'Outline', variant: 'outline' } };
