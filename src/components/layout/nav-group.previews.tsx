@@ -11,7 +11,7 @@ export default meta;
 export const Default = {
   render: () => (
     <MemoryRouter>
-      <SidebarProvider defaultOpen={true}>
+      <SidebarProvider defaultOpen={true} style={{ minHeight: 400 }}>
         <Sidebar>
           <SidebarContent>
             <NavGroup

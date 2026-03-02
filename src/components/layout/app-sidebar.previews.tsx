@@ -12,19 +12,7 @@ export const Default = {
   render: () => (
     <MemoryRouter>
       <AuthProvider>
-        <SidebarProvider defaultOpen={true}>
-          <AppSidebar />
-        </SidebarProvider>
-      </AuthProvider>
-    </MemoryRouter>
-  ),
-};
-
-export const Collapsed = {
-  render: () => (
-    <MemoryRouter>
-      <AuthProvider>
-        <SidebarProvider defaultOpen={false}>
+        <SidebarProvider defaultOpen={true} style={{ minHeight: 500 }}>
           <AppSidebar />
         </SidebarProvider>
       </AuthProvider>

@@ -10,7 +10,7 @@ export default meta;
 export const Default = {
   render: () => (
     <AuthProvider>
-      <SidebarProvider defaultOpen={true}>
+      <SidebarProvider defaultOpen={true} style={{ minHeight: 120 }}>
         <Sidebar>
           <SidebarFooter>
             <NavUser
