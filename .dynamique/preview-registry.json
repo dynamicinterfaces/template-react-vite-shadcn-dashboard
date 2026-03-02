@@ -156,5 +156,10 @@
     "type": "component",
     "path": "src/components/kanban/kanban.container.tsx",
     "previewPath": "src/components/kanban/kanban.container.previews.tsx"
+  },
+  "01KJQVQ4V49Y1AWSKFDDN7N5EV": {
+    "type": "component",
+    "path": "src/components/layout/app-sidebar.tsx",
+    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   }
 }
