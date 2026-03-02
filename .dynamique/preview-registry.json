@@ -151,5 +151,10 @@
     "type": "component",
     "path": "src/components/ui/table.tsx",
     "previewPath": "src/components/ui/table.previews.tsx"
+  },
+  "01KJQM9ZT1G7ECMJSECNWXDX6H": {
+    "type": "component",
+    "path": "src/components/kanban/kanban.container.tsx",
+    "previewPath": "src/components/kanban/kanban.container.previews.tsx"
   }
 }
