@@ -1,13 +1,12 @@
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from './table';
-const meta = {
-  component: Table,
-};
+
+const meta = { component: Table };
 export default meta;
 
 export const Default = {
   render: () => (
     <Table>
-      <TableCaption>Recent invoices</TableCaption>
+      <TableCaption>A list of recent invoices.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead>Invoice</TableHead>
@@ -28,12 +27,6 @@ export const Default = {
           <TableCell>Pending</TableCell>
           <TableCell>PayPal</TableCell>
           <TableCell style={{ textAlign: 'right' }}>$150.00</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>INV003</TableCell>
-          <TableCell>Unpaid</TableCell>
-          <TableCell>Bank Transfer</TableCell>
-          <TableCell style={{ textAlign: 'right' }}>$350.00</TableCell>
         </TableRow>
       </TableBody>
     </Table>
