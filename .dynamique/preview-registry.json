@@ -43,5 +43,55 @@
     "type": "page",
     "path": "src/features/authentication/register.tsx",
     "route": "/register"
+  },
+  "01KJPYXZN6TFXQWWBGVW2C1PBP": {
+    "type": "component",
+    "path": "src/components/ui/button.tsx",
+    "previewPath": "src/components/ui/button.previews.tsx"
+  },
+  "01KJPYY11Z5PJ17FXTDT1935SR": {
+    "type": "component",
+    "path": "src/components/ui/badge.tsx",
+    "previewPath": "src/components/ui/badge.previews.tsx"
+  },
+  "01KJPYY23FJBS5QNHCPDZGH8VN": {
+    "type": "component",
+    "path": "src/components/ui/input.tsx",
+    "previewPath": "src/components/ui/input.previews.tsx"
+  },
+  "01KJPYY33GKB1MEH0G1G1NSGD1": {
+    "type": "component",
+    "path": "src/components/ui/checkbox.tsx",
+    "previewPath": "src/components/ui/checkbox.previews.tsx"
+  },
+  "01KJPYY43MB9PFMZT6JQ2JM3NR": {
+    "type": "component",
+    "path": "src/components/ui/label.tsx",
+    "previewPath": "src/components/ui/label.previews.tsx"
+  },
+  "01KJPYYB6KXDMQ13W3QHC9M41B": {
+    "type": "component",
+    "path": "src/components/ui/separator.tsx",
+    "previewPath": "src/components/ui/separator.previews.tsx"
+  },
+  "01KJPYYC9DDKK8R8QNVHVXP8K7": {
+    "type": "component",
+    "path": "src/components/ui/skeleton.tsx",
+    "previewPath": "src/components/ui/skeleton.previews.tsx"
+  },
+  "01KJPYYEEFQDVDEQE9SBXVNQSA": {
+    "type": "component",
+    "path": "src/components/ui/card.tsx",
+    "previewPath": "src/components/ui/card.previews.tsx"
+  },
+  "01KJPYYGMFY0Q3H463470FBYHW": {
+    "type": "component",
+    "path": "src/components/ui/avatar.tsx",
+    "previewPath": "src/components/ui/avatar.previews.tsx"
+  },
+  "01KJPYYK2C94DXF076TS68Y24C": {
+    "type": "component",
+    "path": "src/components/ui/scroll-area.tsx",
+    "previewPath": "src/components/ui/scroll-area.previews.tsx"
   }
 }
