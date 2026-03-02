@@ -18,7 +18,10 @@ export const Column: React.FC<Props> = props => {
       // className={classes.container}
       className='flex min-h-screen flex-col gap-2 rounded-md bg-accent p-2'
     >
-      <h4 className='min-w-[300px] text-center font-bold'>{name}</h4>
+      <div className='flex min-w-[300px] items-center justify-between font-bold'>
+        <h4>{name}</h4>
+        <span className='text-sm text-muted-foreground'>{content.length}</span>
+      </div>
       {content.map(card => (
         <Link to={`/kanban/detail/${card.id}`} key={card.id}>
           <Card content={card} columnId={columnId} />
