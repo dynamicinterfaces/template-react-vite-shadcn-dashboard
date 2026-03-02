@@ -1,31 +1,34 @@
+import type { Meta, StoryObj } from '@storybook/react';
 import { Header } from './header';
-import { SidebarProvider } from '@/components/ui/sidebar';
+import { SidebarProvider } from '../../components/ui/sidebar';
+import { MemoryRouter } from 'react-router';
 
-const meta = {
-  component: Header,
-};
-export default meta;
-
-export const Default = {
-  render: () => (
-    <SidebarProvider>
-      <Header>
-        <span style={{ marginRight: 8, fontWeight: 600 }}>Dashboard</span>
-        <div style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
-          <span>Search</span>
-          <span>Theme</span>
+function HeaderPreview(args: { fixed?: boolean }) {
+  return (
+    <MemoryRouter>
+      <SidebarProvider defaultOpen={true}>
+        <div style={{ width: 600 }}>
+          <Header {...args}>
+            <h1 style={{ fontSize: 16, fontWeight: 600 }}>Dashboard</h1>
+          </Header>
         </div>
-      </Header>
-    </SidebarProvider>
-  ),
+      </SidebarProvider>
+    </MemoryRouter>
+  );
+}
+
+const meta: Meta<typeof HeaderPreview> = {
+  component: HeaderPreview,
+  args: {
+    fixed: false,
+  },
 };
 
-export const Fixed = {
-  render: () => (
-    <SidebarProvider>
-      <Header fixed>
-        <span style={{ fontWeight: 600 }}>Fixed Header</span>
-      </Header>
-    </SidebarProvider>
-  ),
+export default meta;
+type Story = StoryObj<typeof HeaderPreview>;
+
+export const Default: Story = {};
+
+export const Fixed: Story = {
+  args: { fixed: true },
 };
