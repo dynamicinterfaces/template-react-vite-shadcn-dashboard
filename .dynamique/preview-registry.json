@@ -62,7 +62,8 @@
   },
   "01KJPT4D87V9CRBK2018P4J2HD": {
     "type": "component",
-    "path": "src/components/layout/nav-user.tsx"
+    "path": "src/components/layout/nav-user.tsx",
+    "previewPath": "src/components/layout/nav-user.previews.tsx"
   },
   "01KJPT4D88EHNGTJQNTZ710Q6G": {
     "type": "component",
@@ -74,7 +75,8 @@
   },
   "01KJPT4D8874PPBJV9K4MJ3WPZ": {
     "type": "component",
-    "path": "src/components/theme-switch.tsx"
+    "path": "src/components/theme-switch.tsx",
+    "previewPath": "src/components/theme-switch.previews.tsx"
   },
   "01KJPT4D883JCDV3B0SRE8D9NE": {
     "type": "component",
