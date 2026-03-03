@@ -1,6 +1,8 @@
 import * as React from 'react'
+import { ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 const Table = React.forwardRef<
   HTMLTableElement,
@@ -135,6 +137,76 @@ const TableCaption = React.forwardRef<
 ))
 TableCaption.displayName = 'TableCaption'
 
+type SortDirection = 'asc' | 'desc' | null
+
+interface TableHeadSortProps extends React.ThHTMLAttributes<HTMLTableCellElement> {
+  onSort?: (direction: SortDirection) => void
+  sortDirection?: SortDirection
+}
+
+const TableHeadSort = React.forwardRef<
+  HTMLTableCellElement,
+  TableHeadSortProps
+>(({ className, children, onSort, sortDirection, ...props }, ref) => {
+  const [isHovered, setIsHovered] = React.useState(false)
+  
+  const handleClick = () => {
+    if (!onSort) return
+    
+    // Cycle through: null -> asc -> desc -> null
+    const nextDirection: SortDirection = 
+      sortDirection === null ? 'asc' :
+      sortDirection === 'asc' ? 'desc' : null
+    
+    onSort(nextDirection)
+  }
+  
+  const getSortIcon = () => {
+    if (sortDirection === 'asc') {
+      return <ArrowUp className="h-4 w-4" />
+    } else if (sortDirection === 'desc') {
+      return <ArrowDown className="h-4 w-4" />
+    } else if (isHovered) {
+      return <ArrowUpDown className="h-4 w-4 opacity-50" />
+    }
+    return null
+  }
+  
+  return (
+    <th
+      ref={ref}
+      className={cn(
+        'h-11 px-3 text-left align-middle font-medium text-muted-foreground',
+        'border-b border-border',
+        'whitespace-nowrap',
+        '[&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]',
+        onSort && 'cursor-pointer select-none',
+        className
+      )}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      {...props}
+    >
+      <div 
+        className="flex items-center gap-2"
+        onClick={handleClick}
+      >
+        <span>{children}</span>
+        {onSort && (
+          <span className={cn(
+            'inline-flex transition-opacity',
+            sortDirection ? 'opacity-100' : 'opacity-0',
+            isHovered && !sortDirection && 'opacity-100'
+          )}>
+            {getSortIcon()}
+          </span>
+        )}
+      </div>
+    </th>
+  )
+})
+TableHeadSort.displayName = 'TableHeadSort'
+
 export {
   Table,
   TableBody,
@@ -143,5 +215,6 @@ export {
   TableFooter,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
+  TableHeadSort
 }
