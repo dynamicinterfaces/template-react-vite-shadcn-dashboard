@@ -45,7 +45,8 @@ const TableBody = React.forwardRef<
     ref={ref}
     className={cn(
       '[&_tr:last-child]:border-0',
-      '[&_tr:nth-child(even)]:bg-muted/20',
+      '[&_tr:nth-child(odd)]:bg-background',
+      '[&_tr:nth-child(even)]:bg-muted/30',
       className
     )}
     {...props}
@@ -62,6 +63,7 @@ const TableFooter = React.forwardRef<
     className={cn(
       'border-t border-border bg-muted/50 font-medium',
       '[&>tr]:last:border-b-0',
+      '[&_td]:py-4',
       className
     )}
     {...props}
