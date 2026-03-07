@@ -2,8 +2,8 @@
   "01KJPX0VY70SSNF82DYWX2KJ3Y": {
     "type": "component",
     "path": "src/features/posts/index.tsx",
-    "route": "/",
-    "previewPath": "src/features/posts/index.previews.tsx"
+    "previewPath": "src/features/posts/index.previews.tsx",
+    "route": "/"
   },
   "01KJPX0VY89Y4TZQSGGMFRQY93": {
     "type": "page",
@@ -40,6 +40,12 @@
     "path": "src/features/authentication/login.tsx",
     "previewPath": "src/features/authentication/login.previews.tsx",
     "route": "/login"
+  },
+  "01KJPX0VY9KRNDB8QBKF1WMMFA": {
+    "type": "component",
+    "path": "src/features/authentication/register.tsx",
+    "previewPath": "src/features/authentication/register.previews.tsx",
+    "route": "/register"
   },
   "01KJPYXZN6TFXQWWBGVW2C1PBP": {
     "type": "component",
@@ -91,6 +97,11 @@
     "path": "src/components/ui/scroll-area.tsx",
     "previewPath": "src/components/ui/scroll-area.previews.tsx"
   },
+  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx",
+    "previewPath": "src/components/ui/table.previews.tsx"
+  },
   "01KJPYYYSKAYRG6EQ1PK8RZS3K": {
     "type": "component",
     "path": "src/components/ui/tooltip.tsx",
@@ -141,26 +152,10 @@
     "path": "src/components/kanban/components/column/column.component.tsx",
     "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
   },
-  "01KJPX0VY9KRNDB8QBKF1WMMFA": {
-    "type": "component",
-    "path": "src/features/authentication/register.tsx",
-    "previewPath": "src/features/authentication/register.previews.tsx",
-    "route": "/register"
-  },
-  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
-    "type": "component",
-    "path": "src/components/ui/table.tsx",
-    "previewPath": "src/components/ui/table.previews.tsx"
-  },
   "01KJQM9ZT1G7ECMJSECNWXDX6H": {
     "type": "component",
     "path": "src/components/kanban/kanban.container.tsx",
     "previewPath": "src/components/kanban/kanban.container.previews.tsx"
-  },
-  "01KJQVQ4V49Y1AWSKFDDN7N5EV": {
-    "type": "component",
-    "path": "src/components/layout/app-sidebar.tsx",
-    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   },
   "01KJQVXPD0BYS70G7W7JASADF8": {
     "type": "component",
@@ -172,9 +167,10 @@
     "path": "src/components/layout/nav-user.tsx",
     "previewPath": "src/components/layout/nav-user.previews.tsx"
   },
-  "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
+  "01KJQVQ4V49Y1AWSKFDDN7N5EV": {
     "type": "component",
-    "path": "src/components/layout/nav-group.previews.tsx"
+    "path": "src/components/layout/app-sidebar.tsx",
+    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   },
   "01KJQW1KG1Q7QGPZFD4JNJD0K7": {
     "type": "component",
@@ -187,5 +183,19 @@
   "01KJQW2S9T0MNZJVXYHCK96JS8": {
     "type": "component",
     "path": "src/components/search.previews.tsx"
+  },
+  "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
+    "type": "component",
+    "path": "src/components/layout/nav-group.previews.tsx"
+  },
+  "01KK505J1KQ2G5XWRTCBKD4X5M": {
+    "type": "page",
+    "path": "src/pages/GoogleCallbackPage.tsx",
+    "route": "/auth/google/callback"
+  },
+  "01KK505J1M05EKF6T0FXP6GDH6": {
+    "type": "page",
+    "path": "src/pages/WelcomePage.tsx",
+    "route": "/welcome"
   }
 }
