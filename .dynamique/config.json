@@ -54,6 +54,16 @@
       "path": "src/features/authentication/register.tsx",
       "route": "/register",
       "name": "Register"
+    },
+    {
+      "path": "src/pages/GoogleCallbackPage.tsx",
+      "route": "/auth/google/callback",
+      "name": "Google Callback"
+    },
+    {
+      "path": "src/pages/WelcomePage.tsx",
+      "route": "/welcome",
+      "name": "Welcome"
     }
   ],
   "gitBranch": "",
