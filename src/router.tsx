@@ -9,6 +9,8 @@ import { NavGroup } from './components/layout/types'
 import { useAuth } from './context/auth/authContext'
 import Login from './features/authentication/login'
 import Register from './features/authentication/register'
+import GoogleCallbackPage from './pages/GoogleCallbackPage'
+import WelcomePage from './pages/WelcomePage'
 import Kanban from './features/kanban'
 import CreateKanban from './features/kanban/create'
 import DetailKanban from './features/kanban/detail'
@@ -91,6 +93,10 @@ const publicRoutes = [
     path: '/register',
     element: <Register />
   },
+  {
+    path: '/auth/google/callback',
+    element: <GoogleCallbackPage />
+  },
   { path: '*', element: <Navigate to='/login' replace /> }
 ]
 
@@ -101,7 +107,9 @@ const isPreviewMode = new URLSearchParams(window.location.search).has('_preview'
 const previewRoutes = [
   ...privateRoutes,
   { path: '/login', element: <Login /> },
-  { path: '/register', element: <Register /> }
+  { path: '/register', element: <Register /> },
+  { path: '/auth/google/callback', element: <GoogleCallbackPage /> },
+  { path: '/welcome', element: <WelcomePage /> },
 ]
 
 export const DashboardMenu = (): NavGroup[] => {
