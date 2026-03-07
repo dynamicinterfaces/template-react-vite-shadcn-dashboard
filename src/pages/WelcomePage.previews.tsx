@@ -2,12 +2,16 @@ import { MemoryRouter } from 'react-router'
 import { AuthProvider } from '@/context/auth/authContext'
 import WelcomePage from './WelcomePage'
 
-export default function WelcomePagePreview() {
-  return (
-    <AuthProvider>
-      <MemoryRouter initialEntries={['/welcome']}>
-        <WelcomePage />
-      </MemoryRouter>
-    </AuthProvider>
-  )
+const meta = {
+  component: WelcomePage,
+  decorators: [(Story: any) => (
+    <MemoryRouter initialEntries={['/welcome']}>
+      <AuthProvider>
+        <Story />
+      </AuthProvider>
+    </MemoryRouter>
+  )],
 }
+export default meta
+
+export const Default = {}
