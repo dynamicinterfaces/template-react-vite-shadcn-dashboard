@@ -194,5 +194,10 @@
     "type": "component",
     "path": "src/components/layout/index.tsx",
     "previewPath": "src/components/layout/index.previews.tsx"
+  },
+  "01KJQN2FVDH79ZJ1KGEXT836KA": {
+    "type": "component",
+    "path": "src/features/posts/index.tsx",
+    "previewPath": "src/features/posts/index.previews.tsx"
   }
 }
