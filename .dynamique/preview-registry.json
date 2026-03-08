@@ -90,5 +90,9 @@
     "type": "component",
     "path": "src/features/financials/index.tsx",
     "previewPath": "src/features/financials/index.previews.tsx"
+  },
+  "01KK7QKTF3FFQK7H7ZWGJ0DDS4": {
+    "type": "component",
+    "path": "src/components/db-schema-graph.tsx"
   }
 }
