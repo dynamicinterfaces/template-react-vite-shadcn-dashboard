@@ -25,5 +25,10 @@
     "type": "component",
     "path": "src/components/layout/header.tsx",
     "previewPath": "src/components/layout/header.previews.tsx"
+  },
+  "01KK7FJT6SNV5YYSS0W4TWR3H3": {
+    "type": "component",
+    "path": "src/features/kanban/index.tsx",
+    "previewPath": "src/features/kanban/index.previews.tsx"
   }
 }
