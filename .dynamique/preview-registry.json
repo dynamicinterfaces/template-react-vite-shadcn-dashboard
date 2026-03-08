@@ -5,56 +5,11 @@
     "route": "/",
     "previewPath": "src/features/posts/index.previews.tsx"
   },
-  "01KK7D6BAYZRXZRP351T58PRP3": {
-    "type": "page",
-    "path": "src/features/posts/detail/index.tsx",
-    "route": "/post/:postId"
-  },
   "01KK7D6BAZC2FK1DCWWDQYZW6C": {
     "type": "component",
     "path": "src/features/payment/index.tsx",
     "route": "/payment",
     "previewPath": "src/features/payment/index.previews.tsx"
-  },
-  "01KK7D6BB0MR1G8F0CYYFGWMHW": {
-    "type": "component",
-    "path": "src/features/kanban/index.tsx",
-    "previewPath": "src/features/kanban/index.previews.tsx"
-  },
-  "01KK7D6BB029XTVMA09NXXJJKT": {
-    "type": "page",
-    "path": "src/features/kanban/create/index.tsx",
-    "route": "/kanban/create"
-  },
-  "01KK7D6BB1NBB2SK68JKNGNTFM": {
-    "type": "page",
-    "path": "src/features/kanban/detail/index.tsx",
-    "route": "/kanban/detail/:id"
-  },
-  "01KK7D6BB2HZQEGYF8A4EMKCBV": {
-    "type": "page",
-    "path": "src/features/kanban/edit/index.tsx",
-    "route": "/kanban/edit/:id"
-  },
-  "01KK7D6BB2SQBHT64339XDWX4A": {
-    "type": "page",
-    "path": "src/features/authentication/login.tsx",
-    "route": "/login"
-  },
-  "01KK7D6BB2WJZME1JW0YT9W2YP": {
-    "type": "page",
-    "path": "src/features/authentication/register.tsx",
-    "route": "/register"
-  },
-  "01KK7D6BB4N4W53RS6ACE95BMG": {
-    "type": "page",
-    "path": "src/pages/GoogleCallbackPage.tsx",
-    "route": "/auth/google/callback"
-  },
-  "01KK7D6BB4VR7YPMRAJXX5J659": {
-    "type": "page",
-    "path": "src/pages/WelcomePage.tsx",
-    "route": "/welcome"
   },
   "01KK7DW5HZCGA9EHKKVBHFEKSE": {
     "type": "component",
