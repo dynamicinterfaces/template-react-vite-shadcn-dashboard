@@ -17,9 +17,10 @@
     "previewPath": "src/features/payment/index.previews.tsx"
   },
   "01KJPX0VY8BH6ZYY1R5Q5PVF8D": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/kanban/index.tsx",
-    "route": "/kanban"
+    "route": "/kanban",
+    "previewPath": "src/features/kanban/index.previews.tsx"
   },
   "01KJPX0VY95PBF86CPHD1A6F7D": {
     "type": "page",
