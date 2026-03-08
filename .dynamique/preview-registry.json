@@ -1,191 +1,62 @@
 {
-  "01KJPX0VY70SSNF82DYWX2KJ3Y": {
-    "type": "component",
+  "01KK7D6BAWBPJ2TE4RTA2PY03Z": {
+    "type": "page",
     "path": "src/features/posts/index.tsx",
-    "previewPath": "src/features/posts/index.previews.tsx",
     "route": "/"
   },
-  "01KJPX0VY89Y4TZQSGGMFRQY93": {
+  "01KK7D6BAYZRXZRP351T58PRP3": {
     "type": "page",
     "path": "src/features/posts/detail/index.tsx",
     "route": "/post/:postId"
   },
-  "01KJPX0VY8QSKY11KKBBPFNH6Z": {
+  "01KK7D6BAZC2FK1DCWWDQYZW6C": {
     "type": "page",
     "path": "src/features/payment/index.tsx",
     "route": "/payment"
   },
-  "01KJPX0VY8BH6ZYY1R5Q5PVF8D": {
+  "01KK7D6BB0MR1G8F0CYYFGWMHW": {
     "type": "page",
     "path": "src/features/kanban/index.tsx",
     "route": "/kanban"
   },
-  "01KJPX0VY95PBF86CPHD1A6F7D": {
+  "01KK7D6BB029XTVMA09NXXJJKT": {
     "type": "page",
     "path": "src/features/kanban/create/index.tsx",
     "route": "/kanban/create"
   },
-  "01KJPX0VY9K9D69AKVTTEBDS8D": {
+  "01KK7D6BB1NBB2SK68JKNGNTFM": {
     "type": "page",
     "path": "src/features/kanban/detail/index.tsx",
     "route": "/kanban/detail/:id"
   },
-  "01KJPX0VY919BHXA5JHTBW8HPA": {
+  "01KK7D6BB2HZQEGYF8A4EMKCBV": {
     "type": "page",
     "path": "src/features/kanban/edit/index.tsx",
     "route": "/kanban/edit/:id"
   },
-  "01KJPX0VY9EQ4J7EST1V9Y0ZSE": {
-    "type": "component",
+  "01KK7D6BB2SQBHT64339XDWX4A": {
+    "type": "page",
     "path": "src/features/authentication/login.tsx",
-    "previewPath": "src/features/authentication/login.previews.tsx",
     "route": "/login"
   },
-  "01KJPX0VY9KRNDB8QBKF1WMMFA": {
-    "type": "component",
+  "01KK7D6BB2WJZME1JW0YT9W2YP": {
+    "type": "page",
     "path": "src/features/authentication/register.tsx",
-    "previewPath": "src/features/authentication/register.previews.tsx",
     "route": "/register"
   },
-  "01KJPYXZN6TFXQWWBGVW2C1PBP": {
-    "type": "component",
-    "path": "src/components/ui/button.tsx",
-    "previewPath": "src/components/ui/button.previews.tsx"
+  "01KK7D6BB4N4W53RS6ACE95BMG": {
+    "type": "page",
+    "path": "src/pages/GoogleCallbackPage.tsx",
+    "route": "/auth/google/callback"
   },
-  "01KJPYY11Z5PJ17FXTDT1935SR": {
-    "type": "component",
-    "path": "src/components/ui/badge.tsx",
-    "previewPath": "src/components/ui/badge.previews.tsx"
+  "01KK7D6BB4VR7YPMRAJXX5J659": {
+    "type": "page",
+    "path": "src/pages/WelcomePage.tsx",
+    "route": "/welcome"
   },
-  "01KJPYY23FJBS5QNHCPDZGH8VN": {
+  "01KK7DW5HZCGA9EHKKVBHFEKSE": {
     "type": "component",
-    "path": "src/components/ui/input.tsx",
-    "previewPath": "src/components/ui/input.previews.tsx"
-  },
-  "01KJPYY33GKB1MEH0G1G1NSGD1": {
-    "type": "component",
-    "path": "src/components/ui/checkbox.tsx",
-    "previewPath": "src/components/ui/checkbox.previews.tsx"
-  },
-  "01KJPYY43MB9PFMZT6JQ2JM3NR": {
-    "type": "component",
-    "path": "src/components/ui/label.tsx",
-    "previewPath": "src/components/ui/label.previews.tsx"
-  },
-  "01KJPYYB6KXDMQ13W3QHC9M41B": {
-    "type": "component",
-    "path": "src/components/ui/separator.tsx",
-    "previewPath": "src/components/ui/separator.previews.tsx"
-  },
-  "01KJPYYC9DDKK8R8QNVHVXP8K7": {
-    "type": "component",
-    "path": "src/components/ui/skeleton.tsx",
-    "previewPath": "src/components/ui/skeleton.previews.tsx"
-  },
-  "01KJPYYEEFQDVDEQE9SBXVNQSA": {
-    "type": "component",
-    "path": "src/components/ui/card.tsx",
-    "previewPath": "src/components/ui/card.previews.tsx"
-  },
-  "01KJPYYGMFY0Q3H463470FBYHW": {
-    "type": "component",
-    "path": "src/components/ui/avatar.tsx",
-    "previewPath": "src/components/ui/avatar.previews.tsx"
-  },
-  "01KJPYYK2C94DXF076TS68Y24C": {
-    "type": "component",
-    "path": "src/components/ui/scroll-area.tsx",
-    "previewPath": "src/components/ui/scroll-area.previews.tsx"
-  },
-  "01KJPYYXA10VRAR8A5ZKR1EBQA": {
-    "type": "component",
-    "path": "src/components/ui/table.tsx",
-    "previewPath": "src/components/ui/table.previews.tsx"
-  },
-  "01KJPYYYSKAYRG6EQ1PK8RZS3K": {
-    "type": "component",
-    "path": "src/components/ui/tooltip.tsx",
-    "previewPath": "src/components/ui/tooltip.previews.tsx"
-  },
-  "01KJPYZ1WRTN7211PXZEXAYD3Z": {
-    "type": "component",
-    "path": "src/components/ui/dialog.tsx",
-    "previewPath": "src/components/ui/dialog.previews.tsx"
-  },
-  "01KJPYZ58FPHSFR4RT58SMXVHK": {
-    "type": "component",
-    "path": "src/components/ui/toast.tsx",
-    "previewPath": "src/components/ui/toast.previews.tsx"
-  },
-  "01KJPYZ7N7QFZNM5Q8HZR6E03N": {
-    "type": "component",
-    "path": "src/components/ui/dropdown-menu.tsx",
-    "previewPath": "src/components/ui/dropdown-menu.previews.tsx"
-  },
-  "01KJPYZFY4EZ0MBNFNMDB607NE": {
-    "type": "component",
-    "path": "src/components/ui/sheet.tsx",
-    "previewPath": "src/components/ui/sheet.previews.tsx"
-  },
-  "01KJPYZHYT454C86P9PZVSRXXA": {
-    "type": "component",
-    "path": "src/components/ui/command.tsx",
-    "previewPath": "src/components/ui/command.previews.tsx"
-  },
-  "01KJPYZMJ8HC54M7P14MACT63F": {
-    "type": "component",
-    "path": "src/components/ui/collapsible.tsx",
-    "previewPath": "src/components/ui/collapsible.previews.tsx"
-  },
-  "01KJPYZPN5WAK0QAN4ETGWEQDB": {
-    "type": "component",
-    "path": "src/components/ui/fancy-multi-select.tsx",
-    "previewPath": "src/components/ui/fancy-multi-select.previews.tsx"
-  },
-  "01KJPYZYNC4MEB2VT00AY3W0M5": {
-    "type": "component",
-    "path": "src/features/404.tsx",
-    "previewPath": "src/features/404.previews.tsx"
-  },
-  "01KJPZ0CPQVRAZCREMGE49N4M6": {
-    "type": "component",
-    "path": "src/components/kanban/components/column/column.component.tsx",
-    "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
-  },
-  "01KJQM9ZT1G7ECMJSECNWXDX6H": {
-    "type": "component",
-    "path": "src/components/kanban/kanban.container.tsx",
-    "previewPath": "src/components/kanban/kanban.container.previews.tsx"
-  },
-  "01KJQVXPD0BYS70G7W7JASADF8": {
-    "type": "component",
-    "path": "src/components/layout/header.tsx",
-    "previewPath": "src/components/layout/header.previews.tsx"
-  },
-  "01KJQVY0V1M87850EQJQ886468": {
-    "type": "component",
-    "path": "src/components/layout/nav-user.tsx",
-    "previewPath": "src/components/layout/nav-user.previews.tsx"
-  },
-  "01KJQVQ4V49Y1AWSKFDDN7N5EV": {
-    "type": "component",
-    "path": "src/components/layout/app-sidebar.tsx",
-    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
-  },
-  "01KJQW1KG1Q7QGPZFD4JNJD0K7": {
-    "type": "component",
-    "path": "src/components/theme-switch.previews.tsx"
-  },
-  "01KJQW1QM70YRXADQ7H06BKV54": {
-    "type": "component",
-    "path": "src/components/command-menu.previews.tsx"
-  },
-  "01KJQW2S9T0MNZJVXYHCK96JS8": {
-    "type": "component",
-    "path": "src/components/search.previews.tsx"
-  },
-  "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
-    "type": "component",
-    "path": "src/components/layout/nav-group.previews.tsx"
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
   }
 }
