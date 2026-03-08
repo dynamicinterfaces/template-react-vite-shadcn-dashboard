@@ -189,5 +189,10 @@
   "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
     "type": "component",
     "path": "src/components/layout/nav-group.previews.tsx"
+  },
+  "01KK7DMBC20BGZ03A8EHC63JD4": {
+    "type": "component",
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
   }
 }
