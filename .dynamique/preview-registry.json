@@ -40,5 +40,10 @@
     "type": "component",
     "path": "src/features/authentication/register.tsx",
     "previewPath": "src/features/authentication/register.previews.tsx"
+  },
+  "01KK7FK03GTMM1F63ZHZEE38NQ": {
+    "type": "component",
+    "path": "src/components/kanban/kanban.container.tsx",
+    "previewPath": "src/components/kanban/kanban.container.previews.tsx"
   }
 }
