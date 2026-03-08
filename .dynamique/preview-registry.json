@@ -1,8 +1,9 @@
 {
   "01KK7D6BAWBPJ2TE4RTA2PY03Z": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/posts/index.tsx",
-    "route": "/"
+    "route": "/",
+    "previewPath": "src/features/posts/index.previews.tsx"
   },
   "01KK7D6BAYZRXZRP351T58PRP3": {
     "type": "page",
