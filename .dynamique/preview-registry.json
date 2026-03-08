@@ -45,5 +45,10 @@
     "type": "component",
     "path": "src/components/kanban/kanban.container.tsx",
     "previewPath": "src/components/kanban/kanban.container.previews.tsx"
+  },
+  "01KK7FK4THF00NW8QBHBEZA30P": {
+    "type": "component",
+    "path": "src/components/kanban/components/card/card.component.tsx",
+    "previewPath": "src/components/kanban/components/card/card.component.previews.tsx"
   }
 }
