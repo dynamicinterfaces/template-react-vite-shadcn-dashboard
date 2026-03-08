@@ -95,5 +95,10 @@
     "type": "component",
     "path": "src/components/theme-switch.tsx",
     "previewPath": "src/components/theme-switch.previews.tsx"
+  },
+  "01KK7FKR65CT8BXYWAE9A1VPVK": {
+    "type": "component",
+    "path": "src/components/search.tsx",
+    "previewPath": "src/components/search.previews.tsx"
   }
 }
