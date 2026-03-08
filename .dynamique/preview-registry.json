@@ -55,5 +55,10 @@
     "type": "component",
     "path": "src/components/kanban/components/column/column.component.tsx",
     "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
+  },
+  "01KK7FK6ZC2M26CAEH6XAQ82Y8": {
+    "type": "component",
+    "path": "src/features/kanban/create/index.tsx",
+    "previewPath": "src/features/kanban/create/index.previews.tsx"
   }
 }
