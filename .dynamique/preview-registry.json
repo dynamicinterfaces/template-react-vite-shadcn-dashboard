@@ -187,15 +187,5 @@
   "01KJQVZZ3PDTCPDW1TCKR5BAMT": {
     "type": "component",
     "path": "src/components/layout/nav-group.previews.tsx"
-  },
-  "01KK50NE377RR3XH39QASAEFVN": {
-    "type": "page",
-    "path": "src/pages/GoogleCallbackPage.tsx",
-    "route": "/auth/google/callback"
-  },
-  "01KK50NE37ZEP5JCY863JN74FR": {
-    "type": "page",
-    "path": "src/pages/WelcomePage.tsx",
-    "route": "/welcome"
   }
 }
