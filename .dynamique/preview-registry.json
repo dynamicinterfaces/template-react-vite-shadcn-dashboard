@@ -65,5 +65,10 @@
     "type": "component",
     "path": "src/features/kanban/detail/index.tsx",
     "previewPath": "src/features/kanban/detail/index.previews.tsx"
+  },
+  "01KK7FKBYYBE85RAB4KCFD43MH": {
+    "type": "component",
+    "path": "src/features/kanban/edit/index.tsx",
+    "previewPath": "src/features/kanban/edit/index.previews.tsx"
   }
 }
