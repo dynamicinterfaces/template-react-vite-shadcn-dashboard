@@ -2,16 +2,16 @@ import * as React from 'react'
 import { TrendingUpIcon, TrendingDownIcon, DollarSignIcon, UsersIcon, TargetIcon, ActivityIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
 import {
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
 
-// Mock HubSpot deal/financials data
 const monthlyRevenue = [
   { month: 'Jan', revenue: 148000, target: 140000 },
   { month: 'Feb', revenue: 162000, target: 155000 },
@@ -28,12 +28,12 @@ const monthlyRevenue = [
 ]
 
 const dealPipeline = [
-  { stage: 'Prospecting', count: 42, value: 1240000, color: '#6366f1' },
-  { stage: 'Qualification', count: 28, value: 890000, color: '#8b5cf6' },
-  { stage: 'Proposal Sent', count: 19, value: 720000, color: '#a78bfa' },
-  { stage: 'Negotiation', count: 11, value: 480000, color: '#c4b5fd' },
-  { stage: 'Closed Won', count: 34, value: 2150000, color: '#22c55e' },
-  { stage: 'Closed Lost', count: 16, value: 380000, color: '#ef4444' },
+  { stage: 'Prospecting', count: 42, value: 1240000 },
+  { stage: 'Qualification', count: 28, value: 890000 },
+  { stage: 'Proposal Sent', count: 19, value: 720000 },
+  { stage: 'Negotiation', count: 11, value: 480000 },
+  { stage: 'Closed Won', count: 34, value: 2150000 },
+  { stage: 'Closed Lost', count: 16, value: 380000 },
 ]
 
 const topDeals = [
@@ -53,16 +53,28 @@ const kpiData = [
   { label: 'Avg Deal Size', value: '$73.9K', change: '-3.2%', trend: 'down', icon: UsersIcon },
 ]
 
+const ALL_STAGES = ['All', ...Array.from(new Set(topDeals.map(d => d.stage)))]
+const ALL_OWNERS = ['All', ...Array.from(new Set(topDeals.map(d => d.owner)))]
+
 const fmt = (n: number) =>
   new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n)
 
-const stageColor: Record<string, string> = {
-  'Closed Won': 'bg-green-100 text-green-800',
-  'Closed Lost': 'bg-red-100 text-red-800',
-  'Negotiation': 'bg-yellow-100 text-yellow-800',
-  'Proposal Sent': 'bg-blue-100 text-blue-800',
-  'Qualification': 'bg-purple-100 text-purple-800',
-  'Prospecting': 'bg-gray-100 text-gray-800',
+const stageBadgeVariant: Record<string, 'default' | 'secondary' | 'destructive' | 'outline'> = {
+  'Closed Won': 'default',
+  'Closed Lost': 'destructive',
+  'Negotiation': 'secondary',
+  'Proposal Sent': 'outline',
+  'Qualification': 'secondary',
+  'Prospecting': 'outline',
+}
+
+const pipelineBg: Record<string, string> = {
+  'Prospecting': 'bg-muted-foreground/20',
+  'Qualification': 'bg-muted-foreground/35',
+  'Proposal Sent': 'bg-secondary',
+  'Negotiation': 'bg-primary/60',
+  'Closed Won': 'bg-primary',
+  'Closed Lost': 'bg-destructive',
 }
 
 function RevenueBarChart() {
@@ -79,12 +91,12 @@ function RevenueBarChart() {
             <div key={d.month} className='flex-1 flex flex-col items-center gap-0.5'>
               <div className='w-full flex items-end gap-0.5' style={{ height: chartHeight }}>
                 <div
-                  className='flex-1 rounded-t bg-indigo-500 opacity-90 hover:opacity-100 transition-opacity cursor-pointer'
+                  className='flex-1 rounded-t bg-primary opacity-90 hover:opacity-100 transition-opacity cursor-pointer'
                   style={{ height: revenueH }}
                   title={`Revenue: ${fmt(d.revenue)}`}
                 />
                 <div
-                  className='flex-1 rounded-t bg-gray-300 opacity-70 hover:opacity-90 transition-opacity cursor-pointer'
+                  className='flex-1 rounded-t bg-muted-foreground/30 hover:bg-muted-foreground/50 transition-colors cursor-pointer'
                   style={{ height: targetH }}
                   title={`Target: ${fmt(d.target)}`}
                 />
@@ -100,11 +112,11 @@ function RevenueBarChart() {
       </div>
       <div className='flex items-center gap-4 mt-3'>
         <div className='flex items-center gap-1.5'>
-          <div className='w-3 h-3 rounded bg-indigo-500' />
+          <div className='w-3 h-3 rounded bg-primary' />
           <span className='text-xs text-muted-foreground'>Revenue</span>
         </div>
         <div className='flex items-center gap-1.5'>
-          <div className='w-3 h-3 rounded bg-gray-300' />
+          <div className='w-3 h-3 rounded bg-muted-foreground/30' />
           <span className='text-xs text-muted-foreground'>Target</span>
         </div>
       </div>
@@ -118,15 +130,18 @@ function PipelineFunnel() {
     <div className='space-y-2'>
       {dealPipeline.map((stage) => {
         const pct = (stage.value / maxValue) * 100
+        const bg = pipelineBg[stage.stage] ?? 'bg-muted'
         return (
           <div key={stage.stage} className='flex items-center gap-3'>
             <div className='w-28 text-xs text-right text-muted-foreground shrink-0'>{stage.stage}</div>
             <div className='flex-1 bg-muted rounded-full h-5 overflow-hidden'>
               <div
-                className='h-full rounded-full flex items-center pl-2 transition-all'
-                style={{ width: `${pct}%`, backgroundColor: stage.color }}
+                className={`h-full rounded-full flex items-center pl-2 transition-all ${bg}`}
+                style={{ width: `${pct}%` }}
               >
-                <span className='text-xs text-white font-medium whitespace-nowrap'>{stage.count} deals</span>
+                <span className='text-xs font-medium whitespace-nowrap text-primary-foreground'>
+                  {stage.count} deals
+                </span>
               </div>
             </div>
             <div className='w-24 text-xs text-right font-medium shrink-0'>{fmt(stage.value)}</div>
@@ -138,10 +153,32 @@ function PipelineFunnel() {
 }
 
 export function FinancialsDashboard() {
+  const [search, setSearch] = React.useState('')
+  const [stageFilter, setStageFilter] = React.useState('All')
+  const [ownerFilter, setOwnerFilter] = React.useState('All')
+
   const totalPipelineValue = dealPipeline.reduce((acc, d) => acc + d.value, 0)
   const closedWonValue = dealPipeline.find(d => d.stage === 'Closed Won')?.value ?? 0
-  const winRate = ((dealPipeline.find(d => d.stage === 'Closed Won')?.count ?? 0) /
-    (dealPipeline.find(d => d.stage === 'Closed Won')!.count + dealPipeline.find(d => d.stage === 'Closed Lost')!.count) * 100).toFixed(1)
+  const winRate = (
+    (dealPipeline.find(d => d.stage === 'Closed Won')!.count /
+      (dealPipeline.find(d => d.stage === 'Closed Won')!.count +
+        dealPipeline.find(d => d.stage === 'Closed Lost')!.count)) *
+    100
+  ).toFixed(1)
+
+  const filteredDeals = topDeals.filter(deal => {
+    const matchesSearch =
+      search === '' ||
+      deal.company.toLowerCase().includes(search.toLowerCase()) ||
+      deal.contact.toLowerCase().includes(search.toLowerCase())
+    const matchesStage = stageFilter === 'All' || deal.stage === stageFilter
+    const matchesOwner = ownerFilter === 'All' || deal.owner === ownerFilter
+    return matchesSearch && matchesStage && matchesOwner
+  })
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)
+  const handleStageChange = (e: React.ChangeEvent<HTMLSelectElement>) => setStageFilter(e.target.value)
+  const handleOwnerChange = (e: React.ChangeEvent<HTMLSelectElement>) => setOwnerFilter(e.target.value)
 
   return (
     <div className='space-y-6 p-1'>
@@ -152,7 +189,7 @@ export function FinancialsDashboard() {
           <p className='text-sm text-muted-foreground mt-0.5'>Connected via HubSpot CRM · Last synced just now</p>
         </div>
         <Badge variant='outline' className='gap-1.5'>
-          <span className='w-2 h-2 rounded-full bg-green-500 inline-block' />
+          <span className='w-2 h-2 rounded-full bg-primary inline-block' />
           Live Data
         </Badge>
       </div>
@@ -169,7 +206,7 @@ export function FinancialsDashboard() {
               </CardHeader>
               <CardContent>
                 <div className='text-2xl font-bold'>{kpi.value}</div>
-                <div className={`flex items-center gap-1 text-xs mt-1 ${kpi.trend === 'up' ? 'text-green-600' : 'text-red-600'}`}>
+                <div className={`flex items-center gap-1 text-xs mt-1 ${kpi.trend === 'up' ? 'text-primary' : 'text-destructive'}`}>
                   {kpi.trend === 'up' ? <TrendingUpIcon className='h-3 w-3' /> : <TrendingDownIcon className='h-3 w-3' />}
                   {kpi.change} vs last quarter
                 </div>
@@ -209,8 +246,34 @@ export function FinancialsDashboard() {
       {/* Top Deals Table */}
       <Card>
         <CardHeader>
-          <CardTitle className='text-base'>Top Deals</CardTitle>
-          <p className='text-xs text-muted-foreground'>Highest value opportunities from HubSpot CRM</p>
+          <div className='flex items-center justify-between gap-4 flex-wrap'>
+            <div>
+              <CardTitle className='text-base'>Top Deals</CardTitle>
+              <p className='text-xs text-muted-foreground mt-0.5'>Highest value opportunities from HubSpot CRM</p>
+            </div>
+            <div className='flex items-center gap-2'>
+              <Input
+                placeholder='Search company, contact...'
+                value={search}
+                onChange={handleSearchChange}
+                className='h-8 w-44'
+              />
+              <select
+                value={stageFilter}
+                onChange={handleStageChange}
+                className='h-8 rounded-md border border-input bg-background px-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring'
+              >
+                {ALL_STAGES.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+              <select
+                value={ownerFilter}
+                onChange={handleOwnerChange}
+                className='h-8 rounded-md border border-input bg-background px-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring'
+              >
+                {ALL_OWNERS.map(o => <option key={o} value={o}>{o}</option>)}
+              </select>
+            </div>
+          </div>
         </CardHeader>
         <CardContent>
           <div className='rounded-md border'>
@@ -226,14 +289,18 @@ export function FinancialsDashboard() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {topDeals.map((deal) => (
+                {filteredDeals.length === 0 ? (
+                  <TableRow>
+                    <TableCell colSpan={6} className='text-center text-muted-foreground py-8'>
+                      No deals match your filters
+                    </TableCell>
+                  </TableRow>
+                ) : filteredDeals.map((deal) => (
                   <TableRow key={deal.id}>
                     <TableCell className='font-medium'>{deal.company}</TableCell>
                     <TableCell className='text-muted-foreground'>{deal.contact}</TableCell>
                     <TableCell>
-                      <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${stageColor[deal.stage] ?? 'bg-gray-100 text-gray-800'}`}>
-                        {deal.stage}
-                      </span>
+                      <Badge variant={stageBadgeVariant[deal.stage] ?? 'outline'}>{deal.stage}</Badge>
                     </TableCell>
                     <TableCell className='text-muted-foreground'>{deal.owner}</TableCell>
                     <TableCell className='text-muted-foreground'>{deal.closeDate}</TableCell>
