@@ -20,5 +20,10 @@
     "type": "component",
     "path": "src/components/layout/app-sidebar.tsx",
     "previewPath": "src/components/layout/app-sidebar.previews.tsx"
+  },
+  "01KK7FJMA9F0Q2EQ3TYAT17Q80": {
+    "type": "component",
+    "path": "src/components/layout/header.tsx",
+    "previewPath": "src/components/layout/header.previews.tsx"
   }
 }
