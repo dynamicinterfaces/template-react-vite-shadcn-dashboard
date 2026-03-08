@@ -85,5 +85,10 @@
     "type": "component",
     "path": "src/components/layout/nav-user.tsx",
     "previewPath": "src/components/layout/nav-user.previews.tsx"
+  },
+  "01KK7FKK7V597BB8W5X9GC2T12": {
+    "type": "component",
+    "path": "src/components/command-menu.tsx",
+    "previewPath": "src/components/command-menu.previews.tsx"
   }
 }
