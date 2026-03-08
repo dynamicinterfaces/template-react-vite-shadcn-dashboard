@@ -11,9 +11,10 @@
     "route": "/post/:postId"
   },
   "01KK7D6BAZC2FK1DCWWDQYZW6C": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/payment/index.tsx",
-    "route": "/payment"
+    "route": "/payment",
+    "previewPath": "src/features/payment/index.previews.tsx"
   },
   "01KK7D6BB0MR1G8F0CYYFGWMHW": {
     "type": "component",
