@@ -15,5 +15,10 @@
     "type": "component",
     "path": "src/components/layout/index.tsx",
     "previewPath": "src/components/layout/index.previews.tsx"
+  },
+  "01KK7FJK8ZRG7JJS3AX65EB4SY": {
+    "type": "component",
+    "path": "src/components/layout/app-sidebar.tsx",
+    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   }
 }
