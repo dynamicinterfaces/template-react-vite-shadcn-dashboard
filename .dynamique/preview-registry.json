@@ -35,5 +35,10 @@
     "type": "component",
     "path": "src/features/authentication/login.tsx",
     "previewPath": "src/features/authentication/login.previews.tsx"
+  },
+  "01KK7FJZ8TDJ2TFVKPS7PA2JJH": {
+    "type": "component",
+    "path": "src/features/authentication/register.tsx",
+    "previewPath": "src/features/authentication/register.previews.tsx"
   }
 }
