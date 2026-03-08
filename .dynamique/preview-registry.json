@@ -15,9 +15,9 @@
     "route": "/payment"
   },
   "01KK7D6BB0MR1G8F0CYYFGWMHW": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/kanban/index.tsx",
-    "route": "/kanban"
+    "previewPath": "src/features/kanban/index.previews.tsx"
   },
   "01KK7D6BB029XTVMA09NXXJJKT": {
     "type": "page",
