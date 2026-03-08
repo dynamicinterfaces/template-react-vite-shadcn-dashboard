@@ -100,5 +100,10 @@
     "type": "component",
     "path": "src/components/search.tsx",
     "previewPath": "src/components/search.previews.tsx"
+  },
+  "01KK7FKS9A73JZFWNS8ZG9ZCFR": {
+    "type": "component",
+    "path": "src/pages/WelcomePage.tsx",
+    "previewPath": "src/pages/WelcomePage.previews.tsx"
   }
 }
