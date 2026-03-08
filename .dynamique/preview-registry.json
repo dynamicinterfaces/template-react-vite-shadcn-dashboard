@@ -80,5 +80,10 @@
     "type": "component",
     "path": "src/components/layout/nav-group.tsx",
     "previewPath": "src/components/layout/nav-group.previews.tsx"
+  },
+  "01KK7FKJ6GCKABNEP7W59KB9YK": {
+    "type": "component",
+    "path": "src/components/layout/nav-user.tsx",
+    "previewPath": "src/components/layout/nav-user.previews.tsx"
   }
 }
