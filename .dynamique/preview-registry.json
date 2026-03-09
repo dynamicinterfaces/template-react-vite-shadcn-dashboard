@@ -1,7 +1,8 @@
 {
   "01KK7QKTF3FFQK7H7ZWGJ0DDS4": {
     "type": "component",
-    "path": "src/components/db-schema-graph.tsx"
+    "path": "src/components/db-schema-graph.tsx",
+    "previewPath": "src/components/db-schema-graph.previews.tsx"
   },
   "01KK7K0J6Y27PH58WPB8KG09PA": {
     "type": "component",
@@ -35,11 +36,13 @@
   },
   "01KK7DW5HZCGA9EHKKVBHFEKSE": {
     "type": "component",
-    "path": "src/components/layout/index.tsx"
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
   },
   "01KK7FJK8ZRG7JJS3AX65EB4SY": {
     "type": "component",
-    "path": "src/components/layout/app-sidebar.tsx"
+    "path": "src/components/layout/app-sidebar.tsx",
+    "previewPath": "src/components/layout/app-sidebar.previews.tsx"
   },
   "01KK7FJMA9F0Q2EQ3TYAT17Q80": {
     "type": "component",
@@ -63,7 +66,8 @@
   },
   "01KK7FKJ6GCKABNEP7W59KB9YK": {
     "type": "component",
-    "path": "src/components/layout/nav-user.tsx"
+    "path": "src/components/layout/nav-user.tsx",
+    "previewPath": "src/components/layout/nav-user.previews.tsx"
   },
   "01KK7FKK7V597BB8W5X9GC2T12": {
     "type": "component",
@@ -75,6 +79,7 @@
   },
   "01KK7FKR65CT8BXYWAE9A1VPVK": {
     "type": "component",
-    "path": "src/components/search.tsx"
+    "path": "src/components/search.tsx",
+    "previewPath": "src/components/search.previews.tsx"
   }
 }
