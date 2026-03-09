@@ -1,32 +1,212 @@
-import { useCallback } from 'react';
-import {
-  ReactFlow,
-  MiniMap,
-  Controls,
-  Background,
-  BackgroundVariant,
-  useNodesState,
-  useEdgesState,
-  addEdge,
-  type Connection,
-  type Node,
-  type Edge,
-} from '@xyflow/react';
-import '@xyflow/react/dist/style.css';
+import { ReactFlow, Background, BackgroundVariant, type Node, type Edge } from '@xyflow/react'
+import '@xyflow/react/dist/style.css'
 
-const PRIMARY = 'hsl(var(--primary))';
-const MUTED = 'hsl(var(--muted-foreground))';
+interface TableNodeData {
+  name: string
+  columns: { name: string; type: string; pk?: boolean; fk?: boolean }[]
+}
 
-const edgeLabel = { fill: 'hsl(var(--foreground))', fontSize: 10 };
-const edgeLabelBg = { fill: 'hsl(var(--background))', fillOpacity: 0.8 };
+function TableNode({ data }: { data: TableNodeData }) {
+  return (
+    <div className='rounded-lg border border-border bg-card text-card-foreground shadow-sm min-w-[200px]'>
+      <div className='px-3 py-2 bg-muted rounded-t-lg border-b border-border'>
+        <span className='text-xs font-semibold text-foreground tracking-wide uppercase'>{data.name}</span>
+      </div>
+      <div className='px-3 py-1.5 space-y-0.5'>
+        {data.columns.map((col) => (
+          <div key={col.name} className='flex items-center gap-2 text-xs'>
+            <span className={col.pk ? 'text-primary font-medium' : col.fk ? 'text-muted-foreground' : 'text-foreground'}>
+              {col.name}
+            </span>
+            <span className='text-muted-foreground/60 ml-auto'>{col.type}</span>
+            {col.pk && <span className='text-[10px] text-primary font-bold'>PK</span>}
+            {col.fk && <span className='text-[10px] text-muted-foreground font-bold'>FK</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
-const mkEdge = (
-  id: string,
-  source: string,
-  target: string,
-  label: string,
-  color = PRIMARY
-): Edge => ({
+const nodeTypes = { table: TableNode }
+
+const PRIMARY = 'hsl(var(--primary))'
+const MUTED = 'hsl(var(--muted-foreground))'
+const edgeLabel = { fontSize: 10, fill: 'hsl(var(--muted-foreground))' }
+const edgeLabelBg = { fill: 'hsl(var(--background))', fillOpacity: 0.9 }
+
+const nodes: Node[] = [
+  {
+    id: 'users',
+    type: 'table',
+    position: { x: 420, y: 0 },
+    data: {
+      name: 'users',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'email', type: 'text' },
+        { name: 'name', type: 'text' },
+        { name: 'avatar_url', type: 'text' },
+        { name: 'role', type: 'text' },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'organizations',
+    type: 'table',
+    position: { x: 60, y: 220 },
+    data: {
+      name: 'organizations',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'name', type: 'text' },
+        { name: 'slug', type: 'text' },
+        { name: 'plan', type: 'text' },
+        { name: 'owner_id', type: 'uuid', fk: true },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'org_members',
+    type: 'table',
+    position: { x: 420, y: 220 },
+    data: {
+      name: 'org_members',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'user_id', type: 'uuid', fk: true },
+        { name: 'role', type: 'text' },
+        { name: 'joined_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'payments',
+    type: 'table',
+    position: { x: 760, y: 220 },
+    data: {
+      name: 'payments',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'amount', type: 'numeric' },
+        { name: 'currency', type: 'text' },
+        { name: 'status', type: 'text' },
+        { name: 'stripe_id', type: 'text' },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'boards',
+    type: 'table',
+    position: { x: 60, y: 460 },
+    data: {
+      name: 'boards',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'created_by', type: 'uuid', fk: true },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'invoices',
+    type: 'table',
+    position: { x: 760, y: 460 },
+    data: {
+      name: 'invoices',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'payment_id', type: 'uuid', fk: true },
+        { name: 'stripe_invoice_id', type: 'text' },
+        { name: 'pdf_url', type: 'text' },
+        { name: 'issued_at', type: 'timestamptz' },
+        { name: 'due_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'board_columns',
+    type: 'table',
+    position: { x: 60, y: 670 },
+    data: {
+      name: 'board_columns',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'board_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'position', type: 'int4' },
+      ],
+    },
+  },
+  {
+    id: 'tags',
+    type: 'table',
+    position: { x: 760, y: 670 },
+    data: {
+      name: 'tags',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'color', type: 'text' },
+      ],
+    },
+  },
+  {
+    id: 'cards',
+    type: 'table',
+    position: { x: 60, y: 860 },
+    data: {
+      name: 'cards',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'column_id', type: 'uuid', fk: true },
+        { name: 'title', type: 'text' },
+        { name: 'description', type: 'text' },
+        { name: 'assignee_id', type: 'uuid', fk: true },
+        { name: 'due_at', type: 'timestamptz' },
+        { name: 'position', type: 'int4' },
+      ],
+    },
+  },
+  {
+    id: 'card_tags',
+    type: 'table',
+    position: { x: 420, y: 860 },
+    data: {
+      name: 'card_tags',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'card_id', type: 'uuid', fk: true },
+        { name: 'tag_id', type: 'uuid', fk: true },
+      ],
+    },
+  },
+  {
+    id: 'comments',
+    type: 'table',
+    position: { x: 60, y: 1060 },
+    data: {
+      name: 'comments',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'card_id', type: 'uuid', fk: true },
+        { name: 'author_id', type: 'uuid', fk: true },
+        { name: 'body', type: 'text' },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+]
+
+const mkEdge = (id: string, source: string, target: string, label: string, color = PRIMARY): Edge => ({
   id,
   source,
   target,
@@ -36,93 +216,48 @@ const mkEdge = (
   style: { stroke: color, strokeWidth: 1.5 },
   labelStyle: edgeLabel,
   labelBgStyle: edgeLabelBg,
-});
+  labelBgPadding: [4, 2] as [number, number],
+  labelBgBorderRadius: 3,
+})
 
-const nodeStyle = {
-  background: 'hsl(var(--card))',
-  border: '1px solid hsl(var(--border))',
-  borderRadius: 8,
-  padding: '10px 14px',
-  minWidth: 160,
-  color: 'hsl(var(--card-foreground))',
-  fontSize: 13,
-  fontFamily: 'inherit',
-};
-
-const mkNode = (id: string, label: string, position: { x: number; y: number }): Node => ({
-  id,
-  position,
-  data: { label },
-  style: nodeStyle,
-});
-
-const initialNodes: Node[] = [
-  mkNode('users',        '👤 users',         { x: 400, y: 0 }),
-  mkNode('orgs',         '🏢 organizations', { x: 100, y: 120 }),
-  mkNode('org_members',  '🔗 org_members',   { x: 250, y: 250 }),
-  mkNode('payments',     '💳 payments',      { x: 700, y: 120 }),
-  mkNode('invoices',     '🧾 invoices',      { x: 700, y: 280 }),
-  mkNode('boards',       '📋 boards',        { x: 100, y: 400 }),
-  mkNode('board_cols',   '📁 board_columns', { x: 100, y: 530 }),
-  mkNode('cards',        '🗂 cards',         { x: 400, y: 460 }),
-  mkNode('tags',         '🏷 tags',          { x: 650, y: 430 }),
-  mkNode('card_tags',    '🔀 card_tags',     { x: 520, y: 580 }),
-  mkNode('comments',     '💬 comments',      { x: 400, y: 640 }),
-];
-
-const initialEdges: Edge[] = [
-  // users → orgs (via org_members)
-  mkEdge('e1',  'users',      'org_members', 'user_id'),
-  mkEdge('e2',  'orgs',       'org_members', 'org_id'),
-  // payments & invoices → users
-  mkEdge('e3',  'users',      'payments',    'user_id'),
-  mkEdge('e4',  'users',      'invoices',    'user_id', MUTED),
-  // payments → invoices
-  mkEdge('e5',  'payments',   'invoices',    'payment_id', MUTED),
-  // boards → orgs & users
-  mkEdge('e6',  'orgs',       'boards',      'org_id'),
-  mkEdge('e7',  'users',      'boards',      'owner_id', MUTED),
-  // board_columns → boards
-  mkEdge('e8',  'boards',     'board_cols',  'board_id'),
-  // cards → board_columns & users
-  mkEdge('e9',  'board_cols', 'cards',       'column_id'),
-  mkEdge('e10', 'users',      'cards',       'assignee_id', MUTED),
-  // card_tags → cards & tags
-  mkEdge('e11', 'cards',      'card_tags',   'card_id'),
-  mkEdge('e12', 'tags',       'card_tags',   'tag_id'),
-  // comments → cards & users
-  mkEdge('e13', 'cards',      'comments',    'card_id'),
-  mkEdge('e14', 'users',      'comments',    'author_id', MUTED),
-  // invoices → orgs
-  mkEdge('e15', 'orgs',       'invoices',    'org_id', MUTED),
-];
+const edges: Edge[] = [
+  mkEdge('org-owner', 'organizations', 'users', 'owner_id'),
+  mkEdge('member-org', 'org_members', 'organizations', 'org_id'),
+  mkEdge('member-user', 'org_members', 'users', 'user_id', MUTED),
+  mkEdge('payment-org', 'payments', 'organizations', 'org_id'),
+  mkEdge('board-org', 'boards', 'organizations', 'org_id'),
+  mkEdge('board-creator', 'boards', 'users', 'created_by', MUTED),
+  mkEdge('invoice-payment', 'invoices', 'payments', 'payment_id'),
+  mkEdge('col-board', 'board_columns', 'boards', 'board_id'),
+  mkEdge('tags-org', 'tags', 'organizations', 'org_id', MUTED),
+  mkEdge('card-col', 'cards', 'board_columns', 'column_id'),
+  mkEdge('card-assignee', 'cards', 'users', 'assignee_id', MUTED),
+  mkEdge('cardtag-card', 'card_tags', 'cards', 'card_id'),
+  mkEdge('cardtag-tag', 'card_tags', 'tags', 'tag_id', MUTED),
+  mkEdge('comment-card', 'comments', 'cards', 'card_id'),
+  mkEdge('comment-author', 'comments', 'users', 'author_id', MUTED),
+]
 
 export function DbSchemaGraph() {
-  const [nodes, , onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-
-  const onConnect = useCallback(
-    (params: Connection) => setEdges((eds) => addEdge(params, eds)),
-    [setEdges]
-  );
-
   return (
-    <div style={{ width: '100%', height: 600 }}>
+    <div style={{ width: '100%', height: 600 }} className='rounded-lg border border-border overflow-hidden'>
       <ReactFlow
         nodes={nodes}
         edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
+        nodeTypes={nodeTypes}
         fitView
-        attributionPosition="bottom-left"
+        fitViewOptions={{ padding: 0.15 }}
+        nodesDraggable={false}
+        nodesConnectable={false}
+        elementsSelectable={false}
+        panOnScroll={false}
+        zoomOnScroll={false}
+        proOptions={{ hideAttribution: true }}
       >
-        <Controls />
-        <MiniMap />
-        <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
+        <Background variant={BackgroundVariant.Dots} gap={16} size={1} className='opacity-30' />
       </ReactFlow>
     </div>
-  );
+  )
 }
 
-export default DbSchemaGraph;
+export default DbSchemaGraph
