@@ -23,5 +23,10 @@
     "type": "component",
     "path": "src/components/ui/scroll-area.tsx",
     "previewPath": "src/components/ui/scroll-area.previews.tsx"
+  },
+  "01KK9NYHF5732Z4VJ0RES40HBD": {
+    "type": "component",
+    "path": "src/components/ui/label.tsx",
+    "previewPath": "src/components/ui/label.previews.tsx"
   }
 }
