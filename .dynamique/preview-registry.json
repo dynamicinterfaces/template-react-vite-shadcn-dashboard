@@ -151,5 +151,10 @@
     "type": "component",
     "path": "src/components/ui/table.tsx",
     "previewPath": "src/components/ui/table.previews.tsx"
+  },
+  "01KK9NWPC8H4Q3A7J04KGEM52K": {
+    "type": "component",
+    "path": "src/components/ui/avatar.tsx",
+    "previewPath": "src/components/ui/avatar.previews.tsx"
   }
 }
