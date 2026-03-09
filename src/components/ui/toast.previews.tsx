@@ -17,5 +17,4 @@ function ToastDemo() {
 
 const meta = { component: ToastDemo };
 export default meta;
-
 export const Default = {};
