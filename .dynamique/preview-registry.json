@@ -111,5 +111,10 @@
     "type": "component",
     "path": "src/features/posts/detail/index.tsx",
     "previewPath": "src/features/posts/detail/index.previews.tsx"
+  },
+  "01KK9NTAXRPA9ZM971T87DP880": {
+    "type": "component",
+    "path": "src/features/kanban/edit/index.tsx",
+    "previewPath": "src/features/kanban/edit/index.previews.tsx"
   }
 }
