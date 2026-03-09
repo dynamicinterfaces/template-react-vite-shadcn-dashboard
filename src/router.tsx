@@ -4,6 +4,9 @@ import {
   NewspaperIcon,
   BarChart3Icon,
   CalculatorIcon,
+  Users2Icon,
+  ActivityIcon,
+  BrainIcon,
 } from 'lucide-react'
 import { Navigate, useRoutes } from 'react-router'
 import Layout from './components/layout'
