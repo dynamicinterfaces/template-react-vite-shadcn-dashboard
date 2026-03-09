@@ -180,5 +180,10 @@
     "path": "src/features/payment/index.tsx",
     "route": "/payment",
     "previewPath": "src/features/payment/index.previews.tsx"
+  },
+  "01KK9QD0H8YY239NK3BN9P4WG1": {
+    "type": "component",
+    "path": "src/features/analytics/index.tsx",
+    "previewPath": "src/features/analytics/index.previews.tsx"
   }
 }
