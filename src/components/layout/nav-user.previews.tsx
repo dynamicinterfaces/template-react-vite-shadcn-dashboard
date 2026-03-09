@@ -1,29 +1,25 @@
-import { NavUser } from './nav-user';
-import { SidebarProvider, Sidebar, SidebarContent, SidebarFooter } from '../../components/ui/sidebar';
-import { AuthProvider } from '../../context/auth/authContext';
-import { MemoryRouter } from 'react-router';
+import { SidebarProvider } from '@/components/ui/sidebar'
+import { AuthProvider } from '@/context/auth/authContext'
+import { NavUser } from './nav-user'
 
-function NavUserPreview() {
-  return (
-    <MemoryRouter>
-      <AuthProvider>
-        <SidebarProvider defaultOpen={true}>
-          <Sidebar>
-            <SidebarContent />
-            <SidebarFooter>
-              <NavUser user={{ name: 'John Doe', email: 'john@example.com', avatar: '' }} />
-            </SidebarFooter>
-          </Sidebar>
-        </SidebarProvider>
-      </AuthProvider>
-    </MemoryRouter>
-  );
+const mockUser = {
+  name: 'Jane Smith',
+  email: 'jane@example.com',
+  avatar: '',
 }
 
-const meta = {
-  component: NavUserPreview,
-};
+function Preview() {
+  return (
+    <AuthProvider>
+      <SidebarProvider>
+        <div style={{ padding: 16, width: 260 }}>
+          <NavUser user={mockUser} />
+        </div>
+      </SidebarProvider>
+    </AuthProvider>
+  )
+}
 
-export default meta;
-
-export const Default = {};
+const meta = { title: 'Nav User', component: Preview }
+export default meta
+export const Default = {}

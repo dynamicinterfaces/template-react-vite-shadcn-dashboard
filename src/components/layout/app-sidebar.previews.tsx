@@ -1,25 +1,20 @@
-import { AppSidebar } from './app-sidebar';
-import { SidebarProvider } from '../../components/ui/sidebar';
-import { AuthProvider } from '../../context/auth/authContext';
-import { MemoryRouter } from 'react-router';
+import { SidebarProvider } from '@/components/ui/sidebar'
+import { AuthProvider } from '@/context/auth/authContext'
+import { MemoryRouter } from 'react-router'
+import { AppSidebar } from './app-sidebar'
 
-function AppSidebarPreview() {
+function Preview() {
   return (
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter>
       <AuthProvider>
-        <SidebarProvider defaultOpen={true}>
-          <div style={{ width: 280, height: 600, position: 'relative' }}>
-            <AppSidebar />
-          </div>
+        <SidebarProvider>
+          <AppSidebar />
         </SidebarProvider>
       </AuthProvider>
     </MemoryRouter>
-  );
+  )
 }
 
-const meta = {
-  component: AppSidebarPreview,
-};
-export default meta;
-
-export const Default = {};
+const meta = { title: 'App Sidebar', component: Preview }
+export default meta
+export const Default = {}
