@@ -66,9 +66,35 @@ const privateRoutes = [
           },
           {
             title: 'Accounting',
-            path: '/accounting',
             icon: CalculatorIcon,
-            element: <AccountingDashboard />
+            children: [
+              {
+                title: 'Overview',
+                path: '/accounting',
+                element: <AccountingDashboard />
+              },
+              {
+                title: 'Income Statement',
+                path: '/accounting/income-statement',
+                element: <IncomeStatement />
+              },
+              {
+                title: 'Cash Flow',
+                path: '/accounting/cash-flow',
+                element: <CashFlowStatement />
+              },
+              {
+                title: 'AR Aging',
+                path: '/accounting/ar-aging',
+                element: <ARAgingPage />
+              },
+            ]
+          },
+          {
+            title: 'Analytics',
+            path: '/analytics',
+            icon: BarChart3Icon,
+            element: <AnalyticsPage />
           },
           {
             title: 'Kanban',
