@@ -271,9 +271,9 @@
     "previewPath": "src/features/people/index.previews.tsx"
   },
   "01KKA1RGA0B83DJPTM5P6XTCSF": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/operations/index.tsx",
-    "route": "/operations"
+    "previewPath": "src/features/operations/index.previews.tsx"
   },
   "01KKA1RHCGAZPS3SVAWRWXAFYG": {
     "type": "page",
