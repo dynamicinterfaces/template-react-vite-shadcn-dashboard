@@ -136,5 +136,10 @@
     "type": "component",
     "path": "src/components/ui/badge.tsx",
     "previewPath": "src/components/ui/badge.previews.tsx"
+  },
+  "01KK9NVC2F7THYMRXNF24CKCKK": {
+    "type": "component",
+    "path": "src/components/ui/card.tsx",
+    "previewPath": "src/components/ui/card.previews.tsx"
   }
 }
