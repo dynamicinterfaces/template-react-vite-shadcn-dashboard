@@ -146,5 +146,10 @@
     "type": "component",
     "path": "src/components/ui/input.tsx",
     "previewPath": "src/components/ui/input.previews.tsx"
+  },
+  "01KK9NVH5CZB0S71BGTF5V10HJ": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx",
+    "previewPath": "src/components/ui/table.previews.tsx"
   }
 }
