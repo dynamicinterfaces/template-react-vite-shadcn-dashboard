@@ -96,5 +96,10 @@
     "type": "component",
     "path": "src/features/accounting/index.tsx",
     "previewPath": "src/features/accounting/index.previews.tsx"
+  },
+  "01KK9NT6JNJMNYW383HPM9T670": {
+    "type": "component",
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
   }
 }
