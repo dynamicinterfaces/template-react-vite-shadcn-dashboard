@@ -2,7 +2,8 @@ import {
   DollarSignIcon,
   LayoutDashboardIcon,
   NewspaperIcon,
-  BarChart3Icon
+  BarChart3Icon,
+  CalculatorIcon,
 } from 'lucide-react'
 import { Navigate, useRoutes } from 'react-router'
 import Layout from './components/layout'
