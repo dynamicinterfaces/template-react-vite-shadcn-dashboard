@@ -1,5 +1,5 @@
 import { DashboardMenu } from '@/router'
-import { Command } from 'lucide-react'
+import { Building2 } from 'lucide-react'
 import { NavGroup, NavItem, type SidebarData } from '../types'
 
 interface ISidebarDataComponent {
@@ -39,8 +39,8 @@ export const SidebarDataComponent = (): ISidebarDataComponent => {
         avatar: '/avatars/shadcn.jpg'
       },
       app: {
-        name: 'Dashboard Starter Kit',
-        logo: Command,
+        name: 'Dynamics',
+        logo: Building2,
         plan: 'Vite + ShadcnUI'
       },
       navGroups: removeHiddenItems(routes)
