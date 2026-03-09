@@ -264,5 +264,10 @@
     "type": "page",
     "path": "src/features/sales/index.tsx",
     "route": "/sales"
+  },
+  "01KKA199T4CSEH0JEM4QMX1WRT": {
+    "type": "page",
+    "path": "src/features/people/index.tsx",
+    "route": "/people"
   }
 }
