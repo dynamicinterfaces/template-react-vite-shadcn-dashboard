@@ -28,5 +28,4 @@ function Wrapper() {
 
 const meta = { component: Wrapper };
 export default meta;
-
 export const Default = {};
