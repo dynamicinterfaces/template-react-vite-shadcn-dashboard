@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { TrendingUpIcon, TrendingDownIcon, ReceiptIcon, WalletIcon, FileTextIcon, PiggyBankIcon } from 'lucide-react'
+import { ArrowDownIcon, ArrowUpIcon, BuildingIcon, CreditCardIcon, ScaleIcon, BookOpenIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -12,172 +12,204 @@ import {
   TableRow,
 } from '@/components/ui/table'
 
-const monthlyExpenses = [
-  { month: 'Jan', expenses: 92000, budget: 100000 },
-  { month: 'Feb', expenses: 88000, budget: 100000 },
-  { month: 'Mar', expenses: 105000, budget: 100000 },
-  { month: 'Apr', expenses: 97000, budget: 105000 },
-  { month: 'May', expenses: 112000, budget: 110000 },
-  { month: 'Jun', expenses: 98000, budget: 110000 },
-  { month: 'Jul', expenses: 103000, budget: 115000 },
-  { month: 'Aug', expenses: 118000, budget: 115000 },
-  { month: 'Sep', expenses: 109000, budget: 120000 },
-  { month: 'Oct', expenses: 124000, budget: 120000 },
-  { month: 'Nov', expenses: 131000, budget: 130000 },
-  { month: 'Dec', expenses: 143000, budget: 140000 },
+// Balance Sheet
+const assets = [
+  { account: 'Cash & Cash Equivalents', code: '1000', amount: 482300 },
+  { account: 'Accounts Receivable', code: '1100', amount: 318750 },
+  { account: 'Prepaid Expenses', code: '1200', amount: 42100 },
+  { account: 'Inventory', code: '1300', amount: 189400 },
+  { account: 'Property & Equipment', code: '1500', amount: 640000 },
+  { account: 'Accumulated Depreciation', code: '1510', amount: -128000 },
+  { account: 'Intangible Assets', code: '1600', amount: 95000 },
 ]
 
-const expenseCategories = [
-  { category: 'Payroll', amount: 680000, budget: 700000 },
-  { category: 'Software & Tools', amount: 92000, budget: 90000 },
-  { category: 'Marketing', amount: 148000, budget: 150000 },
-  { category: 'Infrastructure', amount: 74000, budget: 80000 },
-  { category: 'Travel & Events', amount: 38000, budget: 50000 },
-  { category: 'Office & Admin', amount: 21000, budget: 25000 },
+const liabilities = [
+  { account: 'Accounts Payable', code: '2000', amount: 214600 },
+  { account: 'Accrued Liabilities', code: '2100', amount: 87300 },
+  { account: 'Deferred Revenue', code: '2200', amount: 54800 },
+  { account: 'Short-term Debt', code: '2300', amount: 100000 },
+  { account: 'Long-term Debt', code: '2500', amount: 350000 },
 ]
 
-const invoices = [
-  { id: 'INV-2024-087', vendor: 'AWS', category: 'Infrastructure', amount: 24800, dueDate: '2025-01-15', status: 'Paid', approver: 'Sarah Chen' },
-  { id: 'INV-2024-088', vendor: 'Salesforce', category: 'Software & Tools', amount: 18500, dueDate: '2025-01-20', status: 'Pending', approver: 'David Park' },
-  { id: 'INV-2024-089', vendor: 'HubSpot', category: 'Marketing', amount: 12400, dueDate: '2025-01-22', status: 'Pending', approver: 'Jessica Liu' },
-  { id: 'INV-2024-090', vendor: 'Stripe', category: 'Software & Tools', amount: 9200, dueDate: '2025-01-28', status: 'Paid', approver: 'Sarah Chen' },
-  { id: 'INV-2024-091', vendor: 'WeWork', category: 'Office & Admin', amount: 7800, dueDate: '2025-02-01', status: 'Overdue', approver: 'Carlos Mendez' },
-  { id: 'INV-2024-092', vendor: 'Google Ads', category: 'Marketing', amount: 31600, dueDate: '2025-02-05', status: 'Pending', approver: 'Jessica Liu' },
-  { id: 'INV-2024-093', vendor: 'Figma', category: 'Software & Tools', amount: 4800, dueDate: '2025-02-10', status: 'Paid', approver: 'David Park' },
+const equity = [
+  { account: "Common Stock", code: '3000', amount: 500000 },
+  { account: 'Retained Earnings', code: '3100', amount: 232850 },
+  { account: 'Current Period Net Income', code: '3200', amount: 100000 },
 ]
+
+// AP Aging
+const apAging = [
+  { vendor: 'AWS', invoiceId: 'INV-4821', amount: 24800, current: 24800, d30: 0, d60: 0, d90: 0, dueDate: '2025-02-15' },
+  { vendor: 'Salesforce', invoiceId: 'INV-4798', amount: 18500, current: 0, d30: 18500, d60: 0, d90: 0, dueDate: '2025-01-20' },
+  { vendor: 'WeWork', invoiceId: 'INV-4756', amount: 7800, current: 0, d30: 0, d60: 7800, d90: 0, dueDate: '2024-12-01' },
+  { vendor: 'Adobe', invoiceId: 'INV-4702', amount: 4200, current: 0, d30: 0, d60: 0, d90: 4200, dueDate: '2024-11-02' },
+  { vendor: 'Google Ads', invoiceId: 'INV-4841', amount: 31600, current: 31600, d30: 0, d60: 0, d90: 0, dueDate: '2025-02-28' },
+  { vendor: 'Stripe Fees', invoiceId: 'INV-4835', amount: 9200, current: 9200, d30: 0, d60: 0, d90: 0, dueDate: '2025-02-20' },
+]
+
+// Journal Entries
+const journalEntries = [
+  { date: '2025-01-31', ref: 'JE-1042', description: 'Payroll — January 2025', debit: 142000, credit: 142000, account: 'Salaries Expense / Cash', status: 'Posted' },
+  { date: '2025-01-31', ref: 'JE-1041', description: 'Depreciation — Jan 2025', debit: 8000, credit: 8000, account: 'Depreciation Expense / Accum. Depr.', status: 'Posted' },
+  { date: '2025-01-28', ref: 'JE-1040', description: 'Revenue recognition — Q4 deferred', debit: 54800, credit: 54800, account: 'Deferred Revenue / Revenue', status: 'Posted' },
+  { date: '2025-01-25', ref: 'JE-1039', description: 'Prepaid insurance amortization', debit: 3500, credit: 3500, account: 'Insurance Expense / Prepaid Expenses', status: 'Posted' },
+  { date: '2025-01-22', ref: 'JE-1038', description: 'AWS invoice accrual', debit: 24800, credit: 24800, account: 'IT Expense / Accounts Payable', status: 'Posted' },
+  { date: '2025-01-15', ref: 'JE-1037', description: 'Customer payment received', debit: 89400, credit: 89400, account: 'Cash / Accounts Receivable', status: 'Posted' },
+  { date: '2025-01-10', ref: 'JE-1036', description: 'Loan interest accrual', debit: 4375, credit: 4375, account: 'Interest Expense / Accrued Liabilities', status: 'Draft' },
+]
+
+const fmt = (n: number, showNeg = false) => {
+  const abs = Math.abs(n)
+  const str = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(abs)
+  if (showNeg && n < 0) return `(${str})`
+  return str
+}
+
+const totalAssets = assets.reduce((s, a) => s + a.amount, 0)
+const totalLiabilities = liabilities.reduce((s, l) => s + l.amount, 0)
+const totalEquity = equity.reduce((s, e) => s + e.amount, 0)
+const totalAP = apAging.reduce((s, r) => s + r.amount, 0)
+const overdueAP = apAging.reduce((s, r) => s + r.d60 + r.d90, 0)
 
 const kpiData = [
-  { label: 'Total Expenses', value: '$1.32M', change: '+8.2%', trend: 'down', icon: WalletIcon },
-  { label: 'Budget Remaining', value: '$148K', change: '+12.4%', trend: 'up', icon: PiggyBankIcon },
-  { label: 'Open Invoices', value: '3', change: '-25.0%', trend: 'up', icon: FileTextIcon },
-  { label: 'Overdue Invoices', value: '1', change: '+100%', trend: 'down', icon: ReceiptIcon },
+  { label: 'Total Assets', value: fmt(totalAssets), sub: 'Balance sheet total', icon: BuildingIcon, positive: true },
+  { label: 'Total Liabilities', value: fmt(totalLiabilities), sub: 'Debt & obligations', icon: CreditCardIcon, positive: false },
+  { label: "Stockholders' Equity", value: fmt(totalEquity), sub: 'Assets minus liabilities', icon: ScaleIcon, positive: true },
+  { label: 'Accounts Payable', value: fmt(totalAP), sub: `${fmt(overdueAP)} overdue 60+ days`, icon: BookOpenIcon, positive: overdueAP === 0 },
 ]
 
-const ALL_CATEGORIES = ['All', ...Array.from(new Set(invoices.map(i => i.category)))]
-const ALL_STATUSES = ['All', ...Array.from(new Set(invoices.map(i => i.status)))]
-
-const fmt = (n: number) =>
-  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n)
-
-const statusBadgeVariant: Record<string, 'default' | 'secondary' | 'destructive' | 'outline'> = {
-  Paid: 'default',
-  Pending: 'secondary',
-  Overdue: 'destructive',
-}
-
-const categoryBg: Record<string, string> = {
-  Payroll: 'bg-primary',
-  'Software & Tools': 'bg-primary/70',
-  Marketing: 'bg-primary/55',
-  Infrastructure: 'bg-muted-foreground/50',
-  'Travel & Events': 'bg-muted-foreground/35',
-  'Office & Admin': 'bg-muted-foreground/20',
-}
-
-function ExpenseBarChart() {
-  const maxVal = Math.max(...monthlyExpenses.map(d => Math.max(d.expenses, d.budget)))
-  const chartHeight = 180
-
+function BalanceSheet() {
   return (
-    <div className='w-full'>
-      <div className='flex items-end gap-1' style={{ height: chartHeight }}>
-        {monthlyExpenses.map((d) => {
-          const expH = (d.expenses / maxVal) * chartHeight
-          const budH = (d.budget / maxVal) * chartHeight
-          const over = d.expenses > d.budget
-          return (
-            <div key={d.month} className='flex-1 flex flex-col items-center gap-0.5'>
-              <div className='w-full flex items-end gap-0.5' style={{ height: chartHeight }}>
-                <div
-                  className={`flex-1 rounded-t transition-opacity hover:opacity-100 opacity-90 cursor-pointer ${over ? 'bg-destructive' : 'bg-primary'}`}
-                  style={{ height: expH }}
-                  title={`Expenses: ${fmt(d.expenses)}`}
-                />
-                <div
-                  className='flex-1 rounded-t bg-muted-foreground/30 hover:bg-muted-foreground/50 transition-colors cursor-pointer'
-                  style={{ height: budH }}
-                  title={`Budget: ${fmt(d.budget)}`}
-                />
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      {/* Assets */}
+      <div>
+        <div className='text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2'>Assets</div>
+        <div className='space-y-1'>
+          {assets.map((a) => (
+            <div key={a.code} className='flex items-center justify-between py-1 border-b border-border/50 last:border-0'>
+              <div className='flex items-center gap-2'>
+                <span className='text-xs text-muted-foreground font-mono w-10 shrink-0'>{a.code}</span>
+                <span className='text-sm'>{a.account}</span>
               </div>
+              <span className={`text-sm font-medium tabular-nums ${a.amount < 0 ? 'text-destructive' : ''}`}>
+                {fmt(a.amount, true)}
+              </span>
             </div>
-          )
-        })}
-      </div>
-      <div className='flex items-center gap-1 mt-1'>
-        {monthlyExpenses.map((d) => (
-          <div key={d.month} className='flex-1 text-center text-xs text-muted-foreground'>{d.month}</div>
-        ))}
-      </div>
-      <div className='flex items-center gap-4 mt-3'>
-        <div className='flex items-center gap-1.5'>
-          <div className='w-3 h-3 rounded bg-primary' />
-          <span className='text-xs text-muted-foreground'>Expenses</span>
+          ))}
+          <div className='flex items-center justify-between pt-2 mt-1'>
+            <span className='text-sm font-semibold'>Total Assets</span>
+            <span className='text-sm font-semibold tabular-nums'>{fmt(totalAssets)}</span>
+          </div>
         </div>
-        <div className='flex items-center gap-1.5'>
-          <div className='w-3 h-3 rounded bg-destructive' />
-          <span className='text-xs text-muted-foreground'>Over budget</span>
+      </div>
+
+      {/* Liabilities & Equity */}
+      <div>
+        <div className='text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2'>Liabilities</div>
+        <div className='space-y-1 mb-4'>
+          {liabilities.map((l) => (
+            <div key={l.code} className='flex items-center justify-between py-1 border-b border-border/50 last:border-0'>
+              <div className='flex items-center gap-2'>
+                <span className='text-xs text-muted-foreground font-mono w-10 shrink-0'>{l.code}</span>
+                <span className='text-sm'>{l.account}</span>
+              </div>
+              <span className='text-sm font-medium tabular-nums'>{fmt(l.amount)}</span>
+            </div>
+          ))}
+          <div className='flex items-center justify-between pt-2 mt-1 border-t border-border'>
+            <span className='text-sm font-semibold'>Total Liabilities</span>
+            <span className='text-sm font-semibold tabular-nums'>{fmt(totalLiabilities)}</span>
+          </div>
         </div>
-        <div className='flex items-center gap-1.5'>
-          <div className='w-3 h-3 rounded bg-muted-foreground/30' />
-          <span className='text-xs text-muted-foreground'>Budget</span>
+
+        <div className='text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 mt-4'>Equity</div>
+        <div className='space-y-1'>
+          {equity.map((e) => (
+            <div key={e.code} className='flex items-center justify-between py-1 border-b border-border/50 last:border-0'>
+              <div className='flex items-center gap-2'>
+                <span className='text-xs text-muted-foreground font-mono w-10 shrink-0'>{e.code}</span>
+                <span className='text-sm'>{e.account}</span>
+              </div>
+              <span className='text-sm font-medium tabular-nums'>{fmt(e.amount)}</span>
+            </div>
+          ))}
+          <div className='flex items-center justify-between pt-2 mt-1 border-t border-border'>
+            <span className='text-sm font-semibold'>Total Equity</span>
+            <span className='text-sm font-semibold tabular-nums'>{fmt(totalEquity)}</span>
+          </div>
+          <div className='flex items-center justify-between pt-2 mt-1 border-t-2 border-foreground'>
+            <span className='text-sm font-bold'>Total Liabilities & Equity</span>
+            <span className='text-sm font-bold tabular-nums'>{fmt(totalLiabilities + totalEquity)}</span>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-function CategoryBreakdown() {
-  const maxAmount = Math.max(...expenseCategories.map(c => c.budget))
+function APAgingTable() {
+  const cols = ['Current', '1–30 Days', '31–60 Days', '61–90+ Days']
+  const totals = {
+    current: apAging.reduce((s, r) => s + r.current, 0),
+    d30: apAging.reduce((s, r) => s + r.d30, 0),
+    d60: apAging.reduce((s, r) => s + r.d60, 0),
+    d90: apAging.reduce((s, r) => s + r.d90, 0),
+  }
   return (
-    <div className='space-y-2'>
-      {expenseCategories.map((cat) => {
-        const pct = (cat.amount / maxAmount) * 100
-        const over = cat.amount > cat.budget
-        const bg = over ? 'bg-destructive' : (categoryBg[cat.category] ?? 'bg-muted')
-        return (
-          <div key={cat.category} className='flex items-center gap-3'>
-            <div className='w-32 text-xs text-right text-muted-foreground shrink-0'>{cat.category}</div>
-            <div className='flex-1 bg-muted rounded-full h-5 overflow-hidden'>
-              <div
-                className={`h-full rounded-full flex items-center pl-2 transition-all ${bg}`}
-                style={{ width: `${pct}%` }}
-              >
-                <span className='text-xs font-medium whitespace-nowrap text-primary-foreground'>
-                  {fmt(cat.amount)}
-                </span>
-              </div>
-            </div>
-            <div className={`w-20 text-xs text-right shrink-0 ${over ? 'text-destructive font-medium' : 'text-muted-foreground'}`}>
-              {over ? '+' : ''}{fmt(cat.amount - cat.budget)}
-            </div>
-          </div>
-        )
-      })}
+    <div className='rounded-md border'>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Vendor</TableHead>
+            <TableHead>Invoice</TableHead>
+            <TableHead>Due Date</TableHead>
+            <TableHead className='text-right'>Total</TableHead>
+            {cols.map(c => <TableHead key={c} className='text-right'>{c}</TableHead>)}
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {apAging.map((row) => (
+            <TableRow key={row.invoiceId}>
+              <TableCell className='font-medium'>{row.vendor}</TableCell>
+              <TableCell className='font-mono text-xs text-muted-foreground'>{row.invoiceId}</TableCell>
+              <TableCell className='text-muted-foreground'>{row.dueDate}</TableCell>
+              <TableCell className='text-right font-medium tabular-nums'>{fmt(row.amount)}</TableCell>
+              <TableCell className='text-right tabular-nums text-muted-foreground'>{row.current ? fmt(row.current) : '—'}</TableCell>
+              <TableCell className='text-right tabular-nums text-muted-foreground'>{row.d30 ? fmt(row.d30) : '—'}</TableCell>
+              <TableCell className={`text-right tabular-nums ${row.d60 ? 'text-warning font-medium' : 'text-muted-foreground'}`}>{row.d60 ? fmt(row.d60) : '—'}</TableCell>
+              <TableCell className={`text-right tabular-nums ${row.d90 ? 'text-destructive font-medium' : 'text-muted-foreground'}`}>{row.d90 ? fmt(row.d90) : '—'}</TableCell>
+            </TableRow>
+          ))}
+          <TableRow className='bg-muted/40 font-semibold'>
+            <TableCell colSpan={3}>Total</TableCell>
+            <TableCell className='text-right tabular-nums'>{fmt(totalAP)}</TableCell>
+            <TableCell className='text-right tabular-nums'>{fmt(totals.current)}</TableCell>
+            <TableCell className='text-right tabular-nums'>{fmt(totals.d30)}</TableCell>
+            <TableCell className='text-right tabular-nums text-warning'>{fmt(totals.d60)}</TableCell>
+            <TableCell className='text-right tabular-nums text-destructive'>{fmt(totals.d90)}</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     </div>
   )
 }
 
 export function AccountingDashboard() {
   const [search, setSearch] = React.useState('')
-  const [categoryFilter, setCategoryFilter] = React.useState('All')
   const [statusFilter, setStatusFilter] = React.useState('All')
 
-  const totalExpenses = monthlyExpenses.reduce((acc, d) => acc + d.expenses, 0)
-  const totalBudget = monthlyExpenses.reduce((acc, d) => acc + d.budget, 0)
-  const budgetUtilization = ((totalExpenses / totalBudget) * 100).toFixed(1)
+  const balanced = Math.abs(totalAssets - (totalLiabilities + totalEquity)) < 1
 
-  const filteredInvoices = invoices.filter(inv => {
+  const filteredEntries = journalEntries.filter(je => {
     const matchesSearch =
       search === '' ||
-      inv.vendor.toLowerCase().includes(search.toLowerCase()) ||
-      inv.id.toLowerCase().includes(search.toLowerCase())
-    const matchesCategory = categoryFilter === 'All' || inv.category === categoryFilter
-    const matchesStatus = statusFilter === 'All' || inv.status === statusFilter
-    return matchesSearch && matchesCategory && matchesStatus
+      je.description.toLowerCase().includes(search.toLowerCase()) ||
+      je.ref.toLowerCase().includes(search.toLowerCase())
+    const matchesStatus = statusFilter === 'All' || je.status === statusFilter
+    return matchesSearch && matchesStatus
   })
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)
-  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => setCategoryFilter(e.target.value)
   const handleStatusChange = (e: React.ChangeEvent<HTMLSelectElement>) => setStatusFilter(e.target.value)
 
   return (
@@ -186,11 +218,11 @@ export function AccountingDashboard() {
       <div className='flex items-center justify-between'>
         <div>
           <h1 className='text-2xl font-bold tracking-tight'>Accounting</h1>
-          <p className='text-sm text-muted-foreground mt-0.5'>Budget tracking & invoice management · FY 2024</p>
+          <p className='text-sm text-muted-foreground mt-0.5'>General ledger · Period ending January 31, 2025</p>
         </div>
-        <Badge variant='outline' className='gap-1.5'>
-          <span className='w-2 h-2 rounded-full bg-primary inline-block' />
-          Live Data
+        <Badge variant={balanced ? 'default' : 'destructive'} className='gap-1.5'>
+          <ScaleIcon className='w-3 h-3' />
+          {balanced ? 'Balanced' : 'Out of Balance'}
         </Badge>
       </div>
 
@@ -205,10 +237,10 @@ export function AccountingDashboard() {
                 <Icon className='h-4 w-4 text-muted-foreground' />
               </CardHeader>
               <CardContent>
-                <div className='text-2xl font-bold'>{kpi.value}</div>
-                <div className={`flex items-center gap-1 text-xs mt-1 ${kpi.trend === 'up' ? 'text-primary' : 'text-destructive'}`}>
-                  {kpi.trend === 'up' ? <TrendingUpIcon className='h-3 w-3' /> : <TrendingDownIcon className='h-3 w-3' />}
-                  {kpi.change} vs last quarter
+                <div className='text-2xl font-bold tabular-nums'>{kpi.value}</div>
+                <div className={`flex items-center gap-1 text-xs mt-1 ${kpi.positive ? 'text-primary' : 'text-destructive'}`}>
+                  {kpi.positive ? <ArrowUpIcon className='h-3 w-3' /> : <ArrowDownIcon className='h-3 w-3' />}
+                  {kpi.sub}
                 </div>
               </CardContent>
             </Card>
@@ -216,61 +248,49 @@ export function AccountingDashboard() {
         })}
       </div>
 
-      {/* Charts Row */}
-      <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
-        <Card>
-          <CardHeader>
-            <CardTitle className='text-base'>Monthly Expenses vs Budget</CardTitle>
-            <p className='text-xs text-muted-foreground'>Red bars indicate over-budget months</p>
-          </CardHeader>
-          <CardContent>
-            <ExpenseBarChart />
-          </CardContent>
-        </Card>
+      {/* Balance Sheet */}
+      <Card>
+        <CardHeader>
+          <CardTitle className='text-base'>Balance Sheet</CardTitle>
+          <p className='text-xs text-muted-foreground'>As of January 31, 2025</p>
+        </CardHeader>
+        <CardContent>
+          <BalanceSheet />
+        </CardContent>
+      </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className='text-base'>Expense Categories</CardTitle>
-            <div className='flex gap-4 text-xs text-muted-foreground mt-0.5'>
-              <span>Total: {fmt(totalExpenses)}</span>
-              <span>Budget: {fmt(totalBudget)}</span>
-              <span>Utilization: {budgetUtilization}%</span>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <CategoryBreakdown />
-          </CardContent>
-        </Card>
-      </div>
+      {/* AP Aging */}
+      <Card>
+        <CardHeader>
+          <CardTitle className='text-base'>Accounts Payable Aging</CardTitle>
+          <p className='text-xs text-muted-foreground'>Outstanding vendor balances by age</p>
+        </CardHeader>
+        <CardContent>
+          <APAgingTable />
+        </CardContent>
+      </Card>
 
-      {/* Invoices Table */}
+      {/* Journal Entries */}
       <Card>
         <CardHeader>
           <div className='flex items-center justify-between gap-4 flex-wrap'>
             <div>
-              <CardTitle className='text-base'>Invoices</CardTitle>
-              <p className='text-xs text-muted-foreground mt-0.5'>Vendor invoices and approval status</p>
+              <CardTitle className='text-base'>Journal Entries</CardTitle>
+              <p className='text-xs text-muted-foreground mt-0.5'>General ledger entries for current period</p>
             </div>
             <div className='flex items-center gap-2'>
               <Input
-                placeholder='Search vendor, invoice...'
+                placeholder='Search description, ref...'
                 value={search}
                 onChange={handleSearchChange}
-                className='h-8 w-44'
+                className='h-8 w-48'
               />
-              <select
-                value={categoryFilter}
-                onChange={handleCategoryChange}
-                className='h-8 rounded-md border border-input bg-background px-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring'
-              >
-                {ALL_CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
-              </select>
               <select
                 value={statusFilter}
                 onChange={handleStatusChange}
                 className='h-8 rounded-md border border-input bg-background px-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring'
               >
-                {ALL_STATUSES.map(s => <option key={s} value={s}>{s}</option>)}
+                {['All', 'Posted', 'Draft'].map(s => <option key={s} value={s}>{s}</option>)}
               </select>
             </div>
           </div>
@@ -280,33 +300,33 @@ export function AccountingDashboard() {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>Invoice</TableHead>
-                  <TableHead>Vendor</TableHead>
-                  <TableHead>Category</TableHead>
-                  <TableHead>Approver</TableHead>
-                  <TableHead>Due Date</TableHead>
+                  <TableHead>Date</TableHead>
+                  <TableHead>Reference</TableHead>
+                  <TableHead>Description</TableHead>
+                  <TableHead>Accounts</TableHead>
                   <TableHead>Status</TableHead>
-                  <TableHead className='text-right'>Amount</TableHead>
+                  <TableHead className='text-right'>Debit</TableHead>
+                  <TableHead className='text-right'>Credit</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {filteredInvoices.length === 0 ? (
+                {filteredEntries.length === 0 ? (
                   <TableRow>
                     <TableCell colSpan={7} className='text-center text-muted-foreground py-8'>
-                      No invoices match your filters
+                      No entries match your filters
                     </TableCell>
                   </TableRow>
-                ) : filteredInvoices.map((inv) => (
-                  <TableRow key={inv.id}>
-                    <TableCell className='font-mono text-xs text-muted-foreground'>{inv.id}</TableCell>
-                    <TableCell className='font-medium'>{inv.vendor}</TableCell>
-                    <TableCell className='text-muted-foreground'>{inv.category}</TableCell>
-                    <TableCell className='text-muted-foreground'>{inv.approver}</TableCell>
-                    <TableCell className='text-muted-foreground'>{inv.dueDate}</TableCell>
+                ) : filteredEntries.map((je) => (
+                  <TableRow key={je.ref}>
+                    <TableCell className='text-muted-foreground'>{je.date}</TableCell>
+                    <TableCell className='font-mono text-xs text-muted-foreground'>{je.ref}</TableCell>
+                    <TableCell className='font-medium max-w-[180px] truncate'>{je.description}</TableCell>
+                    <TableCell className='text-xs text-muted-foreground max-w-[200px] truncate'>{je.account}</TableCell>
                     <TableCell>
-                      <Badge variant={statusBadgeVariant[inv.status] ?? 'outline'}>{inv.status}</Badge>
+                      <Badge variant={je.status === 'Posted' ? 'default' : 'secondary'}>{je.status}</Badge>
                     </TableCell>
-                    <TableCell className='text-right font-medium'>{fmt(inv.amount)}</TableCell>
+                    <TableCell className='text-right tabular-nums'>{fmt(je.debit)}</TableCell>
+                    <TableCell className='text-right tabular-nums'>{fmt(je.credit)}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
