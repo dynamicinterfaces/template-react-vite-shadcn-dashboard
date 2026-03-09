@@ -126,5 +126,10 @@
     "type": "component",
     "path": "src/features/404.tsx",
     "previewPath": "src/features/404.previews.tsx"
+  },
+  "01KK9NV7GGTGNN9B95V9YAK154": {
+    "type": "component",
+    "path": "src/components/ui/button.tsx",
+    "previewPath": "src/components/ui/button.previews.tsx"
   }
 }
