@@ -4,7 +4,7 @@ import { DbSchemaGraph } from './db-schema-graph'
 function Preview() {
   return (
     <ReactFlowProvider>
-      <div style={{ width: 680, height: 420 }}>
+      <div style={{ width: '100vw', height: '100vh' }}>
         <DbSchemaGraph />
       </div>
     </ReactFlowProvider>

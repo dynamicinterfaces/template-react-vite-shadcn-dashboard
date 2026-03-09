@@ -242,7 +242,7 @@ const edges: Edge[] = [
 
 export function DbSchemaGraph() {
   return (
-    <div style={{ width: '100%', height: 600 }} className='rounded-lg border border-border overflow-hidden'>
+    <div style={{ width: '100%', height: '100%' }} className='rounded-lg border border-border overflow-hidden'>
       <ReactFlow
         nodes={nodes}
         edges={edges}
