@@ -4,13 +4,15 @@ import WelcomePage from './WelcomePage';
 
 function Preview() {
   return (
-    <MemoryRouter>
-      <AuthProvider>
-        <Routes>
-          <Route path='/' element={<WelcomePage />} />
-        </Routes>
-      </AuthProvider>
-    </MemoryRouter>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+      <MemoryRouter>
+        <AuthProvider>
+          <Routes>
+            <Route path='/' element={<WelcomePage />} />
+          </Routes>
+        </AuthProvider>
+      </MemoryRouter>
+    </div>
   );
 }
 
