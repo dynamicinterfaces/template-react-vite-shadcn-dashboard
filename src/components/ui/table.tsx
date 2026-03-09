@@ -190,8 +190,7 @@ const TableHeadSort = React.forwardRef<
         {onSort && (
           <span className={cn(
             'inline-flex transition-opacity',
-            sortDirection ? 'opacity-100' : 'opacity-40',
-            isHovered && !sortDirection && 'opacity-70'
+            sortDirection || isHovered ? 'opacity-100' : 'opacity-0'
           )}>
             {getSortIcon()}
           </span>
