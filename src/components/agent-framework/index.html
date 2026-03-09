@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Framework</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #0f0f11; color: #f4f4f5; height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 16px 24px; border-bottom: 1px solid #27272a; }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header p { font-size: 13px; color: #71717a; margin-top: 2px; }
+  #graph { flex: 1; }
+  .legend { display: flex; gap: 20px; padding: 12px 24px; border-top: 1px solid #27272a; font-size: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Agent Framework — Acme Corp</h1>
+  <p>Agentic team topology: orchestrators, specialists, and data sources</p>
+</header>
+<div id="graph"></div>
+<div class="legend">
+  <div class="legend-item"><div class="dot" style="background:#6366f1"></div>Orchestrator</div>
+  <div class="legend-item"><div class="dot" style="background:#0ea5e9"></div>Specialist Agent</div>
+  <div class="legend-item"><div class="dot" style="background:#10b981"></div>Data Source</div>
+  <div class="legend-item"><div class="dot" style="background:#f59e0b"></div>External Tool</div>
+</div>
+
+<script>
+const nodes = new vis.DataSet([
+  // Orchestrators
+  { id: 1,  label: 'CEO Agent\n(Orchestrator)',    group: 'orch',   level: 0 },
+
+  // Dept orchestrators
+  { id: 2,  label: 'Finance\nOrchestrator',         group: 'orch',   level: 1 },
+  { id: 3,  label: 'Marketing\nOrchestrator',       group: 'orch',   level: 1 },
+  { id: 4,  label: 'Engineering\nOrchestrator',     group: 'orch',   level: 1 },
+  { id: 5,  label: 'Operations\nOrchestrator',      group: 'orch',   level: 1 },
+
+  // Finance specialists
+  { id: 6,  label: 'Invoice\nAgent',                group: 'spec',   level: 2 },
+  { id: 7,  label: 'Budget\nAnalyst',               group: 'spec',   level: 2 },
+  { id: 8,  label: 'Payments\nAgent',               group: 'spec',   level: 2 },
+
+  // Marketing specialists
+  { id: 9,  label: 'Content\nAgent',                group: 'spec',   level: 2 },
+  { id: 10, label: 'SEO\nAgent',                    group: 'spec',   level: 2 },
+
+  // Engineering specialists
+  { id: 11, label: 'Code Review\nAgent',            group: 'spec',   level: 2 },
+  { id: 12, label: 'Deploy\nAgent',                 group: 'spec',   level: 2 },
+  { id: 13, label: 'QA\nAgent',                     group: 'spec',   level: 2 },
+
+  // Operations specialists
+  { id: 14, label: 'Scheduler\nAgent',              group: 'spec',   level: 2 },
+  { id: 15, label: 'Support\nAgent',                group: 'spec',   level: 2 },
+
+  // Data sources
+  { id: 16, label: 'Postgres\nDB',                  group: 'data',   level: 3 },
+  { id: 17, label: 'Vector\nStore',                 group: 'data',   level: 3 },
+  { id: 18, label: 'File\nStorage',                 group: 'data',   level: 3 },
+
+  // External tools
+  { id: 19, label: 'Stripe\nAPI',                   group: 'tool',   level: 3 },
+  { id: 20, label: 'GitHub\nAPI',                   group: 'tool',   level: 3 },
+  { id: 21, label: 'Slack\nWebhook',                group: 'tool',   level: 3 },
+  { id: 22, label: 'Claude\nAPI',                   group: 'tool',   level: 3 },
+])
+
+const edges = new vis.DataSet([
+  // CEO → depts
+  { from: 1, to: 2 }, { from: 1, to: 3 }, { from: 1, to: 4 }, { from: 1, to: 5 },
+
+  // Finance → specialists
+  { from: 2, to: 6 }, { from: 2, to: 7 }, { from: 2, to: 8 },
+
+  // Marketing → specialists
+  { from: 3, to: 9 }, { from: 3, to: 10 },
+
+  // Engineering → specialists
+  { from: 4, to: 11 }, { from: 4, to: 12 }, { from: 4, to: 13 },
+
+  // Operations → specialists
+  { from: 5, to: 14 }, { from: 5, to: 15 },
+
+  // Specialists → data/tools
+  { from: 6, to: 19, dashes: true }, { from: 6, to: 16, dashes: true },
+  { from: 7, to: 16, dashes: true }, { from: 7, to: 17, dashes: true },
+  { from: 8, to: 19, dashes: true },
+  { from: 9, to: 22, dashes: true }, { from: 9, to: 18, dashes: true },
+  { from: 10, to: 17, dashes: true },
+  { from: 11, to: 20, dashes: true }, { from: 11, to: 22, dashes: true },
+  { from: 12, to: 20, dashes: true }, { from: 12, to: 21, dashes: true },
+  { from: 13, to: 16, dashes: true },
+  { from: 14, to: 16, dashes: true }, { from: 14, to: 21, dashes: true },
+  { from: 15, to: 17, dashes: true }, { from: 15, to: 22, dashes: true },
+])
+
+const groupColors = {
+  orch: { background: '#6366f1', border: '#4f46e5', highlight: { background: '#818cf8', border: '#6366f1' } },
+  spec: { background: '#0ea5e9', border: '#0284c7', highlight: { background: '#38bdf8', border: '#0ea5e9' } },
+  data: { background: '#10b981', border: '#059669', highlight: { background: '#34d399', border: '#10b981' } },
+  tool: { background: '#f59e0b', border: '#d97706', highlight: { background: '#fbbf24', border: '#f59e0b' } },
+}
+
+nodes.forEach(n => {
+  const c = groupColors[n.group]
+  nodes.update({ id: n.id, color: c, font: { color: '#fff', size: 12, face: 'system-ui' }, shape: 'box', borderWidth: 2, widthConstraint: { minimum: 100 } })
+})
+
+edges.forEach(e => {
+  edges.update({ id: e.id, color: { color: e.dashes ? '#3f3f46' : '#71717a', highlight: '#a1a1aa' }, arrows: { to: { enabled: true, scaleFactor: 0.6 } }, smooth: { type: 'cubicBezier' } })
+})
+
+const container = document.getElementById('graph')
+new vis.Network(container, { nodes, edges }, {
+  layout: { hierarchical: { direction: 'UD', sortMethod: 'directed', levelSeparation: 140, nodeSpacing: 120 } },
+  physics: { enabled: false },
+  interaction: { hover: true, tooltipDelay: 200 },
+})
+</script>
+</body>
+</html>
