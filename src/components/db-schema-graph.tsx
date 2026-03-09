@@ -1,4 +1,4 @@
-import { ReactFlow, Background, BackgroundVariant, type Node, type Edge } from '@xyflow/react'
+import { ReactFlow, Background, BackgroundVariant, Handle, Position, type Node, type Edge } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 
 interface TableNodeData {
@@ -9,6 +9,7 @@ interface TableNodeData {
 function TableNode({ data }: { data: TableNodeData }) {
   return (
     <div className='rounded-lg border border-border bg-card text-card-foreground shadow-sm min-w-[200px]'>
+      <Handle type='target' position={Position.Top} style={{ background: 'hsl(var(--primary))' }} />
       <div className='px-3 py-2 bg-muted rounded-t-lg border-b border-border'>
         <span className='text-xs font-semibold text-foreground tracking-wide uppercase'>{data.name}</span>
       </div>
@@ -24,6 +25,7 @@ function TableNode({ data }: { data: TableNodeData }) {
           </div>
         ))}
       </div>
+      <Handle type='source' position={Position.Bottom} style={{ background: 'hsl(var(--primary))' }} />
     </div>
   )
 }
