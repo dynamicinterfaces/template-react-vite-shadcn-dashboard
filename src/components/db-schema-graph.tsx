@@ -30,117 +30,223 @@ function TableNode({ data }: { data: TableNodeData }) {
 
 const nodeTypes = { table: TableNode }
 
+const PRIMARY = 'hsl(var(--primary))'
+const MUTED = 'hsl(var(--muted-foreground))'
+const edgeLabel = { fontSize: 10, fill: 'hsl(var(--muted-foreground))' }
+const edgeLabelBg = { fill: 'hsl(var(--background))', fillOpacity: 0.9 }
+
 const nodes: Node[] = [
   {
     id: 'users',
     type: 'table',
-    position: { x: 350, y: 20 },
+    position: { x: 420, y: 0 },
     data: {
       name: 'users',
       columns: [
         { name: 'id', type: 'uuid', pk: true },
         { name: 'email', type: 'text' },
         { name: 'name', type: 'text' },
+        { name: 'avatar_url', type: 'text' },
+        { name: 'role', type: 'text' },
         { name: 'created_at', type: 'timestamptz' },
       ],
     },
   },
   {
-    id: 'minty-bridge',
+    id: 'organizations',
     type: 'table',
-    position: { x: 20, y: 200 },
+    position: { x: 60, y: 220 },
     data: {
-      name: 'minty-bridge',
+      name: 'organizations',
       columns: [
         { name: 'id', type: 'uuid', pk: true },
         { name: 'name', type: 'text' },
-        { name: 'bridge_type', type: 'text' },
-        { name: 'status', type: 'text' },
-        { name: 'created_at', type: 'timestamptz' },
-        { name: 'updated_at', type: 'timestamptz' },
+        { name: 'slug', type: 'text' },
+        { name: 'plan', type: 'text' },
         { name: 'owner_id', type: 'uuid', fk: true },
-      ],
-    },
-  },
-  {
-    id: 'universal-mcp',
-    type: 'table',
-    position: { x: 340, y: 230 },
-    data: {
-      name: 'universal-mcp',
-      columns: [
-        { name: 'id', type: 'uuid', pk: true },
-        { name: 'session_id', type: 'text' },
-        { name: 'user_id', type: 'uuid', fk: true },
-        { name: 'tool_name', type: 'text' },
-        { name: 'payload', type: 'jsonb' },
         { name: 'created_at', type: 'timestamptz' },
-        { name: 'status', type: 'text' },
       ],
     },
   },
   {
-    id: 'auction',
+    id: 'org_members',
     type: 'table',
-    position: { x: 660, y: 200 },
+    position: { x: 420, y: 220 },
     data: {
-      name: 'auction',
+      name: 'org_members',
       columns: [
         { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'user_id', type: 'uuid', fk: true },
+        { name: 'role', type: 'text' },
+        { name: 'joined_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'payments',
+    type: 'table',
+    position: { x: 760, y: 220 },
+    data: {
+      name: 'payments',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'amount', type: 'numeric' },
+        { name: 'currency', type: 'text' },
+        { name: 'status', type: 'text' },
+        { name: 'stripe_id', type: 'text' },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'boards',
+    type: 'table',
+    position: { x: 60, y: 460 },
+    data: {
+      name: 'boards',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'created_by', type: 'uuid', fk: true },
+        { name: 'created_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'invoices',
+    type: 'table',
+    position: { x: 760, y: 460 },
+    data: {
+      name: 'invoices',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'payment_id', type: 'uuid', fk: true },
+        { name: 'stripe_invoice_id', type: 'text' },
+        { name: 'pdf_url', type: 'text' },
+        { name: 'issued_at', type: 'timestamptz' },
+        { name: 'due_at', type: 'timestamptz' },
+      ],
+    },
+  },
+  {
+    id: 'board_columns',
+    type: 'table',
+    position: { x: 60, y: 670 },
+    data: {
+      name: 'board_columns',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'board_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'position', type: 'int4' },
+      ],
+    },
+  },
+  {
+    id: 'tags',
+    type: 'table',
+    position: { x: 760, y: 670 },
+    data: {
+      name: 'tags',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'org_id', type: 'uuid', fk: true },
+        { name: 'name', type: 'text' },
+        { name: 'color', type: 'text' },
+      ],
+    },
+  },
+  {
+    id: 'cards',
+    type: 'table',
+    position: { x: 60, y: 860 },
+    data: {
+      name: 'cards',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'column_id', type: 'uuid', fk: true },
         { name: 'title', type: 'text' },
         { name: 'description', type: 'text' },
-        { name: 'start_price', type: 'numeric' },
-        { name: 'current_bid', type: 'numeric' },
-        { name: 'end_at', type: 'timestamptz' },
-        { name: 'seller_id', type: 'uuid', fk: true },
-        { name: 'status', type: 'text' },
+        { name: 'assignee_id', type: 'uuid', fk: true },
+        { name: 'due_at', type: 'timestamptz' },
+        { name: 'position', type: 'int4' },
+      ],
+    },
+  },
+  {
+    id: 'card_tags',
+    type: 'table',
+    position: { x: 420, y: 860 },
+    data: {
+      name: 'card_tags',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'card_id', type: 'uuid', fk: true },
+        { name: 'tag_id', type: 'uuid', fk: true },
+      ],
+    },
+  },
+  {
+    id: 'comments',
+    type: 'table',
+    position: { x: 60, y: 1060 },
+    data: {
+      name: 'comments',
+      columns: [
+        { name: 'id', type: 'uuid', pk: true },
+        { name: 'card_id', type: 'uuid', fk: true },
+        { name: 'author_id', type: 'uuid', fk: true },
+        { name: 'body', type: 'text' },
+        { name: 'created_at', type: 'timestamptz' },
       ],
     },
   },
 ]
 
+const mkEdge = (id: string, source: string, target: string, label: string, color = PRIMARY): Edge => ({
+  id,
+  source,
+  target,
+  label,
+  type: 'smoothstep',
+  animated: true,
+  style: { stroke: color, strokeWidth: 1.5 },
+  labelStyle: edgeLabel,
+  labelBgStyle: edgeLabelBg,
+  labelBgPadding: [4, 2] as [number, number],
+  labelBgBorderRadius: 3,
+})
+
 const edges: Edge[] = [
-  {
-    id: 'minty-bridge-owner',
-    source: 'minty-bridge',
-    target: 'users',
-    label: 'owner_id',
-    animated: true,
-    style: { stroke: 'hsl(var(--primary))' },
-    labelStyle: { fontSize: 10, fill: 'hsl(var(--muted-foreground))' },
-    labelBgStyle: { fill: 'hsl(var(--background))' },
-  },
-  {
-    id: 'universal-mcp-user',
-    source: 'universal-mcp',
-    target: 'users',
-    label: 'user_id',
-    animated: true,
-    style: { stroke: 'hsl(var(--primary))' },
-    labelStyle: { fontSize: 10, fill: 'hsl(var(--muted-foreground))' },
-    labelBgStyle: { fill: 'hsl(var(--background))' },
-  },
-  {
-    id: 'auction-seller',
-    source: 'auction',
-    target: 'users',
-    label: 'seller_id',
-    animated: true,
-    style: { stroke: 'hsl(var(--primary))' },
-    labelStyle: { fontSize: 10, fill: 'hsl(var(--muted-foreground))' },
-    labelBgStyle: { fill: 'hsl(var(--background))' },
-  },
+  mkEdge('org-owner', 'organizations', 'users', 'owner_id'),
+  mkEdge('member-org', 'org_members', 'organizations', 'org_id'),
+  mkEdge('member-user', 'org_members', 'users', 'user_id', MUTED),
+  mkEdge('payment-org', 'payments', 'organizations', 'org_id'),
+  mkEdge('board-org', 'boards', 'organizations', 'org_id'),
+  mkEdge('board-creator', 'boards', 'users', 'created_by', MUTED),
+  mkEdge('invoice-payment', 'invoices', 'payments', 'payment_id'),
+  mkEdge('col-board', 'board_columns', 'boards', 'board_id'),
+  mkEdge('tags-org', 'tags', 'organizations', 'org_id', MUTED),
+  mkEdge('card-col', 'cards', 'board_columns', 'column_id'),
+  mkEdge('card-assignee', 'cards', 'users', 'assignee_id', MUTED),
+  mkEdge('cardtag-card', 'card_tags', 'cards', 'card_id'),
+  mkEdge('cardtag-tag', 'card_tags', 'tags', 'tag_id', MUTED),
+  mkEdge('comment-card', 'comments', 'cards', 'card_id'),
+  mkEdge('comment-author', 'comments', 'users', 'author_id', MUTED),
 ]
 
 export function DbSchemaGraph() {
   return (
-    <div style={{ width: '100%', height: 420 }} className='rounded-lg border border-border overflow-hidden'>
+    <div style={{ width: '100%', height: 600 }} className='rounded-lg border border-border overflow-hidden'>
       <ReactFlow
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
         fitView
-        fitViewOptions={{ padding: 0.2 }}
+        fitViewOptions={{ padding: 0.15 }}
         nodesDraggable={false}
         nodesConnectable={false}
         elementsSelectable={false}
