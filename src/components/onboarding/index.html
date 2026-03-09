@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FDE Onboarding Flow</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f0f11; color: #e4e4e7; font-family: 'Inter', system-ui, sans-serif; padding: 32px; min-height: 100vh; }
+  h1 { font-size: 22px; font-weight: 700; color: #fff; }
+  .subtitle { font-size: 13px; color: #71717a; margin-top: 4px; margin-bottom: 36px; }
+
+  .timeline { position: relative; padding-left: 48px; }
+  .timeline::before { content:''; position:absolute; left:20px; top:0; bottom:0; width:2px; background: linear-gradient(to bottom, #6366f1, #f59e0b, #22c55e); }
+
+  .step { position: relative; margin-bottom: 32px; cursor: pointer; }
+  .step-dot { position:absolute; left:-36px; top:14px; width:16px; height:16px; border-radius:50%; border:2px solid #27272a; background:#0f0f11; transition: all 0.2s; }
+  .step.active .step-dot { background:#6366f1; border-color:#6366f1; box-shadow: 0 0 10px #6366f1aa; }
+  .step.done .step-dot { background:#22c55e; border-color:#22c55e; }
+
+  .step-card { background:#18181b; border:1px solid #27272a; border-radius:12px; padding:16px 20px; transition: border-color 0.2s, box-shadow 0.2s; }
+  .step.active .step-card { border-color:#6366f1; box-shadow: 0 0 0 1px #6366f144; }
+  .step.done .step-card { border-color:#27272a; opacity: 0.7; }
+
+  .step-header { display:flex; align-items:center; justify-content:space-between; }
+  .step-day { font-size:10px; font-weight:700; color:#6366f1; letter-spacing:1px; text-transform:uppercase; }
+  .step.done .step-day { color:#22c55e; }
+  .step-title { font-size:15px; font-weight:600; margin-top:4px; }
+  .step-body { font-size:13px; color:#a1a1aa; margin-top:8px; line-height:1.6; }
+
+  .tags { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+  .tag { font-size:10px; font-weight:600; padding:2px 8px; border-radius:99px; background:#27272a; color:#a1a1aa; }
+  .tag.blue { background:#1e3a5f; color:#38bdf8; }
+  .tag.purple { background:#2e1a4a; color:#a78bfa; }
+  .tag.green { background:#14301f; color:#4ade80; }
+  .tag.amber { background:#3d2507; color:#fbbf24; }
+
+  .status-badge { font-size:10px; font-weight:700; padding:2px 10px; border-radius:99px; }
+  .status-done { background:#14301f; color:#4ade80; }
+  .status-active { background:#1e1b4b; color:#818cf8; }
+  .status-pending { background:#1c1c1f; color:#52525b; }
+
+  .output-box { background:#0f0f11; border:1px solid #27272a; border-radius:8px; padding:12px; margin-top:12px; font-size:11px; font-family: 'JetBrains Mono', monospace; color:#6366f1; line-height:1.8; }
+  .output-box .dim { color:#3f3f46; }
+</style>
+</head>
+<body>
+<h1>Forward Deployed Engineering — Onboarding Flow</h1>
+<p class="subtitle">How the DI agent gets up to speed on Day 1 and delivers value by end of week</p>
+
+<div class="timeline">
+
+  <div class="step done">
+    <div class="step-dot"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <span class="step-day">Day 1 · Hour 1</span>
+        <span class="status-badge status-done">✓ Complete</span>
+      </div>
+      <div class="step-title">Client Intake &amp; Discovery</div>
+      <div class="step-body">Agent connects to MCP, reads company metadata, interviews stakeholders via structured questions. Maps org chart, identifies key data sources, notes pain points.</div>
+      <div class="tags">
+        <span class="tag blue">MCP connect</span>
+        <span class="tag purple">org mapping</span>
+        <span class="tag">stakeholder Q&A</span>
+      </div>
+      <div class="output-box">
+        <span class="dim">→ </span>org_chart.json (142 employees, 7 depts)<br/>
+        <span class="dim">→ </span>data_sources.json (6 integrations found)<br/>
+        <span class="dim">→ </span>pain_points.md (14 identified)
+      </div>
+    </div>
+  </div>
+
+  <div class="step done">
+    <div class="step-dot"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <span class="step-day">Day 1 · Hour 2–4</span>
+        <span class="status-badge status-done">✓ Complete</span>
+      </div>
+      <div class="step-title">Canvas Population</div>
+      <div class="step-body">Agent reads integration APIs, creates graph nodes for every business entity. Org chart, departments, systems, and key contacts appear on canvas automatically.</div>
+      <div class="tags">
+        <span class="tag blue">graph nodes</span>
+        <span class="tag purple">createNodes ×349</span>
+        <span class="tag green">grouping</span>
+      </div>
+      <div class="output-box">
+        <span class="dim">→ </span>349 nodes created across 12 groups<br/>
+        <span class="dim">→ </span>Admin · Engineering · Sales · Finance<br/>
+        <span class="dim">→ </span>Marketing · People · Operations · Intelligence
+      </div>
+    </div>
+  </div>
+
+  <div class="step done">
+    <div class="step-dot"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <span class="step-day">Day 2–3</span>
+        <span class="status-badge status-done">✓ Complete</span>
+      </div>
+      <div class="step-title">Application Deployment</div>
+      <div class="step-body">Agent scaffolds live dashboard app from scratch in sandbox. Wires all data sources, deploys pages for each business unit. Live preview URL shared with client in Slack.</div>
+      <div class="tags">
+        <span class="tag blue">writeApplicationFile</span>
+        <span class="tag amber">7 pages deployed</span>
+        <span class="tag green">live preview</span>
+      </div>
+      <div class="output-box">
+        <span class="dim">→ </span>/financials · /accounting · /analytics<br/>
+        <span class="dim">→ </span>/sales · /people · /operations · /intelligence<br/>
+        <span class="dim">→ </span>preview URL shared · client approved
+      </div>
+    </div>
+  </div>
+
+  <div class="step active">
+    <div class="step-dot"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <span class="step-day">Day 4–5</span>
+        <span class="status-badge status-active">● In Progress</span>
+      </div>
+      <div class="step-title">Workflow Automation</div>
+      <div class="step-body">Agent builds automated workflows: weekly digest, anomaly alerts, AR dunning sequences, sales pipeline nudges. Each workflow is a node on canvas — inspectable and editable.</div>
+      <div class="tags">
+        <span class="tag purple">createWorkflow</span>
+        <span class="tag blue">triggers</span>
+        <span class="tag amber">12 workflows</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-dot"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <span class="step-day">Week 2+</span>
+        <span class="status-badge status-pending">Upcoming</span>
+      </div>
+      <div class="step-title">Autonomous Operations</div>
+      <div class="step-body">Agent monitors all systems, surfaces insights proactively, updates dashboards as data changes. Client team collaborates directly on canvas. No FDEs needed on-site.</div>
+      <div class="tags">
+        <span class="tag green">autonomous</span>
+        <span class="tag blue">real-time sync</span>
+        <span class="tag">collaborative canvas</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

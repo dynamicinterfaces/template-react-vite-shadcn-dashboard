@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FDE Agent — Overview</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0f0f11; color:#e4e4e7; font-family:'Inter',system-ui,sans-serif; padding:32px; }
+
+  h1 { font-size:26px; font-weight:800; color:#fff; letter-spacing:-0.5px; }
+  h1 span { color:#6366f1; }
+  .tagline { font-size:13px; color:#71717a; margin-top:6px; margin-bottom:40px; }
+
+  .section-title { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#52525b; margin-bottom:16px; }
+
+  /* Comparison table */
+  .compare { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:40px; }
+  .col { background:#18181b; border-radius:12px; overflow:hidden; }
+  .col-header { padding:16px 20px; font-size:13px; font-weight:700; border-bottom:1px solid #27272a; }
+  .col.palantir .col-header { color:#f87171; border-top:3px solid #ef4444; }
+  .col.di .col-header { color:#818cf8; border-top:3px solid #6366f1; }
+  .col-row { padding:12px 20px; border-bottom:1px solid #1c1c1f; font-size:13px; display:flex; justify-content:space-between; align-items:center; }
+  .col-row:last-child { border-bottom:none; }
+  .col-row .label { color:#a1a1aa; }
+  .col.palantir .col-row .value { color:#fca5a5; font-weight:600; }
+  .col.di .col-row .value { color:#a5b4fc; font-weight:600; }
+
+  /* Value props */
+  .props { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:40px; }
+  .prop { background:#18181b; border-radius:10px; padding:16px; border:1px solid #27272a; }
+  .prop-icon { font-size:22px; margin-bottom:8px; }
+  .prop-title { font-size:13px; font-weight:700; color:#fff; margin-bottom:4px; }
+  .prop-body { font-size:12px; color:#71717a; line-height:1.6; }
+
+  /* Metrics */
+  .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .metric { background:#18181b; border-radius:10px; padding:16px; text-align:center; }
+  .metric-val { font-size:28px; font-weight:800; color:#6366f1; }
+  .metric-unit { font-size:11px; color:#52525b; margin-bottom:4px; }
+  .metric-label { font-size:12px; color:#a1a1aa; }
+
+  /* Quote */
+  .quote { background:#18181b; border-left:4px solid #6366f1; border-radius:0 12px 12px 0; padding:20px 24px; font-size:15px; font-style:italic; color:#d4d4d8; line-height:1.7; }
+  .quote cite { display:block; font-size:12px; font-style:normal; color:#52525b; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<h1>Dynamic Interfaces <span>FDE Agent</span></h1>
+<p class="tagline">What Palantir does with 10 engineers and $10M — we do with one agent in one week.</p>
+
+<div class="section-title">Head-to-head comparison</div>
+<div class="compare">
+  <div class="col palantir">
+    <div class="col-header">🔴 Palantir Forward Deployed Engineering</div>
+    <div class="col-row"><span class="label">Team size</span><span class="value">8–15 engineers</span></div>
+    <div class="col-row"><span class="label">Deployment time</span><span class="value">3–6 months</span></div>
+    <div class="col-row"><span class="label">Contract value</span><span class="value">$5M–$50M/yr</span></div>
+    <div class="col-row"><span class="label">Customization</span><span class="value">Manual, bespoke</span></div>
+    <div class="col-row"><span class="label">Data visibility</span><span class="value">Foundry ontology</span></div>
+    <div class="col-row"><span class="label">Client dependency</span><span class="value">High — needs Palantir</span></div>
+    <div class="col-row"><span class="label">Iterating</span><span class="value">Weeks per change</span></div>
+  </div>
+  <div class="col di">
+    <div class="col-header">🟣 Dynamic Interfaces FDE Agent</div>
+    <div class="col-row"><span class="label">Team size</span><span class="value">1 AI agent (Claude)</span></div>
+    <div class="col-row"><span class="label">Deployment time</span><span class="value">1–5 days</span></div>
+    <div class="col-row"><span class="label">Contract value</span><span class="value">SaaS — starts at $0</span></div>
+    <div class="col-row"><span class="label">Customization</span><span class="value">Agent-generated, live</span></div>
+    <div class="col-row"><span class="label">Data visibility</span><span class="value">Graph-native canvas</span></div>
+    <div class="col-row"><span class="label">Client dependency</span><span class="value">Low — MCP is open</span></div>
+    <div class="col-row"><span class="label">Iterating</span><span class="value">Minutes per change</span></div>
+  </div>
+</div>
+
+<div class="section-title">Why it works</div>
+<div class="props">
+  <div class="prop">
+    <div class="prop-icon">🕸️</div>
+    <div class="prop-title">Graph-native</div>
+    <div class="prop-body">Everything is a node or edge. The agent maps the entire business — people, systems, data — into a single connected graph. Nothing is siloed.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-icon">🤖</div>
+    <div class="prop-title">MCP-first</div>
+    <div class="prop-body">Claude connects via MCP on day one. It can read, write, create, and automate anything on the canvas. Any LLM can act as the FDE.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-icon">⚡</div>
+    <div class="prop-title">Live apps in sandboxes</div>
+    <div class="prop-body">The agent deploys real React apps with live previews. Not static dashboards — actual running software built for the client's workflows.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-icon">🔄</div>
+    <div class="prop-title">Real-time collaboration</div>
+    <div class="prop-body">The canvas syncs via Yjs. Client teams see the agent working in real-time — they can add notes, redirect work, and co-build together.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-icon">🔌</div>
+    <div class="prop-title">Open integrations</div>
+    <div class="prop-body">HubSpot, Stripe, Rippling, QuickBooks, Snowflake — the agent reads from any API and syncs data into the graph automatically.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-icon">🧠</div>
+    <div class="prop-title">Autonomous intelligence</div>
+    <div class="prop-body">Agent monitors all connected systems, surfaces anomalies, generates weekly digests, and triggers workflows — without being asked.</div>
+  </div>
+</div>
+
+<div class="section-title">By the numbers (this demo)</div>
+<div class="metrics">
+  <div class="metric"><div class="metric-val">349</div><div class="metric-unit"> </div><div class="metric-label">Graph nodes created</div></div>
+  <div class="metric"><div class="metric-val">7</div><div class="metric-unit"> </div><div class="metric-label">Live pages deployed</div></div>
+  <div class="metric"><div class="metric-val">6</div><div class="metric-unit"> </div><div class="metric-label">Integrations mapped</div></div>
+  <div class="metric"><div class="metric-val">1</div><div class="metric-unit">week</div><div class="metric-label">Total elapsed time</div></div>
+</div>
+
+<div class="quote">
+  "The Palantir model is brilliant but it doesn't scale. You can't send FDE teams to every company that needs operational intelligence. DI is what happens when you make the FDE the AI."
+  <cite>— The thesis behind this demo</cite>
+</div>
+
+</body>
+</html>

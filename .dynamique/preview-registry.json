@@ -269,5 +269,15 @@
     "type": "page",
     "path": "src/features/people/index.tsx",
     "route": "/people"
+  },
+  "01KKA1RGA0B83DJPTM5P6XTCSF": {
+    "type": "page",
+    "path": "src/features/operations/index.tsx",
+    "route": "/operations"
+  },
+  "01KKA1RHCGAZPS3SVAWRWXAFYG": {
+    "type": "page",
+    "path": "src/features/intelligence/index.tsx",
+    "route": "/intelligence"
   }
 }

@@ -1,62 +1,57 @@
-import { TrendingUp, TrendingDown, DollarSign, Target, Users, Briefcase } from 'lucide-react';
+import { TrendingUp, TrendingDown, DollarSign, Users, Target, Percent } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const kpis = [
-  { label: 'Total Pipeline',    value: '$4.2M',   delta: '+18.3%', up: true,  icon: DollarSign },
-  { label: 'Deals Closing Q2',  value: '34',      delta: '+7',     up: true,  icon: Target },
-  { label: 'Avg Deal Size',     value: '$124K',   delta: '-3.1%',  up: false, icon: Briefcase },
-  { label: 'Win Rate',          value: '38%',     delta: '+4.2%',  up: true,  icon: Users },
+  { label: 'Total Pipeline',  value: '$4.2M',   delta: '+18.3%', up: true,  icon: DollarSign },
+  { label: 'Open Deals',      value: '84',      delta: '+6',     up: true,  icon: Target },
+  { label: 'Avg Deal Size',   value: '$49,800', delta: '+11.2%', up: true,  icon: DollarSign },
+  { label: 'Win Rate',        value: '38%',     delta: '-2.1%',  up: false, icon: Percent },
 ];
 
 const stages = [
-  {
-    label: 'Prospecting', color: 'hsl(var(--muted-foreground))', deals: [
-      { name: 'Acme Corp', value: '$80K', owner: 'Sarah K.' },
-      { name: 'Globex Inc', value: '$210K', owner: 'Mike T.' },
-      { name: 'Initech', value: '$55K', owner: 'Laura P.' },
-    ]
-  },
-  {
-    label: 'Qualified', color: 'hsl(var(--info))', deals: [
-      { name: 'Umbrella Co', value: '$340K', owner: 'James R.' },
-      { name: 'Hooli', value: '$125K', owner: 'Sarah K.' },
-    ]
-  },
-  {
-    label: 'Proposal', color: 'hsl(var(--warning))', deals: [
-      { name: 'Pied Piper', value: '$490K', owner: 'Mike T.' },
-      { name: 'Vandelay Ind', value: '$185K', owner: 'James R.' },
-      { name: 'Soylent Corp', value: '$72K', owner: 'Laura P.' },
-    ]
-  },
-  {
-    label: 'Negotiation', color: 'hsl(var(--primary))', deals: [
-      { name: 'Massive Dyn', value: '$620K', owner: 'Sarah K.' },
-      { name: 'Bluth Co', value: '$88K', owner: 'Mike T.' },
-    ]
-  },
-  {
-    label: 'Closed Won', color: 'hsl(var(--success))', deals: [
-      { name: 'Dunder Mifflin', value: '$310K', owner: 'Laura P.' },
-      { name: 'Sterling Cooper', value: '$440K', owner: 'James R.' },
-    ]
-  },
+  { name: 'Prospecting',  count: 22, value: '$680K',  color: 'hsl(var(--muted-foreground))' },
+  { name: 'Qualified',    count: 18, value: '$920K',  color: 'hsl(var(--info))' },
+  { name: 'Proposal',     count: 14, value: '$1.1M',  color: 'hsl(var(--warning))' },
+  { name: 'Negotiation',  count: 9,  value: '$840K',  color: 'hsl(var(--primary))' },
+  { name: 'Closed Won',   count: 21, value: '$2.1M',  color: 'hsl(var(--success))' },
 ];
 
-const activity = [
-  { action: 'Deal moved to Negotiation', detail: 'Massive Dynamics — $620K', time: '2h ago', up: true },
-  { action: 'New contact added', detail: 'Jennifer Walsh @ Hooli', time: '4h ago', up: true },
-  { action: 'Proposal sent', detail: 'Pied Piper — $490K', time: '6h ago', up: true },
-  { action: 'Deal lost', detail: 'Initrode — $95K', time: '1d ago', up: false },
-  { action: 'Meeting scheduled', detail: 'Bluth Co — discovery call', time: '1d ago', up: true },
+const deals = [
+  { company: 'Acme Corp',        contact: 'Sarah Chen',    stage: 'Negotiation', value: '$220K', close: 'Mar 28', owner: 'J. Park' },
+  { company: 'Meridian Health',  contact: 'Tom Russo',     stage: 'Proposal',    value: '$185K', close: 'Apr 5',  owner: 'A. Singh' },
+  { company: 'BlueWave Capital', contact: 'Nina Patel',    stage: 'Qualified',   value: '$310K', close: 'Apr 12', owner: 'J. Park' },
+  { company: 'Orion Logistics',  contact: 'Mark Delaney',  stage: 'Proposal',    value: '$95K',  close: 'Mar 31', owner: 'L. Kim' },
+  { company: 'Vertex Systems',   contact: 'Dana Howell',   stage: 'Negotiation', value: '$440K', close: 'Apr 2',  owner: 'A. Singh' },
+  { company: 'Pulse Analytics',  contact: 'Carlos Vega',   stage: 'Qualified',   value: '$130K', close: 'Apr 18', owner: 'L. Kim' },
 ];
+
+const stageBadge: Record<string, string> = {
+  Prospecting:  'bg-muted text-muted-foreground',
+  Qualified:    'bg-info/15 text-info',
+  Proposal:     'bg-warning/15 text-warning',
+  Negotiation:  'bg-primary/15 text-primary',
+  'Closed Won': 'bg-success/15 text-success',
+};
+
+const accounts = [
+  { name: 'Acme Corp',        industry: 'Manufacturing', arr: '$420K', health: 'Healthy' },
+  { name: 'Meridian Health',  industry: 'Healthcare',    arr: '$280K', health: 'At Risk' },
+  { name: 'BlueWave Capital', industry: 'Finance',       arr: '$610K', health: 'Healthy' },
+  { name: 'Orion Logistics',  industry: 'Logistics',     arr: '$195K', health: 'Churning' },
+];
+
+const healthColor: Record<string, string> = {
+  Healthy:  'text-success',
+  'At Risk': 'text-warning',
+  Churning: 'text-destructive',
+};
 
 export default function SalesPage() {
   return (
     <div className="p-6 space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Sales Pipeline</h1>
-        <p className="text-muted-foreground text-sm mt-1">Q2 2025 — synced from HubSpot CRM</p>
+        <h1 className="text-2xl font-semibold">Sales & CRM</h1>
+        <p className="text-muted-foreground text-sm mt-1">Q2 2025 — mock data</p>
       </div>
 
       {/* KPIs */}
@@ -78,51 +73,77 @@ export default function SalesPage() {
         ))}
       </div>
 
-      {/* Pipeline board */}
+      {/* Pipeline funnel */}
       <Card>
-        <CardHeader>
-          <CardTitle className="text-base">Pipeline Board</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-5 gap-3 min-w-0">
-            {stages.map(({ label, color, deals }) => (
-              <div key={label} className="flex flex-col gap-2">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: color }} />
-                  <span className="text-xs font-medium truncate">{label}</span>
-                  <span className="text-xs text-muted-foreground ml-auto">{deals.length}</span>
-                </div>
-                {deals.map((deal) => (
-                  <div key={deal.name} className="rounded-md border border-border bg-muted/30 p-2 space-y-1">
-                    <div className="text-xs font-medium leading-tight">{deal.name}</div>
-                    <div className="text-xs font-bold" style={{ color }}>{deal.value}</div>
-                    <div className="text-[10px] text-muted-foreground">{deal.owner}</div>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Recent activity */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">Recent Activity</CardTitle>
-        </CardHeader>
+        <CardHeader><CardTitle className="text-base">Pipeline by Stage</CardTitle></CardHeader>
         <CardContent className="space-y-3">
-          {activity.map((a, i) => (
-            <div key={i} className="flex items-start gap-3 text-sm">
-              <div className={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${a.up ? 'bg-success' : 'bg-destructive'}`} />
-              <div className="flex-1 min-w-0">
-                <span className="font-medium">{a.action}</span>
-                <span className="text-muted-foreground"> — {a.detail}</span>
+          {stages.map(({ name, count, value, color }) => (
+            <div key={name} className="flex items-center gap-4">
+              <span className="w-28 text-sm text-muted-foreground shrink-0">{name}</span>
+              <div className="flex-1 h-7 rounded bg-muted overflow-hidden relative">
+                <div
+                  className="h-full rounded flex items-center px-2"
+                  style={{ width: `${(count / 22) * 100}%`, background: color, opacity: 0.85 }}
+                />
               </div>
-              <span className="text-xs text-muted-foreground flex-shrink-0">{a.time}</span>
+              <span className="w-8 text-sm text-center">{count}</span>
+              <span className="w-16 text-sm text-right font-medium">{value}</span>
             </div>
           ))}
         </CardContent>
       </Card>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        {/* Deals table */}
+        <Card className="lg:col-span-2">
+          <CardHeader><CardTitle className="text-base">Open Deals</CardTitle></CardHeader>
+          <CardContent>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-muted-foreground border-b border-border">
+                  <th className="text-left pb-2 font-medium">Company</th>
+                  <th className="text-left pb-2 font-medium">Stage</th>
+                  <th className="text-right pb-2 font-medium">Value</th>
+                  <th className="text-right pb-2 font-medium">Close</th>
+                  <th className="text-right pb-2 font-medium">Owner</th>
+                </tr>
+              </thead>
+              <tbody>
+                {deals.map(({ company, stage, value, close, owner }) => (
+                  <tr key={company} className="border-b border-border last:border-0">
+                    <td className="py-2 font-medium">{company}</td>
+                    <td className="py-2">
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${stageBadge[stage] ?? ''}`}>{stage}</span>
+                    </td>
+                    <td className="py-2 text-right font-medium">{value}</td>
+                    <td className="py-2 text-right text-muted-foreground">{close}</td>
+                    <td className="py-2 text-right text-muted-foreground">{owner}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
+
+        {/* Top accounts */}
+        <Card>
+          <CardHeader><CardTitle className="text-base">Top Accounts</CardTitle></CardHeader>
+          <CardContent className="space-y-3">
+            {accounts.map(({ name, industry, arr, health }) => (
+              <div key={name} className="flex items-start justify-between border-b border-border last:border-0 pb-3 last:pb-0">
+                <div>
+                  <div className="font-medium text-sm">{name}</div>
+                  <div className="text-xs text-muted-foreground">{industry}</div>
+                </div>
+                <div className="text-right">
+                  <div className="text-sm font-medium">{arr}</div>
+                  <div className={`text-xs font-medium ${healthColor[health]}`}>{health}</div>
+                </div>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
