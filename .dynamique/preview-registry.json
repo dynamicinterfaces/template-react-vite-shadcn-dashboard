@@ -161,5 +161,10 @@
     "type": "component",
     "path": "src/components/ui/dialog.tsx",
     "previewPath": "src/components/ui/dialog.previews.tsx"
+  },
+  "01KK9NWSVCGG9BS1PVQA877PTJ": {
+    "type": "component",
+    "path": "src/components/ui/dropdown-menu.tsx",
+    "previewPath": "src/components/ui/dropdown-menu.previews.tsx"
   }
 }
