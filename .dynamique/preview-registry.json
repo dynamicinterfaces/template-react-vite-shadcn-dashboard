@@ -276,8 +276,8 @@
     "previewPath": "src/features/operations/index.previews.tsx"
   },
   "01KKA1RHCGAZPS3SVAWRWXAFYG": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/intelligence/index.tsx",
-    "route": "/intelligence"
+    "previewPath": "src/features/intelligence/index.previews.tsx"
   }
 }
