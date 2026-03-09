@@ -38,5 +38,15 @@
     "type": "component",
     "path": "src/components/ui/command.tsx",
     "previewPath": "src/components/ui/command.previews.tsx"
+  },
+  "01KK9NWX2JJ411FVZ4JW1N2KAJ": {
+    "type": "component",
+    "path": "src/components/ui/tooltip.tsx",
+    "previewPath": "src/components/ui/tooltip.previews.tsx"
+  },
+  "01KK9NYS8T1Q8TS02023C604YX": {
+    "type": "component",
+    "path": "src/components/ui/toast.tsx",
+    "previewPath": "src/components/ui/toast.previews.tsx"
   }
 }
