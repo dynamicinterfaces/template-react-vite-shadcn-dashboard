@@ -121,5 +121,10 @@
     "type": "component",
     "path": "src/pages/WelcomePage.tsx",
     "previewPath": "src/pages/WelcomePage.previews.tsx"
+  },
+  "01KK9NV56DC6ASGCE5T9M2SVRJ": {
+    "type": "component",
+    "path": "src/features/404.tsx",
+    "previewPath": "src/features/404.previews.tsx"
   }
 }
