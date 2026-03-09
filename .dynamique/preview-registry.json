@@ -101,5 +101,10 @@
     "type": "component",
     "path": "src/components/layout/index.tsx",
     "previewPath": "src/components/layout/index.previews.tsx"
+  },
+  "01KK9NT81VWN017QSKEZG2SAQG": {
+    "type": "component",
+    "path": "src/components/db-schema-graph.tsx",
+    "previewPath": "src/components/db-schema-graph.previews.tsx"
   }
 }
