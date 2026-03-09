@@ -3,5 +3,10 @@
     "type": "component",
     "path": "src/components/ui/checkbox.tsx",
     "previewPath": "src/components/ui/checkbox.previews.tsx"
+  },
+  "01KK9NXR9ZTXZMKPJFG63CCQP4": {
+    "type": "component",
+    "path": "src/components/ui/separator.tsx",
+    "previewPath": "src/components/ui/separator.previews.tsx"
   }
 }
