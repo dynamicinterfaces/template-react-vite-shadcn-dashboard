@@ -176,5 +176,10 @@
     "type": "component",
     "path": "src/components/ui/tooltip.tsx",
     "previewPath": "src/components/ui/tooltip.previews.tsx"
+  },
+  "01KK9NWYJ573DBPKD1YX6F6XYR": {
+    "type": "component",
+    "path": "src/components/ui/skeleton.tsx",
+    "previewPath": "src/components/ui/skeleton.previews.tsx"
   }
 }
