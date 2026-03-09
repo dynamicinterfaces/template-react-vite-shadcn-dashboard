@@ -156,5 +156,10 @@
     "type": "component",
     "path": "src/components/ui/avatar.tsx",
     "previewPath": "src/components/ui/avatar.previews.tsx"
+  },
+  "01KK9NWR21CCYTSJX2VSB57SK1": {
+    "type": "component",
+    "path": "src/components/ui/dialog.tsx",
+    "previewPath": "src/components/ui/dialog.previews.tsx"
   }
 }
