@@ -93,8 +93,8 @@
     "previewPath": "src/features/payment/index.previews.tsx"
   },
   "01KK8DVT62E85TKYD5JG0BY1FD": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/accounting/index.tsx",
-    "route": "/accounting"
+    "previewPath": "src/features/accounting/index.previews.tsx"
   }
 }
