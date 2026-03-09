@@ -1,12 +1,8 @@
 {
-  "01KK7QKTF3FFQK7H7ZWGJ0DDS4": {
-    "type": "component",
-    "path": "src/components/db-schema-graph.tsx",
-    "previewPath": "src/components/db-schema-graph.previews.tsx"
-  },
   "01KK7K0J6Y27PH58WPB8KG09PA": {
     "type": "component",
     "path": "src/features/financials/index.tsx",
+    "route": "/financials",
     "previewPath": "src/features/financials/index.previews.tsx"
   },
   "01KK7FJT6SNV5YYSS0W4TWR3H3": {
@@ -34,11 +30,6 @@
     "path": "src/features/kanban/detail/index.tsx",
     "previewPath": "src/features/kanban/detail/index.previews.tsx"
   },
-  "01KK7DW5HZCGA9EHKKVBHFEKSE": {
-    "type": "component",
-    "path": "src/components/layout/index.tsx",
-    "previewPath": "src/components/layout/index.previews.tsx"
-  },
   "01KK7FJK8ZRG7JJS3AX65EB4SY": {
     "type": "component",
     "path": "src/components/layout/app-sidebar.tsx",
@@ -46,23 +37,28 @@
   },
   "01KK7FJMA9F0Q2EQ3TYAT17Q80": {
     "type": "component",
-    "path": "src/components/layout/header.tsx"
+    "path": "src/components/layout/header.tsx",
+    "previewPath": "src/components/layout/header.previews.tsx"
   },
   "01KK7FK03GTMM1F63ZHZEE38NQ": {
     "type": "component",
-    "path": "src/components/kanban/kanban.container.tsx"
+    "path": "src/components/kanban/kanban.container.tsx",
+    "previewPath": "src/components/kanban/kanban.container.previews.tsx"
   },
   "01KK7FK4THF00NW8QBHBEZA30P": {
     "type": "component",
-    "path": "src/components/kanban/components/card/card.component.tsx"
+    "path": "src/components/kanban/components/card/card.component.tsx",
+    "previewPath": "src/components/kanban/components/card/card.component.previews.tsx"
   },
   "01KK7FK5RS45EPHA9H28RDS0QR": {
     "type": "component",
-    "path": "src/components/kanban/components/column/column.component.tsx"
+    "path": "src/components/kanban/components/column/column.component.tsx",
+    "previewPath": "src/components/kanban/components/column/column.component.previews.tsx"
   },
   "01KK7FKH8BS9ADH0501HX8AGNA": {
     "type": "component",
-    "path": "src/components/layout/nav-group.tsx"
+    "path": "src/components/layout/nav-group.tsx",
+    "previewPath": "src/components/layout/nav-group.previews.tsx"
   },
   "01KK7FKJ6GCKABNEP7W59KB9YK": {
     "type": "component",
@@ -71,15 +67,34 @@
   },
   "01KK7FKK7V597BB8W5X9GC2T12": {
     "type": "component",
-    "path": "src/components/command-menu.tsx"
+    "path": "src/components/command-menu.tsx",
+    "previewPath": "src/components/command-menu.previews.tsx"
   },
   "01KK7FKQ7SKK1QVN8YRYSH8DAK": {
     "type": "component",
-    "path": "src/components/theme-switch.tsx"
+    "path": "src/components/theme-switch.tsx",
+    "previewPath": "src/components/theme-switch.previews.tsx"
   },
   "01KK7FKR65CT8BXYWAE9A1VPVK": {
     "type": "component",
     "path": "src/components/search.tsx",
     "previewPath": "src/components/search.previews.tsx"
+  },
+  "01KK7D6BAWBPJ2TE4RTA2PY03Z": {
+    "type": "component",
+    "path": "src/features/posts/index.tsx",
+    "route": "/",
+    "previewPath": "src/features/posts/index.previews.tsx"
+  },
+  "01KK7D6BAZC2FK1DCWWDQYZW6C": {
+    "type": "component",
+    "path": "src/features/payment/index.tsx",
+    "route": "/payment",
+    "previewPath": "src/features/payment/index.previews.tsx"
+  },
+  "01KK8DVT62E85TKYD5JG0BY1FD": {
+    "type": "page",
+    "path": "src/features/accounting/index.tsx",
+    "route": "/accounting"
   }
 }
