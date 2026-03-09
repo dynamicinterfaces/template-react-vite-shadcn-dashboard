@@ -131,5 +131,10 @@
     "type": "component",
     "path": "src/components/ui/button.tsx",
     "previewPath": "src/components/ui/button.previews.tsx"
+  },
+  "01KK9NV998129NQAJ46WCHY94S": {
+    "type": "component",
+    "path": "src/components/ui/badge.tsx",
+    "previewPath": "src/components/ui/badge.previews.tsx"
   }
 }
