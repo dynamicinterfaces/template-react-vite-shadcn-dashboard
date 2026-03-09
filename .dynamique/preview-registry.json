@@ -1,4 +1,64 @@
 {
+  "01KK8DVT62E85TKYD5JG0BY1FD": {
+    "type": "component",
+    "path": "src/features/accounting/index.tsx",
+    "previewPath": "src/features/accounting/index.previews.tsx"
+  },
+  "01KK9NT6JNJMNYW383HPM9T670": {
+    "type": "component",
+    "path": "src/components/layout/index.tsx",
+    "previewPath": "src/components/layout/index.previews.tsx"
+  },
+  "01KK9NT81VWN017QSKEZG2SAQG": {
+    "type": "component",
+    "path": "src/components/db-schema-graph.tsx",
+    "previewPath": "src/components/db-schema-graph.previews.tsx"
+  },
+  "01KK9NT9JNCXB0XKXJ28SG56QW": {
+    "type": "component",
+    "path": "src/features/posts/detail/index.tsx",
+    "previewPath": "src/features/posts/detail/index.previews.tsx"
+  },
+  "01KK9NTAXRPA9ZM971T87DP880": {
+    "type": "component",
+    "path": "src/features/kanban/edit/index.tsx",
+    "previewPath": "src/features/kanban/edit/index.previews.tsx"
+  },
+  "01KK9NTCGKXTN7J75J5WFQADYS": {
+    "type": "component",
+    "path": "src/pages/WelcomePage.tsx",
+    "previewPath": "src/pages/WelcomePage.previews.tsx"
+  },
+  "01KK9NV56DC6ASGCE5T9M2SVRJ": {
+    "type": "component",
+    "path": "src/features/404.tsx",
+    "previewPath": "src/features/404.previews.tsx"
+  },
+  "01KK9NVDXKH8V4EZVRQVYSZ7FB": {
+    "type": "component",
+    "path": "src/components/ui/input.tsx",
+    "previewPath": "src/components/ui/input.previews.tsx"
+  },
+  "01KK9NVH5CZB0S71BGTF5V10HJ": {
+    "type": "component",
+    "path": "src/components/ui/table.tsx",
+    "previewPath": "src/components/ui/table.previews.tsx"
+  },
+  "01KK9NWR21CCYTSJX2VSB57SK1": {
+    "type": "component",
+    "path": "src/components/ui/dialog.tsx",
+    "previewPath": "src/components/ui/dialog.previews.tsx"
+  },
+  "01KK9NWVM660CAHCKKAS9NEW00": {
+    "type": "component",
+    "path": "src/components/ui/fancy-multi-select.tsx",
+    "previewPath": "src/components/ui/fancy-multi-select.previews.tsx"
+  },
+  "01KK9NWYJ573DBPKD1YX6F6XYR": {
+    "type": "component",
+    "path": "src/components/ui/skeleton.tsx",
+    "previewPath": "src/components/ui/skeleton.previews.tsx"
+  },
   "01KK9NWSVCGG9BS1PVQA877PTJ": {
     "type": "component",
     "path": "src/components/ui/dropdown-menu.tsx",
@@ -48,5 +108,25 @@
     "type": "component",
     "path": "src/components/ui/toast.tsx",
     "previewPath": "src/components/ui/toast.previews.tsx"
+  },
+  "01KK9NWPC8H4Q3A7J04KGEM52K": {
+    "type": "component",
+    "path": "src/components/ui/avatar.tsx",
+    "previewPath": "src/components/ui/avatar.previews.tsx"
+  },
+  "01KK9NXP8N72J36MEY2HA591PY": {
+    "type": "component",
+    "path": "src/components/ui/checkbox.tsx",
+    "previewPath": "src/components/ui/checkbox.previews.tsx"
+  },
+  "01KK9NV998129NQAJ46WCHY94S": {
+    "type": "component",
+    "path": "src/components/ui/badge.tsx",
+    "previewPath": "src/components/ui/badge.previews.tsx"
+  },
+  "01KK9NV7GGTGNN9B95V9YAK154": {
+    "type": "component",
+    "path": "src/components/ui/button.tsx",
+    "previewPath": "src/components/ui/button.previews.tsx"
   }
 }
