@@ -201,5 +201,10 @@
     "type": "component",
     "path": "src/features/accounting/income-statement.tsx",
     "previewPath": "src/features/accounting/income-statement.previews.tsx"
+  },
+  "01KK9Y2J188NC9VR07FVKZ1G03": {
+    "type": "component",
+    "path": "src/features/accounting/cash-flow.tsx",
+    "previewPath": "src/features/accounting/cash-flow.previews.tsx"
   }
 }
