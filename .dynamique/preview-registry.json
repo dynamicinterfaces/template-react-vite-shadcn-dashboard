@@ -196,5 +196,10 @@
     "path": "src/features/posts/index.tsx",
     "route": "/",
     "previewPath": "src/features/posts/index.previews.tsx"
+  },
+  "01KK9Y2FB9ZT2P0JT6E6XP170B": {
+    "type": "component",
+    "path": "src/features/accounting/income-statement.tsx",
+    "previewPath": "src/features/accounting/income-statement.previews.tsx"
   }
 }
