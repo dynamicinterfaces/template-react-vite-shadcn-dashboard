@@ -19,6 +19,7 @@ import DetailKanban from './features/kanban/detail'
 import EditKanban from './features/kanban/edit'
 import { Payments } from './features/payment'
 import FinancialsDashboard from './features/financials'
+import AccountingDashboard from './features/accounting'
 import Post from './features/posts'
 import PostDetail from './features/posts/detail'
 
