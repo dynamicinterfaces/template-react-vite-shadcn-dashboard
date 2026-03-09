@@ -61,6 +61,12 @@ const privateRoutes = [
             element: <FinancialsDashboard />
           },
           {
+            title: 'Accounting',
+            path: '/accounting',
+            icon: CalculatorIcon,
+            element: <AccountingDashboard />
+          },
+          {
             title: 'Kanban',
             icon: LayoutDashboardIcon,
             children: [
