@@ -261,9 +261,9 @@
     "route": "/auth/google/callback"
   },
   "01KKA18K1M19TQW06EP7SWCD9G": {
-    "type": "page",
+    "type": "component",
     "path": "src/features/sales/index.tsx",
-    "route": "/sales"
+    "previewPath": "src/features/sales/index.previews.tsx"
   },
   "01KKA199T4CSEH0JEM4QMX1WRT": {
     "type": "page",
