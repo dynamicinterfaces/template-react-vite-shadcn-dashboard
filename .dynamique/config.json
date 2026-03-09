@@ -7,7 +7,7 @@
   "devPort": 5173,
   "buildCommand": "npm run build",
   "buildOutputDir": "dist",
-  "previewStrategy": "none",
+  "previewStrategy": "dev-server",
   "env": {},
   "routes": [
     {

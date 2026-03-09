@@ -227,6 +227,16 @@
     "previewPath": "src/features/analytics/index.previews.tsx",
     "route": "/analytics"
   },
+  "01KKA17F9Q12QYEW27VP0J2QCG": {
+    "type": "page",
+    "path": "src/pages/GoogleCallbackPage.tsx",
+    "route": "/auth/google/callback"
+  },
+  "01KK9RH8X240FMN6Q15MDG6YSP": {
+    "type": "component",
+    "path": "src/components/design-tokens/index.tsx",
+    "previewPath": "src/components/design-tokens/index.previews.tsx"
+  },
   "01KK9Y2FB9ZT2P0JT6E6XP170B": {
     "type": "component",
     "path": "src/features/accounting/income-statement.tsx",
@@ -244,40 +254,34 @@
     "path": "src/components/ui/toast.tsx",
     "previewPath": "src/components/ui/toast.previews.tsx"
   },
-  "01KK9RH8X240FMN6Q15MDG6YSP": {
-    "type": "component",
-    "path": "src/components/design-tokens/index.tsx",
-    "previewPath": "src/components/design-tokens/index.previews.tsx"
-  },
   "01KK9Y2X35A5TB13CWNXS938EX": {
     "type": "component",
     "path": "src/features/accounting/ar-aging.tsx",
     "previewPath": "src/features/accounting/ar-aging.previews.tsx",
     "route": "/accounting/ar-aging"
   },
-  "01KKA17F9Q12QYEW27VP0J2QCG": {
-    "type": "page",
-    "path": "src/pages/GoogleCallbackPage.tsx",
-    "route": "/auth/google/callback"
-  },
   "01KKA18K1M19TQW06EP7SWCD9G": {
     "type": "component",
     "path": "src/features/sales/index.tsx",
-    "previewPath": "src/features/sales/index.previews.tsx"
+    "previewPath": "src/features/sales/index.previews.tsx",
+    "route": "/sales?_preview=1"
   },
   "01KKA199T4CSEH0JEM4QMX1WRT": {
     "type": "component",
     "path": "src/features/people/index.tsx",
-    "previewPath": "src/features/people/index.previews.tsx"
+    "previewPath": "src/features/people/index.previews.tsx",
+    "route": "/people?_preview=1"
   },
   "01KKA1RGA0B83DJPTM5P6XTCSF": {
     "type": "component",
     "path": "src/features/operations/index.tsx",
-    "previewPath": "src/features/operations/index.previews.tsx"
+    "previewPath": "src/features/operations/index.previews.tsx",
+    "route": "/operations?_preview=1"
   },
   "01KKA1RHCGAZPS3SVAWRWXAFYG": {
     "type": "component",
     "path": "src/features/intelligence/index.tsx",
-    "previewPath": "src/features/intelligence/index.previews.tsx"
+    "previewPath": "src/features/intelligence/index.previews.tsx",
+    "route": "/intelligence?_preview=1"
   }
 }
