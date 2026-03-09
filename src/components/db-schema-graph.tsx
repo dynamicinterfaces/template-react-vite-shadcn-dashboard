@@ -241,11 +241,16 @@ const edges: Edge[] = [
 ]
 
 export function DbSchemaGraph() {
+  const [ns, , onNodesChange] = useNodesState(nodes)
+  const [es, , onEdgesChange] = useEdgesState(edges)
+
   return (
     <div style={{ width: '100%', height: '100%' }} className='rounded-lg border border-border overflow-hidden'>
       <ReactFlow
-        nodes={nodes}
-        edges={edges}
+        nodes={ns}
+        edges={es}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         fitView
         fitViewOptions={{ padding: 0.15 }}
