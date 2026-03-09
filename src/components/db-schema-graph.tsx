@@ -1,4 +1,4 @@
-import { ReactFlow, Background, BackgroundVariant, Handle, Position, type Node, type Edge } from '@xyflow/react'
+import { ReactFlow, Background, BackgroundVariant, Handle, Position, useNodesState, useEdgesState, type Node, type Edge } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 
 interface TableNodeData {
