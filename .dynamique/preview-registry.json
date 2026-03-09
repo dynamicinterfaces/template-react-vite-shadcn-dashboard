@@ -106,5 +106,10 @@
     "type": "component",
     "path": "src/components/db-schema-graph.tsx",
     "previewPath": "src/components/db-schema-graph.previews.tsx"
+  },
+  "01KK9NT9JNCXB0XKXJ28SG56QW": {
+    "type": "component",
+    "path": "src/features/posts/detail/index.tsx",
+    "previewPath": "src/features/posts/detail/index.previews.tsx"
   }
 }
