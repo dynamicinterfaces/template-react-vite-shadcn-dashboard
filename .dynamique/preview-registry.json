@@ -18,5 +18,10 @@
     "type": "component",
     "path": "src/components/ui/sheet.tsx",
     "previewPath": "src/components/ui/sheet.previews.tsx"
+  },
+  "01KK9NYD8DAAXWKSHXJ2ST2FGV": {
+    "type": "component",
+    "path": "src/components/ui/scroll-area.tsx",
+    "previewPath": "src/components/ui/scroll-area.previews.tsx"
   }
 }
