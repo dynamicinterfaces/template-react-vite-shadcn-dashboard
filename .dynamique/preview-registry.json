@@ -171,5 +171,10 @@
     "type": "component",
     "path": "src/components/ui/fancy-multi-select.tsx",
     "previewPath": "src/components/ui/fancy-multi-select.previews.tsx"
+  },
+  "01KK9NWX2JJ411FVZ4JW1N2KAJ": {
+    "type": "component",
+    "path": "src/components/ui/tooltip.tsx",
+    "previewPath": "src/components/ui/tooltip.previews.tsx"
   }
 }
