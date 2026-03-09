@@ -28,5 +28,10 @@
     "type": "component",
     "path": "src/components/ui/label.tsx",
     "previewPath": "src/components/ui/label.previews.tsx"
+  },
+  "01KK9NYKPBNBDG5098904MTMM5": {
+    "type": "component",
+    "path": "src/components/ui/collapsible.tsx",
+    "previewPath": "src/components/ui/collapsible.previews.tsx"
   }
 }
