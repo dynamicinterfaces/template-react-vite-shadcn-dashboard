@@ -206,5 +206,10 @@
     "type": "component",
     "path": "src/features/accounting/cash-flow.tsx",
     "previewPath": "src/features/accounting/cash-flow.previews.tsx"
+  },
+  "01KK9Y2X35A5TB13CWNXS938EX": {
+    "type": "component",
+    "path": "src/features/accounting/ar-aging.tsx",
+    "previewPath": "src/features/accounting/ar-aging.previews.tsx"
   }
 }
