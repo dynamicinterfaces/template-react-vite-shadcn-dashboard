@@ -101,6 +101,30 @@ const privateRoutes = [
             element: <AnalyticsPage />
           },
           {
+            title: 'Sales',
+            path: '/sales',
+            icon: DollarSignIcon,
+            element: <SalesPage />
+          },
+          {
+            title: 'People',
+            path: '/people',
+            icon: Users2Icon,
+            element: <PeoplePage />
+          },
+          {
+            title: 'Operations',
+            path: '/operations',
+            icon: ActivityIcon,
+            element: <OperationsPage />
+          },
+          {
+            title: 'Intelligence',
+            path: '/intelligence',
+            icon: BrainIcon,
+            element: <IntelligencePage />
+          },
+          {
             title: 'Kanban',
             icon: LayoutDashboardIcon,
             children: [
