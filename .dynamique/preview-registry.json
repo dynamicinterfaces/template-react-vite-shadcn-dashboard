@@ -33,5 +33,10 @@
     "type": "component",
     "path": "src/components/ui/collapsible.tsx",
     "previewPath": "src/components/ui/collapsible.previews.tsx"
+  },
+  "01KK9NYPPQ5MZKDJKA0S62WXEB": {
+    "type": "component",
+    "path": "src/components/ui/command.tsx",
+    "previewPath": "src/components/ui/command.previews.tsx"
   }
 }
