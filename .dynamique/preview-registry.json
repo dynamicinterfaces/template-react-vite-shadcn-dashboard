@@ -166,5 +166,10 @@
     "type": "component",
     "path": "src/components/ui/dropdown-menu.tsx",
     "previewPath": "src/components/ui/dropdown-menu.previews.tsx"
+  },
+  "01KK9NWVM660CAHCKKAS9NEW00": {
+    "type": "component",
+    "path": "src/components/ui/fancy-multi-select.tsx",
+    "previewPath": "src/components/ui/fancy-multi-select.previews.tsx"
   }
 }
