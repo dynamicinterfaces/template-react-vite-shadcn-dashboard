@@ -123,6 +123,7 @@ const isPreviewMode = new URLSearchParams(window.location.search).has('_preview'
 const previewRoutes = [
   ...privateRoutes,
   { path: '/financials', element: <FinancialsDashboard /> },
+  { path: '/accounting', element: <AccountingDashboard /> },
   { path: '/login', element: <Login /> },
   { path: '/register', element: <Register /> },
   { path: '/auth/google/callback', element: <GoogleCallbackPage /> },
