@@ -1,12 +1,22 @@
 {
-  "01KK9NXP8N72J36MEY2HA591PY": {
+  "01KK9NWSVCGG9BS1PVQA877PTJ": {
     "type": "component",
-    "path": "src/components/ui/checkbox.tsx",
-    "previewPath": "src/components/ui/checkbox.previews.tsx"
+    "path": "src/components/ui/dropdown-menu.tsx",
+    "previewPath": "src/components/ui/dropdown-menu.previews.tsx"
   },
   "01KK9NXR9ZTXZMKPJFG63CCQP4": {
     "type": "component",
     "path": "src/components/ui/separator.tsx",
     "previewPath": "src/components/ui/separator.previews.tsx"
+  },
+  "01KK9NVC2F7THYMRXNF24CKCKK": {
+    "type": "component",
+    "path": "src/components/ui/card.tsx",
+    "previewPath": "src/components/ui/card.previews.tsx"
+  },
+  "01KK9NYAE79XAJA7QY0XCM0HRE": {
+    "type": "component",
+    "path": "src/components/ui/sheet.tsx",
+    "previewPath": "src/components/ui/sheet.previews.tsx"
   }
 }
