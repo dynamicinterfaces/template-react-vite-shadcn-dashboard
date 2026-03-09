@@ -185,5 +185,10 @@
     "type": "component",
     "path": "src/features/analytics/index.tsx",
     "previewPath": "src/features/analytics/index.previews.tsx"
+  },
+  "01KK9RH8X240FMN6Q15MDG6YSP": {
+    "type": "component",
+    "path": "src/components/design-tokens/index.tsx",
+    "previewPath": "src/components/design-tokens/index.previews.tsx"
   }
 }
