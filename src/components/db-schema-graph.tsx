@@ -249,9 +249,10 @@ export function DbSchemaGraph() {
         nodeTypes={nodeTypes}
         fitView
         fitViewOptions={{ padding: 0.15 }}
-        nodesDraggable={false}
+        nodesDraggable={true}
         nodesConnectable={false}
-        elementsSelectable={false}
+        elementsSelectable={true}
+        panOnDrag={false}
         panOnScroll={false}
         zoomOnScroll={false}
         proOptions={{ hideAttribution: true }}
