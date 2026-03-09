@@ -222,8 +222,7 @@ export default function EditKanban() {
                     {/* <Input placeholder='Fill Assign to' {...field} /> */}
                     <FancyMultiSelect
                       placeholder={'Select Assignment'}
-                      className='col-span-3'
-                      // onChange={value => handleFormChange('assignTo', value)}
+                      className='w-full'
                       {...field}
                       values={roles_assignment}
                       defaultValues={field.value}
