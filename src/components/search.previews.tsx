@@ -1,29 +1,32 @@
-import { Search } from './search';
-import { SearchProvider } from '../context/search-context';
-import { ThemeProvider } from '../context/theme-context';
-import { AuthProvider } from '../context/auth/authContext';
-import { MemoryRouter } from 'react-router';
+import { SidebarProvider } from '@/components/ui/sidebar'
+import { AuthProvider } from '@/context/auth/authContext'
+import { ThemeProvider } from '@/context/theme-context'
+import { MemoryRouter } from 'react-router'
+import { Search } from './search'
 
-function SearchPreview() {
+// Minimal search context mock — avoids pulling in CommandMenu + its deps
+import React from 'react'
+const SearchContext = React.createContext<{ open: boolean; setOpen: React.Dispatch<React.SetStateAction<boolean>> } | null>(null)
+
+function Preview() {
+  const [open, setOpen] = React.useState(false)
   return (
     <MemoryRouter>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme='light' storageKey='preview-theme'>
         <AuthProvider>
-          <SearchProvider>
-            <div style={{ padding: 24, maxWidth: 400 }}>
-              <Search placeholder="Search commands..." />
-            </div>
-          </SearchProvider>
+          <SidebarProvider>
+            <SearchContext.Provider value={{ open, setOpen }}>
+              <div style={{ padding: 16, width: 280 }}>
+                <Search />
+              </div>
+            </SearchContext.Provider>
+          </SidebarProvider>
         </AuthProvider>
       </ThemeProvider>
     </MemoryRouter>
-  );
+  )
 }
 
-const meta = {
-  component: SearchPreview,
-};
-
-export default meta;
-
-export const Default = {};
+const meta = { title: 'Search', component: Preview }
+export default meta
+export const Default = {}
